@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 0 getEm(30);
+    background: $grey-dark;
+    &>a {
+        display: block;
+        color: $white;
+        text: {
+            transform: uppercase;
+            decoration: none;
+        }
+        margin: auto;
+    }
+    &--is-open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: getEm(20);
+        bottom: 0;
+        z-index:999;
+    }
+}

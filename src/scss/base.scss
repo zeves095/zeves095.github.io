@@ -1,0 +1,27 @@
+@import 'normalize-scss';
+@import './params';
+@import './functions';
+@import './typography';
+
+// blocks
+@import './blocks/button/button';
+@import './blocks/image/image';
+
+@import './blocks/main-header/main-header';
+    @import './blocks/logo/logo';
+    @import './blocks/menu/menu';
+    @import './blocks/support/support';
+    @import './blocks/hamburger/hamburger';
+@import './blocks/video-area/video-area';
+@import './blocks/section/section';
+@import './blocks/service/service';
+@import './blocks/order/order';
+@import './blocks/order-form/order-form';
+    @import './blocks/denomination/denomination';
+    @import './blocks/quantity/quantity';
+
+@import './blocks/main-footer/main-footer';
+    @import './blocks/social-links/social-links';
+    @import './blocks/social-link/social-link';
+
+@import './layouts/default-layout';

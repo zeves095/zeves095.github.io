@@ -1,0 +1,51 @@
+.caption {
+
+  display: block;
+
+  font-family: AcademyC;
+  font-size: 40px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.95;
+  letter-spacing: normal;
+  color: $black;
+
+  margin-top: 35px;
+  margin-right:22px;
+  margin-left:22px;
+  max-width:328px;
+
+  &--double {
+    margin: 0 auto;
+    width: 332px;
+    height: 159px;
+    font-family: AcademyC;
+    font-size: 60px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: $black;
+  
+    display: flex;
+    flex-flow: column nowrap;
+    flex-shrink: 0;
+    align-items: flex-start;
+    & span:nth-child(2) {
+      align-self: flex-end;
+    }
+  }
+
+  &--note {
+    font-family: ProximaNova;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: $grey;
+  }
+}

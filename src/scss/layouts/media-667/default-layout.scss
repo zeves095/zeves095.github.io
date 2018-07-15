@@ -1,0 +1,26 @@
+@media (min-width: 667px) {
+    .page-header {
+        &>*{
+            max-width: getEm(667);
+        }
+    }
+
+    .section {
+        max-width: getEm(667);
+
+        &--up38next {
+            margin-bottom: 0;
+        }
+        &>.video-area {
+            width: auto;
+            height: getEm(265);
+            margin:0 getEm(20);
+        }
+    }
+
+    .page-footer {
+        &>*{
+            max-width: getEm(667);
+        }
+    }
+}

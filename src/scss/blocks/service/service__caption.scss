@@ -1,0 +1,26 @@
+.service__caption {
+    display: block;
+    margin: 0;
+    font: {
+        family: AcademyC;
+        size: getEm(40);
+        weight: normal;
+        style: normal;
+        stretch: normal;
+    }
+    line-height: 0.95;
+    letter-spacing: normal;
+    color: $black;
+    &--double-left-to-right {
+        font-size: getEm(60);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+        & span:nth-child(2) {
+            align-self: flex-end;
+        }
+    }
+}
+
+
+@import './media-667/service__caption';

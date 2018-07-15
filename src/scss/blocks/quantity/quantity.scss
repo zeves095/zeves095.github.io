@@ -1,0 +1,12 @@
+.quantity {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    box-sizing: border-box;
+    text-transform: uppercase;
+    border: solid getEm(1) $black;
+    text-align:center;
+    align-self: stretch;
+}

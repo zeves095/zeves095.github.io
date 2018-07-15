@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+$base-font: 'Arial black';
+$title-padding: 1em;
+
+h1 {
+ font-family: $base-font;
+ padding: $title-padding;
+}

@@ -1,0 +1,79 @@
+.support {
+    position: relative;
+    text-transform: uppercase;
+    font: {
+        family: ProximaNova;
+        size: getEm(14);
+        weight: bold;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: normal;
+    letter-spacing: normal;
+    color: $black;
+    cursor: pointer;
+}
+
+/* Цвет основного хвостика */
+.support__icon {
+    display: inline-block;
+    position: absolute;
+    left: -#{getEm(40)};
+    bottom: -#{getEm(5)};
+	padding:0px;
+    width:0;
+    height:0;
+    font-size: getEm(8);
+    // margin:0 0 -2.4em -3em;
+	/* css3 */
+    -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+    border-radius:50%;
+    border: getEm(14) solid $green;
+    color: $green;
+}
+
+/* обрезаем "шарик" до "хвостика <месяца>" */
+ .support__icon:before {
+    content:".";
+    display: block;
+	position:absolute;
+	top:-1.3em;
+	left:-2.1em;
+	padding:0px;
+    margin:0;
+    width:0;
+    height:0;
+	color:$white;
+	background:$white;
+	/* css3 */
+    -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+    border-radius:50%;
+    border: 1.2em solid $white;
+}
+
+/* основной шарик который превращает "месяц" в "хвостик" и создает итоговое "облачко" */
+ .support__icon:after {
+    content:".";
+    display: block;
+	position:absolute;
+	top:-1.3em;
+	left:-.5em;
+	padding:0px;
+    margin:0;
+    width:0;
+    height:0;
+	/* css3 */
+    -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+    border-radius:50%;
+    border: 1em solid $green;
+}
+
+ .support:hover .support__icon {
+    border-color: $blue;
+    &:after {
+        border-color: $blue;
+    }
+}

@@ -1,0 +1,10 @@
+.order-form {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+@import './order-form__label';
+@import './order-form__denomination';
+@import './order-form__quantity';
+@import './order__button-submit';

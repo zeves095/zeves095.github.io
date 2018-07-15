@@ -1,0 +1,13 @@
+.order__question {
+    font: {
+        family: ProximaNova;
+        size: getEm(18);
+        weight: normal;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+}

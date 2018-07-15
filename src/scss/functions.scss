@@ -1,0 +1,8 @@
+@mixin test-border($color: $grey-light) { // just switcher to hightlight borders (for testing..)
+    // border: 0.07em solid $color;
+    // box-sizing: border-box;
+}
+
+@function getEm($px) { // get value in pixels we need and return appropriated rem['ed] value;
+    @return #{$px / ($hfsVal * $bfsVal)}em;
+}

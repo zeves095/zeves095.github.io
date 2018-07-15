@@ -1,0 +1,12 @@
+.main-footer__copyright {
+    font: {
+        family: ProximaNova;
+        size: getEm(15);
+        weight: normal;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: 1.2;
+    letter-spacing: normal;
+    color: $black;
+}

@@ -1,0 +1,14 @@
+.order__note {
+    font: {
+        family: ProximaNova;
+        size: getEm(14);
+        weight: normal;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: 1.64;
+    letter-spacing: normal;
+    text-align: center;
+    color: $black;
+    margin-bottom:0;
+}

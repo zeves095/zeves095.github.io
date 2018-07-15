@@ -1,0 +1,15 @@
+.order__caption {
+    display: block;
+    margin:0;
+    
+    font: {
+        family: AcademyC;
+        size: getEm(40);
+        weight: normal;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: 0.95;
+    letter-spacing: normal;
+    color: $black;
+}

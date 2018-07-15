@@ -1,0 +1,9 @@
+.image {
+    background: {
+        image: url("./pic.jpg");
+        repeat:  no-repeat;
+        size: cover;
+    };
+    width:auto;
+    align-self: stretch;
+}

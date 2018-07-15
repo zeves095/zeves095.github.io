@@ -1,0 +1,17 @@
+.service {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+}
+
+@import './service__caption';
+@import './service__slider';
+@import './service__description';
+@import './service__note-caption';
+@import './service__note';
+@import './service__button-buy-sertificate';
+@import './service__button-call';
+@import './service__link-call';
+
+
+

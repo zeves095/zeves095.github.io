@@ -1,0 +1,12 @@
+.service__note-caption {
+    font: {
+        family: ProximaNova;
+        size: getEm(14);
+        weight: 600;
+        style: normal;
+        stretch: normal;
+    };
+    line-height: 1.36;
+    letter-spacing: normal;
+    color: $grey;
+}

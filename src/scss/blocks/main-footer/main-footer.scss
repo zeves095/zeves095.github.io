@@ -1,0 +1,14 @@
+.main-footer {
+    background-color: $grey-light;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+@import './main-footer__question';
+@import './main-footer__button_call';
+@import './main-footer__social-links';
+@import './main-footer__copyright';
+@import './main-footer__links';
+@import './main-footer__link';

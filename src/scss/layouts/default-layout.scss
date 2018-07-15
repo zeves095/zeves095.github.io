@@ -1,0 +1,64 @@
+html {
+    font-size: $hfs;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $bfs;
+}
+
+main {
+    // @include test-border($red);
+    // do'nt style this element - just stay it for sematic html markup. (i.e. for yandex||google||ios reader)
+    margin:0;
+}
+
+.page-header {
+    margin-bottom: getEm(20);
+    &>*{
+        max-width: getEm(375);
+        margin: 0 auto getEm(20);
+        min-height: getEm(54);
+    }
+}
+
+.section {
+    margin-bottom: getEm(20);
+    &--up38next {
+        margin-bottom: -(getEm(15));
+    }
+    max-width: getEm(375);
+    // outline: 1px solid $grey-light;
+    margin: auto;
+
+    &>.video-area {
+        width: auto;
+        height: getEm(184);
+    }
+
+    &>.service {
+        margin:0 getEm(20);
+    }
+
+    &>.order {
+        margin:0 getEm(20);
+    }
+}
+
+.page-footer {
+    &>*{
+        max-width: getEm(375);
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding:0 getEm(20);
+    }
+}
+
+@import './media-500/default-layout';
+@import './media-667/default-layout';

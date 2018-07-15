@@ -1,0 +1,14 @@
+.main-header {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: flex-end;
+    box-sizing: border-box;
+    padding:0 getEm(10);
+}
+
+@import './main-header__logo';
+@import './main-header__menu';
+@import './main-header__support';
+@import './main-header__hamburger';

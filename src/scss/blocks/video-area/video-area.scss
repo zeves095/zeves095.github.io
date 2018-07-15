@@ -1,0 +1,17 @@
+.video-area {
+    background: #666;
+    background-image: url("./img1.jpg");
+    background-repeat:  no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-position: left top;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+@import './video-area__caption';
+@import './video-area__button-buy-sertificate';
+@import './media-667/video-area';
