@@ -2,6 +2,10 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
+    justify-content: space-between;
+    &>* {
+        flex: 0 0 auto;
+    }
 }
 
 @import './service__caption';
@@ -13,5 +17,4 @@
 @import './service__button-call';
 @import './service__link-call';
 
-
-
+@import './media-667/service.scss';
