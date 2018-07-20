@@ -1,0 +1,7 @@
+@media (min-width: 667px) {
+    .order__button-submit {
+        &>span:nth-child(2){
+            display: none;
+        }
+    }
+}

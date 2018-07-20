@@ -1,0 +1,7 @@
+.order__button-submit {
+    &>span:nth-child(2) {
+        margin-left:getEm(14);
+    }
+}
+
+@import './media-667/order__button-submit';

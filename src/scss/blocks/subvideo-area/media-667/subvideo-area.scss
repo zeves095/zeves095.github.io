@@ -1,0 +1,9 @@
+@media (min-width: 667px) {
+    .subvideo-area {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex:0 0 auto;
+    }
+}

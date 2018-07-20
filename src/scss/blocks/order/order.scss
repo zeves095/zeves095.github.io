@@ -1,5 +1,8 @@
 .order {
-
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 @import './order__caption';
@@ -7,3 +10,6 @@
 @import './order__question';
 @import './order__form';
 @import './order__note';
+@import './order__button-submit';
+
+@import './media-667/order';

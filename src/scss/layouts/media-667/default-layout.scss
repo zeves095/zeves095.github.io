@@ -1,4 +1,7 @@
 @media (min-width: 667px) {
+    html {
+        // font-size: 1.5vw;
+    }
     .page-header {
         &>*{
             max-width: getEm(667);
@@ -7,15 +10,23 @@
 
     .section {
         max-width: getEm(667);
-        height: getEm(350);
+        height: getEm(332);
 
         &--up38next {
             margin-bottom: 0;
+            height: auto;
         }
         &>.video-area {
             width: auto;
             height: getEm(265);
             margin:0 getEm(20);
+        }
+        &>.subvideo-area {
+            width: auto;
+            margin:0 getEm(20);
+        }
+        &--order {
+            height: getEm(425);
         }
     }
 

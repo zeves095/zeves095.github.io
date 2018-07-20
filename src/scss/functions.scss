@@ -4,5 +4,6 @@
 }
 
 @function getEm($px) { // get value in pixels we need and return appropriated rem['ed] value;
+    @return #{$px / 14}em;
     @return #{$px / ($hfsVal * $bfsVal)}em;
 }
