@@ -11,6 +11,9 @@
     color: $black;
     text-decoration: underline;
 
+    &:hover {
+        text-decoration: none;
+    }
     &--oferta {
 
     }

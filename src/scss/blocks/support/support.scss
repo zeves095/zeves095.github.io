@@ -1,6 +1,7 @@
 .support {
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
     font: {
         family: ProximaNova;
         size: getEm(14);
@@ -12,6 +13,10 @@
     letter-spacing: normal;
     color: $black;
     cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 /* Цвет основного хвостика */
@@ -71,9 +76,9 @@
     border: #{getEm(14, em)} solid $green; //1em solid $green;
 }
 
- .support:hover .support__icon {
-    border-color: $blue;
-    &:after {
-        border-color: $blue;
-    }
-}
+//  .support:hover .support__icon {
+//     border-color: $blue;
+//     &:after {
+//         border-color: $blue;
+//     }
+// }

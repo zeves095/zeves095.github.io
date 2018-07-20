@@ -32,16 +32,39 @@
         color: $grey-darkest;
         background-color: transparent;
         border: solid getEm(1) $grey-darkest;
+
+        &:hover {
+            background-color: $grey-lightest;
+        }
+        &:active {
+            background-color: $grey-lightest;
+            border: none;
+        }
     }
     &--white {
         color: $grey-darkest;
         background-color: $white;
         border: solid getEm(1) $white;
+
+        &:hover {
+            background-color: $grey-lightest;
+        }
+        &:active {
+            background-color: $grey-lightest;
+            border: none;
+        }
     }
     &--black {
         color: $white;
         background-color: $grey-darkest;
         border: solid getEm(1) $grey-darkest;
+
+        &:hover {
+            background-color: $black;
+        }
+        &:active {
+            background-color: $grey-darker;
+        }
     }
     &--link-call {
         text-transform: none;

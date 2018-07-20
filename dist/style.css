@@ -27,14 +27,28 @@
       color: #35302f;
       background-color: transparent;
       border: solid 0.1rem #35302f; }
+      .button--transparent:hover {
+        background-color: #f3f3f3; }
+      .button--transparent:active {
+        background-color: #f3f3f3;
+        border: none; }
     .button--white {
       color: #35302f;
       background-color: #ffffff;
       border: solid 0.1rem #ffffff; }
+      .button--white:hover {
+        background-color: #f3f3f3; }
+      .button--white:active {
+        background-color: #f3f3f3;
+        border: none; }
     .button--black {
       color: #ffffff;
       background-color: #35302f;
       border: solid 0.1rem #35302f; }
+      .button--black:hover {
+        background-color: #000000; }
+      .button--black:active {
+        background-color: #3c3c3c; }
     .button--link-call {
       text-transform: none;
       font-weight: normal; }
@@ -121,6 +135,7 @@
   .support {
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
     font-family: ProximaNova;
     font-size: 1.4rem;
     font-weight: bold;
@@ -130,6 +145,8 @@
     letter-spacing: normal;
     color: #000000;
     cursor: pointer; }
+    .support:hover {
+      text-decoration: underline; }
   /* Цвет основного хвостика */
   .support__icon {
     display: inline-block;
@@ -180,10 +197,6 @@
     -moz-border-radius: 50%;
     border-radius: 50%;
     border: 1.4em solid #77cb1c; }
-  .support:hover .support__icon {
-    border-color: #0000ff; }
-    .support:hover .support__icon:after {
-      border-color: #0000ff; }
   .hamburger {
     z-index: 1000;
     font-size: 2.8rem;
@@ -565,6 +578,8 @@
     letter-spacing: normal;
     color: #000000;
     text-decoration: underline; }
+    .main-footer__link:hover {
+      text-decoration: none; }
   .main-footer__footer-block {
     width: 100%; } }
 
