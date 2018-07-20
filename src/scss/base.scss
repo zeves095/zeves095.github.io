@@ -1,3 +1,4 @@
+@media (min-width: 320px) {
 @import 'normalize-scss';
 @import './params';
 @import './functions';
@@ -27,3 +28,4 @@
     @import './blocks/social-link/social-link';
 
 @import './layouts/default-layout';
+}
