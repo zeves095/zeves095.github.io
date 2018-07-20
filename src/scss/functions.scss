@@ -3,7 +3,7 @@
     // box-sizing: border-box;
 }
 
-@function getEm($px) { // get value in pixels we need and return appropriated rem['ed] value;
-    @return #{$px / 14}em;
-    @return #{$px / ($hfsVal * $bfsVal)}em;
+@function getEm($px, $em: rem) { // get value in pixels we need and return appropriated rem['ed] value;
+    @return #{$px / $hfsVal}#{$em}; // $em
+    // @return #{$px / ($hfsVal * $bfsVal)}#{$em};
 }

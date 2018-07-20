@@ -11,6 +11,8 @@
     text-align: center;
     box-sizing: border-box;
     align-self: stretch;
+    height: 100%;
+    width: 100%;
     // Размеры пусть задаются в родителе.
     // но центрирование нужно задать здесь
     // height: getEm(50);
@@ -53,3 +55,6 @@
         }
     }
 }
+
+
+@import './media-667/button';

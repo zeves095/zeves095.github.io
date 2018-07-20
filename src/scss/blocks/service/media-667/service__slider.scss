@@ -1,8 +1,6 @@
 @media (min-width: 667px) {
     .service__slider.service__slider {
         height: getEm(275); // фиксированая высота - вероятно вынести на уровень настроек layout'a
-        margin-right: -#{getEm(20)};
-        width:auto;
         order: 3;
     }
 }

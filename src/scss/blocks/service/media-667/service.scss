@@ -3,14 +3,47 @@
         flex-wrap: wrap;
         align-content: space-between;
         height:100%;
+
         &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
-            width: 40%;
+            width: 50%;
+            box-sizing: border-box;
+
+            padding-right: #{getEm(10)};
+            // margin-left: -#{getEm(20)};
+            // padding-left: getEm(20);
         }
+        
         &>.service__link-call { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
-            width: 60%;
+            box-sizing: content-box;
+            margin-left: -#{getEm(10)};
+            align-self: flex-start;
+            z-index:999;
         }
         &>.service__image {
             width: auto;
+        }
+        &>.service__slider {
+            width: auto;
+            margin-left: -#{getEm(10)};
+            margin-right: -#{getEm(20)};
+            // z-index:-1;
+        }
+
+        &--reverse {
+            &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
+                margin-left: -#{getEm(10)};
+                padding-left: #{getEm(10)};
+                margin-right:0;
+                padding-right:0;
+            }
+            &>.service__link-call { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
+                margin-left:0;
+                margin-right:#{getEm(10)};
+                padding-left:0;
+            }
+            &>.service__image {
+                margin-left: -#{getEm(20)};
+            }
         }
     }
 }

@@ -18,18 +18,18 @@
 .support__icon {
     display: inline-block;
     position: absolute;
-    left: -#{getEm(40)};
-    bottom: -#{getEm(5)};
+    left: -#{getEm(40, em)};
+    bottom: -#{getEm(5, em)};
 	padding:0px;
     width:0;
     height:0;
-    font-size: getEm(8);
+    font-size: getEm(4, em);
     // margin:0 0 -2.4em -3em;
 	/* css3 */
     -webkit-border-radius:50%;
 	-moz-border-radius:50%;
     border-radius:50%;
-    border: getEm(14) solid $green;
+    border: getEm(14, em) solid $green;
     color: $green;
 }
 
@@ -38,8 +38,8 @@
     content:".";
     display: block;
 	position:absolute;
-	top:-1.3em;
-	left:-2.1em;
+	top: -#{getEm(18.2, em)}; //-1.3em;
+	left:-#{getEm(29.4, em)}; //-2.1em;
 	padding:0px;
     margin:0;
     width:0;
@@ -50,7 +50,7 @@
     -webkit-border-radius:50%;
 	-moz-border-radius:50%;
     border-radius:50%;
-    border: 1.2em solid $white;
+    border: #{getEm(16.8, em)} solid $white; //1.2em solid $white;
 }
 
 /* основной шарик который превращает "месяц" в "хвостик" и создает итоговое "облачко" */
@@ -58,8 +58,8 @@
     content:".";
     display: block;
 	position:absolute;
-	top:-1.3em;
-	left:-.5em;
+	top:-#{getEm(18.2, em)}; //-1.3em;
+	left:-#{getEm(7, em)}; //.5em;
 	padding:0px;
     margin:0;
     width:0;
@@ -68,7 +68,7 @@
     -webkit-border-radius:50%;
 	-moz-border-radius:50%;
     border-radius:50%;
-    border: 1em solid $green;
+    border: #{getEm(14, em)} solid $green; //1em solid $green;
 }
 
  .support:hover .support__icon {

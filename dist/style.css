@@ -5,7 +5,7 @@ h1 {
 
 .button {
   font-family: LucidaGrande;
-  font-size: 1.14286em;
+  font-size: 1.6rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -14,6 +14,8 @@ h1 {
   text-align: center;
   box-sizing: border-box;
   align-self: stretch;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   flex: 1 0 auto;
@@ -24,15 +26,15 @@ h1 {
   .button--transparent {
     color: #35302f;
     background-color: transparent;
-    border: solid 0.07143em #35302f; }
+    border: solid 0.1rem #35302f; }
   .button--white {
     color: #35302f;
     background-color: #ffffff;
-    border: solid 0.07143em #ffffff; }
+    border: solid 0.1rem #ffffff; }
   .button--black {
     color: #ffffff;
     background-color: #35302f;
-    border: solid 0.07143em #35302f; }
+    border: solid 0.1rem #35302f; }
   .button--link-call {
     text-transform: none;
     font-weight: normal; }
@@ -40,6 +42,10 @@ h1 {
       content: '\1F4DE    ';
       color: inherit;
       display: inline; }
+
+@media (min-width: 667px) {
+  .button--link-call {
+    justify-content: flex-start; } }
 
 .image {
   background-image: url("./pic.jpg");
@@ -70,11 +76,11 @@ h1 {
   justify-content: space-between;
   align-items: flex-end;
   box-sizing: border-box;
-  padding: 0 0.71429em; }
+  padding: 0 1rem; }
 
 .main-header__logo {
-  width: 3.21429em;
-  height: 3.21429em; }
+  width: 4.5rem;
+  height: 4.5rem; }
 
 .main-header__menu {
   flex-basis: 100%;
@@ -87,10 +93,10 @@ h1 {
 @media (min-width: 667px) {
   .main-header__support {
     margin-left: auto;
-    margin-right: 1.42857em; } }
+    margin-right: 2rem; } }
 
 .main-header__hamburger {
-  height: 1.85714em; }
+  height: 2.6rem; }
 
 .logo {
   display: block;
@@ -101,7 +107,7 @@ h1 {
   flex-flow: column nowrap;
   align-items: stretch;
   box-sizing: border-box;
-  padding: 0 2.14286em;
+  padding: 0 3rem;
   background: #474747; }
   .menu > a {
     display: block;
@@ -113,7 +119,7 @@ h1 {
     position: fixed;
     top: 0;
     right: 0;
-    left: 1.42857em;
+    left: 2rem;
     bottom: 0;
     z-index: 999; }
 
@@ -121,7 +127,7 @@ h1 {
   position: relative;
   text-transform: uppercase;
   font-family: ProximaNova;
-  font-size: 1em;
+  font-size: 1.4rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -134,17 +140,17 @@ h1 {
 .support__icon {
   display: inline-block;
   position: absolute;
-  left: -2.85714em;
-  bottom: -0.35714em;
+  left: -4em;
+  bottom: -0.5em;
   padding: 0px;
   width: 0;
   height: 0;
-  font-size: 0.57143em;
+  font-size: 0.4em;
   /* css3 */
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1em solid #77cb1c;
+  border: 1.4em solid #77cb1c;
   color: #77cb1c; }
 
 /* обрезаем "шарик" до "хвостика <месяца>" */
@@ -152,8 +158,8 @@ h1 {
   content: ".";
   display: block;
   position: absolute;
-  top: -1.3em;
-  left: -2.1em;
+  top: -1.82em;
+  left: -2.94em;
   padding: 0px;
   margin: 0;
   width: 0;
@@ -164,15 +170,15 @@ h1 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1.2em solid #ffffff; }
+  border: 1.68em solid #ffffff; }
 
 /* основной шарик который превращает "месяц" в "хвостик" и создает итоговое "облачко" */
 .support__icon:after {
   content: ".";
   display: block;
   position: absolute;
-  top: -1.3em;
-  left: -.5em;
+  top: -1.82em;
+  left: -0.7em;
   padding: 0px;
   margin: 0;
   width: 0;
@@ -181,7 +187,7 @@ h1 {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  border: 1em solid #77cb1c; }
+  border: 1.4em solid #77cb1c; }
 
 .support:hover .support__icon {
   border-color: #0000ff; }
@@ -190,8 +196,8 @@ h1 {
 
 .hamburger {
   z-index: 1000;
-  font-size: 2em;
-  line-height: 3em; }
+  font-size: 2.8rem;
+  line-height: 2.8rem; }
 
 .video-area {
   background: #666;
@@ -213,7 +219,7 @@ h1 {
     display: flex;
     flex-flow: column nowrap;
     font-family: AcademyC;
-    font-size: 3.64286em;
+    font-size: 5.1rem;
     font-weight: normal;
     font-style: normal;
     font-stretch: normal;
@@ -228,17 +234,17 @@ h1 {
 
 @media (min-width: 667px) {
   .video-area__button-buy-sertificate {
-    height: 3.57143em;
+    height: 5rem;
     display: flex;
     flex-grow: 0;
-    max-width: 17.85714em;
-    margin: 1.42857em 0;
+    max-width: 25rem;
+    margin: 2rem 0;
     padding: 0; } }
 
 @media (min-width: 667px) {
   .video-area {
     box-sizing: border-box;
-    padding-left: 1.42857em; } }
+    padding-left: 2rem; } }
 
 .subvideo-area {
   display: none; }
@@ -270,7 +276,7 @@ h1 {
   display: block;
   margin: 0;
   font-family: AcademyC;
-  font-size: 2.85714em;
+  font-size: 4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -278,7 +284,7 @@ h1 {
   letter-spacing: normal;
   color: #000000; }
   .service__caption--double-left-to-right {
-    font-size: 4.28571em;
+    font-size: 6rem;
     display: flex;
     flex-flow: column nowrap;
     align-items: flex-start; }
@@ -295,26 +301,22 @@ h1 {
 @media (min-width: 667px) {
   .service__image {
     display: block;
-    width: auto;
-    height: 19.71429em;
-    margin-left: -1.42857em;
+    height: 27.6rem;
     order: -1; } }
 
 .service__slider {
   width: auto;
-  height: 16.64286em;
-  margin-right: -1.42857em; }
+  height: 23.3rem;
+  margin-right: -2rem; }
 
 @media (min-width: 667px) {
   .service__slider.service__slider {
-    height: 19.64286em;
-    margin-right: -1.42857em;
-    width: auto;
+    height: 27.5rem;
     order: 3; } }
 
 .service__description {
   font-family: ProximaNova;
-  font-size: 1.21429em;
+  font-size: 1.7rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -325,7 +327,7 @@ h1 {
 
 .service__note-caption {
   font-family: ProximaNova;
-  font-size: 1em;
+  font-size: 1.4rem;
   font-weight: 600;
   font-style: normal;
   font-stretch: normal;
@@ -336,7 +338,7 @@ h1 {
 
 .service__note {
   font-family: ProximaNova;
-  font-size: 0.85714em;
+  font-size: 1.2rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -348,25 +350,25 @@ h1 {
     padding: 0px; }
 
 .service__button-buy-sertificate {
-  height: 3.57143em; }
+  height: 5rem; }
 
 @media (min-width: 667px) {
   .service__button-buy-sertificate {
-    height: 2.5em; } }
+    height: 3.5rem; } }
 
 .service__button-call {
-  height: 3.57143em; }
+  height: 5rem; }
 
 @media (min-width: 667px) {
   .service__button-call {
     display: none; } }
 
 .service__link-call {
-  height: 3.57143em; }
+  height: 5rem; }
 
 @media (min-width: 667px) {
   .service__link-call {
-    height: 2.5em;
+    height: 3.5rem;
     order: 5; }
     .service__link-call--reverse {
       order: -1; } }
@@ -377,11 +379,31 @@ h1 {
     align-content: space-between;
     height: 100%; }
     .service > * {
-      width: 40%; }
+      width: 50%;
+      box-sizing: border-box;
+      padding-right: 1rem; }
     .service > .service__link-call {
-      width: 60%; }
+      box-sizing: content-box;
+      margin-left: -1rem;
+      align-self: flex-start;
+      z-index: 999; }
     .service > .service__image {
-      width: auto; } }
+      width: auto; }
+    .service > .service__slider {
+      width: auto;
+      margin-left: -1rem;
+      margin-right: -2rem; }
+    .service--reverse > * {
+      margin-left: -1rem;
+      padding-left: 1rem;
+      margin-right: 0;
+      padding-right: 0; }
+    .service--reverse > .service__link-call {
+      margin-left: 0;
+      margin-right: 1rem;
+      padding-left: 0; }
+    .service--reverse > .service__image {
+      margin-left: -2rem; } }
 
 .order {
   display: flex;
@@ -393,7 +415,7 @@ h1 {
   display: block;
   margin: 0;
   font-family: AcademyC;
-  font-size: 2.85714em;
+  font-size: 4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -402,16 +424,16 @@ h1 {
   color: #000000; }
 
 .order__image {
-  height: 14.5em; }
+  height: 20.3rem; }
 
 @media (min-width: 667px) {
   .order__image {
-    height: 14.5em;
+    height: 20.3rem;
     order: 4; } }
 
 .order__question {
   font-family: ProximaNova;
-  font-size: 1.28571em;
+  font-size: 1.8rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -422,7 +444,7 @@ h1 {
 
 .order__note {
   font-family: ProximaNova;
-  font-size: 1em;
+  font-size: 1.4rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -436,7 +458,7 @@ h1 {
   order: 5; }
 
 .order__button-submit > span:nth-child(2) {
-  margin-left: 1em; }
+  margin-left: 1.4rem; }
 
 @media (min-width: 667px) {
   .order__button-submit > span:nth-child(2) {
@@ -456,7 +478,7 @@ h1 {
 
 .order-form__label {
   font-family: ProximaNova;
-  font-size: 0.92857em;
+  font-size: 1.3rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -465,13 +487,13 @@ h1 {
   color: #000000; }
 
 .order-form__denomination {
-  height: 3.64286em; }
+  height: 5.1rem; }
 
 .order-form__quantity {
-  height: 3.64286em; }
+  height: 5.1rem; }
 
 .order__button-submit {
-  height: 3.64286em; }
+  height: 5.1rem; }
 
 .denomination {
   display: flex;
@@ -480,7 +502,7 @@ h1 {
   align-items: center;
   box-sizing: border-box;
   text-transform: uppercase;
-  border: solid 0.07143em #000000;
+  border: solid 0.1rem #000000;
   text-align: center;
   align-self: stretch; }
 
@@ -491,7 +513,7 @@ h1 {
   align-items: center;
   box-sizing: border-box;
   text-transform: uppercase;
-  border: solid 0.07143em #000000;
+  border: solid 0.1rem #000000;
   text-align: center;
   align-self: stretch; }
 
@@ -504,7 +526,7 @@ h1 {
 
 .main-footer__question {
   font-family: ProximaNova;
-  font-size: 1.28571em;
+  font-size: 1.8rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -515,12 +537,12 @@ h1 {
   width: 100%; }
 
 .main-footer__button_call {
-  height: 3.57143em; }
+  height: 5rem; }
 
 .main-footer__social-links {
   align-self: stretch;
-  height: 2.85714em;
-  font-size: 2.85714em;
+  height: 4rem;
+  font-size: 4rem;
   margin: 0;
   /* маленький хак чтобы социалки не вылезали за ширину экрана */
   max-width: 100%;
@@ -532,7 +554,7 @@ h1 {
 
 .main-footer__copyright {
   font-family: ProximaNova;
-  font-size: 1.07143em;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -553,7 +575,7 @@ h1 {
 
 .main-footer__link {
   font-family: ProximaNova;
-  font-size: 1.07143em;
+  font-size: 1.5rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -580,7 +602,7 @@ h1 {
   list-style: none;
   padding: 0; }
   .social-links > * {
-    margin-left: 1em; }
+    margin-left: 1.4rem; }
   .social-links > *:first-child {
     margin-left: 0; }
 
@@ -597,7 +619,7 @@ h1 {
     text-decoration: none;
     color: transparent;
     display: block;
-    max-width: 1.42857em; }
+    max-width: 2rem; }
 
 html {
   font-size: 10px; }
@@ -609,37 +631,37 @@ html {
   box-sizing: border-box; }
 
 body {
-  font-size: 1.4em; }
+  font-size: 1em; }
 
 main {
   margin: 0; }
 
 .page-header {
-  margin-bottom: 1.42857em; }
+  margin-bottom: 1rem; }
   .page-header > * {
-    max-width: 26.78571em;
-    margin: 0 auto 1.42857em;
-    min-height: 3.85714em; }
+    max-width: 37.5rem;
+    margin: 0 auto 0rem;
+    min-height: 5.4rem; }
 
 .section {
-  margin-bottom: 1.42857em;
-  max-width: 26.78571em;
+  margin-bottom: 2rem;
+  max-width: 37.5rem;
   margin: auto; }
   .section--up38next {
-    margin-bottom: -1.07143em; }
+    margin-bottom: -1.5rem; }
   .section > .video-area {
     width: auto;
-    height: 13.14286em; }
+    height: 18.4rem; }
   .section > .service {
-    margin: 0 1.42857em; }
+    margin: 0 2rem; }
   .section > .order {
-    margin: 0 1.42857em; }
+    margin: 0 2rem; }
 
 .page-footer > * {
-  max-width: 26.78571em;
+  max-width: 37.5rem;
   margin: 0 auto;
   box-sizing: border-box;
-  padding: 0 1.42857em; }
+  padding: 0 2rem; }
 
 @media (min-width: 500px) {
   html {
@@ -655,23 +677,23 @@ main {
 
 @media (min-width: 667px) {
   .page-header > * {
-    max-width: 47.64286em; }
+    max-width: 66.7rem; }
   .section {
-    max-width: 47.64286em;
-    height: 23.71429em; }
+    max-width: 66.7rem;
+    height: 33.2rem; }
     .section--up38next {
       margin-bottom: 0;
       height: auto; }
     .section > .video-area {
       width: auto;
-      height: 18.92857em;
-      margin: 0 1.42857em; }
+      height: 26.5rem;
+      margin: 0 2rem; }
     .section > .subvideo-area {
       width: auto;
-      margin: 0 1.42857em; }
+      margin: 0 2rem; }
     .section--order {
-      height: 30.35714em; }
+      height: 42.5rem; }
   .page-footer > * {
-    max-width: 47.64286em; } }
+    max-width: 66.7rem; } }
 
 /*# sourceMappingURL=style.css.map*/

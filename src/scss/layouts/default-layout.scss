@@ -20,10 +20,10 @@ main {
 }
 
 .page-header {
-    margin-bottom: getEm(20);
+    margin-bottom: getEm(10);
     &>*{
         max-width: getEm(375);
-        margin: 0 auto getEm(20);
+        margin: 0 auto getEm(0);
         min-height: getEm(54);
     }
 }
