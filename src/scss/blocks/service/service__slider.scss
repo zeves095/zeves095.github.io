@@ -1,9 +1,4 @@
 .service__slider {
-    background: {
-        image: url("./pic.jpg");
-        repeat:  no-repeat;
-        size: cover;
-    }
     width: auto;
     height: getEm(233);
     margin-right: -#{getEm(20)};

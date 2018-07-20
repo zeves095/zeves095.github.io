@@ -1,3 +1,17 @@
 .slider {
+    background: {
+        image: url("./pic.jpg");
+        repeat:  no-repeat;
+        size: cover;
+    }
 
+    &--service1 {
+        background-image: url("./service-image-1.png")
+    }
+    &--service2 {
+        background-image: url("./service-image-2.png")
+    }
+    &--service3 {
+        background-image: url("./service-image-3.png")
+    }
 }

@@ -6,4 +6,10 @@
     };
     width:auto;
     align-self: stretch;
+    &--service0 {
+        background-image: url("./service-image-0.png");
+    }
+    &--order {
+        background-image: url("./order-image.png");
+    }
 }

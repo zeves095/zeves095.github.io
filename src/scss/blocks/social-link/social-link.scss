@@ -1,5 +1,28 @@
 .social-link {
+    background: {
+        image: url('./socials.png');
+        repeat: no-repeat;
+        size: auto 100%;
+        position: 53% center;
+    }
+    // cursor: pointer;
+
+    &--vk {
+        background-position-x: left;
+    }
+    &--instagram {
+        
+    }
+    &--facebook {
+        background-position-x: right;
+    }
+
     &>a {
         text-decoration: none;
+        color: transparent;
+        display: block;
+        max-width:getEm(20);
     }
+
+
 }
