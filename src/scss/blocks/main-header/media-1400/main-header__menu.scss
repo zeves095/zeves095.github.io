@@ -1,0 +1,12 @@
+@media (min-width: 1400px) {
+    .main-header__menu {
+        &--hidden {
+            display: block;
+            &.menu { // @INFO - нужно конечно было вынести .menu в ребенка .main-header__menu - но из-за мелочи не хотел разметку усложнять. Если вдруг меню разрастется по сложности - тогда вынести. А пока и так норм.
+                display: flex;
+            }
+        }
+        flex: 1 0 auto;
+        order:1;
+    }
+}

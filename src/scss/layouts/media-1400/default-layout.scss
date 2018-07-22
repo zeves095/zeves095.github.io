@@ -1,0 +1,43 @@
+@media (min-width: 1400px) {
+    
+    
+    .page-header {
+        position: fixed;
+        width: 100vw;
+        &>*{
+            max-width: getEm(1400);
+            margin: 0 auto getEm(0);
+            height: getEm(140);
+        }
+    }
+    
+    .section {
+        max-width: getEm(1400);
+
+        height: 100vh;
+        box-sizing: border-box;
+        padding: #{getEm(140)} #{getEm(78)} #{getEm(130)} #{getEm(78)};
+        background-clip: content-box;
+        &>.video-area {
+            width: 100%;
+            height: 100%;
+        }
+    
+        &>.service {
+            margin:0 getEm(20);
+        }
+    
+        &>.order {
+            margin:0 getEm(20);
+        }
+    }
+    
+    .page-footer {
+        &>*{
+            max-width: getEm(375);
+            margin: 0 auto;
+            box-sizing: border-box;
+            padding:0 getEm(20);
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@media (min-width: 1400px) {
+    .menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: stretch;
+        box-sizing: border-box;
+        padding: 0 getEm(30);
+        background: transparent;
+        &>a {
+            display: block;
+            color: $black;
+            font: {
+                family: ProximaNova;
+                weight: 600;
+                size: getEm(13);
+            }
+            text: {
+                transform: uppercase;
+                decoration: none;
+            }
+            margin: 0 getEm(20);
+        }
+    }
+}

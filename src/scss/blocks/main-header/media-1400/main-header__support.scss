@@ -1,0 +1,8 @@
+@media (min-width: 1400px) {
+    .main-header__support {
+        &>.hidden {
+            display: inline;
+        }
+        order: 2;
+    }
+}
