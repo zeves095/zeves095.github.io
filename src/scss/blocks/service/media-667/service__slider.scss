@@ -1,4 +1,4 @@
-@media (min-width: 667px) {
+@media (min-width: #{getEm(667,'px')}) {
     .service__slider.service__slider {
         height: getEm(275); // фиксированая высота - вероятно вынести на уровень настроек layout'a
         order: 3;

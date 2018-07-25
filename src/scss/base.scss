@@ -1,7 +1,9 @@
-@media (min-width: 320px) {
 @import 'normalize-scss';
 @import './params';
 @import './functions';
+
+@media (min-width: #{getEm(320,'px')}) {
+
 @import './typography';
 
 // blocks
@@ -33,14 +35,14 @@
 div {
     margin:0;
     padding:0;
-    // outline: 1px solid red;
+    // outline: #{getEm(1,'px')} solid red;
 }
 // p {
-//     outline: 1px solid blue;
+//     outline: #{getEm(1,'px')} solid blue;
 // }
 // span {
-//     outline: 1px solid green;
+//     outline: #{getEm(1,'px')} solid green;
 // }
 // a {
-//     outline: 1px solid yellow;
+//     outline: #{getEm(1,'px')} solid yellow;
 // }

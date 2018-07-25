@@ -26,4 +26,4 @@ $bfsVal: 1.0; // body font-size in em
 $hfs: #{$hfsVal}px;
 $bfs: #{$bfsVal}em;
 
-$maxMobile: 375px;
+$maxMobile: #{getEm(375,'px')};

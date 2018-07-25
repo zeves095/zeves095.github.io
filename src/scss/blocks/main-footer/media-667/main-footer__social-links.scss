@@ -1,4 +1,4 @@
-@media (min-width: 667px) {
+@media (min-width: #{getEm(667,'px')}) {
     .main-footer__social-links {
         align-self: center;
     }

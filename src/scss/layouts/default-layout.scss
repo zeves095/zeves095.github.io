@@ -35,7 +35,7 @@ main {
         margin-bottom: -(getEm(15));
     }
     max-width: getEm(375);
-    // outline: 1px solid $grey-light;
+    // outline: #{getEm(1,'px')} solid $grey-light;
     margin: auto;
 
     &>.video-area {

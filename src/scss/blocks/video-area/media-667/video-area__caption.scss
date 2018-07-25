@@ -1,4 +1,4 @@
-@media (min-width: 667px) {
+@media (min-width: #{getEm(667,'px')}) {
     .video-area__caption {
         display: flex;
         flex-flow: column nowrap;

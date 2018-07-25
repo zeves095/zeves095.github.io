@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: #{getEm(1400,'px')}) {
     .service__buttons {
         display: flex;
         flex-flow: row nowrap;

@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: #{getEm(1400,'px')}) {
     .video-area__button-details {
         height: getEm(50);
         display: flex;

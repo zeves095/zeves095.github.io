@@ -1,4 +1,4 @@
-@media (min-width: 667px) {
+@media (min-width: #{getEm(667,'px')}) {
     .service__image {
         display: block;
         height: getEm(276); // фиксированая высота - вероятно вынести на уровень настроек layout'a

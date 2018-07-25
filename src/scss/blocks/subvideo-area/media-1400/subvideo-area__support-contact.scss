@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: #{getEm(1400,'px')}) {
     .subvideo-area__support-contact {
         // width:50%; // если не фикировать
         position: fixed;

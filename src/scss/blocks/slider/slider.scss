@@ -6,7 +6,7 @@
         // size: cover;
     }
 
-    // outline: 1px solid $grey;
+    // outline: #{getEm(1,'px')} solid $grey;
     position:relative;
     // padding:0 !important;
     // overflow:hidden;

@@ -11,7 +11,7 @@
     color: $grey;
     &--list {
         list-style: none;
-        padding: 0px;
+        padding: #{getEm(0,'px')};
         &>li {}
     }
 }

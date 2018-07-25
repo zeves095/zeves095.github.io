@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: #{getEm(1400,'px')}) {
     .slider {
         // width: 100%;
         // position:relative;
@@ -20,7 +20,7 @@
             // position: relative;
             // display: flex;
             // justify-content: flex-start;
-            // outline: 1px dotted red;
+            // outline: #{getEm(1,'px')} dotted red;
             // z-index:999;
         }
         &__description-main {

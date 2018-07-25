@@ -1,4 +1,4 @@
-@media (min-width: 667px) {
+@media (min-width: #{getEm(667,'px')}) {
     .order__button-submit {
         &>span:nth-child(2){
             display: none;

@@ -5,7 +5,11 @@
 
 @function getEm($px, $em: rem) { // get value in pixels we need and return appropriated rem['ed] value;
     // @return #{$px}px;
-    @return #{$px / $hfsVal}#{$em}; // $em
+    @if (($em == em) or ($em == rem)) {
+        @return #{(12/14) * $px / $hfsVal}#{$em}; // $em
+    } @else {
+        @return #{(12/14) * $px}#{$em};
+    }
     // @return #{$px / ($hfsVal * $bfsVal)}#{$em};
 }
 

@@ -1,4 +1,4 @@
-@media (min-width: 1400px) {
+@media (min-width: #{getEm(1400,'px')}) { //AND (min-height: #{getEm(800,'px')}) {
     
     
     .page-header {
@@ -29,12 +29,14 @@
         display: flex;
         flex-flow: row wrap;
         min-height: 100vh;
+
         box-sizing: border-box;
         padding-top: #{getEm(120)}; 
         background-clip: content-box;
         position: relative;
         
         @include two-color();
+        
 
         &>.video-area {
             width: getEm(1244);
@@ -60,7 +62,7 @@
         }
         &--main {
             @include two-color--reverse();
-            padding-top: 0; 
+            padding-top:0;
         }
 
         &::before {
@@ -108,9 +110,8 @@
             height: getEm(158);
             font-size: getEm(22);
         }
-        
     }
-    
+
     .page-footer {
         display: none;
     }
