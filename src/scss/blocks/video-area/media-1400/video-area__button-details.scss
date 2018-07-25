@@ -1,0 +1,10 @@
+@media (min-width: 1400px) {
+    .video-area__button-details {
+        height: getEm(50);
+        display: flex;
+        flex-grow: 0;
+        max-width: getEm(250);
+        margin: getEm(20) 0;
+        padding: 0;
+    }
+}

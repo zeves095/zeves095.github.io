@@ -1,0 +1,38 @@
+@media (min-width: 1400px) {
+    .slider {
+        // width: 100%;
+        // position:relative;
+        &__items {
+            // width: 100%;
+            // position:relative;
+        }
+        &__item {
+            // width: 100%;
+            // position:relative;
+            // display: block;
+        }
+        &__description {
+            display: flex;
+            margin-left: getEm(40 + 75);
+            align-items: flex-start;
+
+            // width:100%;
+            // position: relative;
+            // display: flex;
+            // justify-content: flex-start;
+            // outline: 1px dotted red;
+            // z-index:999;
+        }
+        &__description-main {
+            width: getEm(490); // обязательное указание фикса - иначе верстка поедет
+            flex: 0 1 auto;;
+            margin:0 auto;
+        }
+
+        &__description-price-list {
+            width: auto;
+            flex: 1 1 auto;
+            margin-left: getEm(10);
+        }
+    }
+}

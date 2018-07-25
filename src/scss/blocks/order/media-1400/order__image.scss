@@ -1,0 +1,14 @@
+@media (min-width: 1400px) {
+    .order__image {
+        display: block;
+        height: 100%;
+        order: -1;
+        display: flex;
+        &>img {
+            margin: auto;
+            width: getEm(441);
+            height: getEm(435);
+            flex-grow: 0;
+        }
+    }
+}

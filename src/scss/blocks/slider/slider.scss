@@ -1,17 +1,44 @@
 .slider {
+
     background: {
-        image: url("./pic.jpg");
-        repeat:  no-repeat;
-        size: cover;
+        // image: url("./pic.jpg");
+        // repeat:  no-repeat;
+        // size: cover;
+    }
+
+    // outline: 1px solid $grey;
+    position:relative;
+    // padding:0 !important;
+    // overflow:hidden;
+
+    &__items {
+        margin:0;
+        padding:0;
+    }
+    &__item {
+        margin:0;
+        padding:0;
+    }
+
+    &__image {
+        width:100%;
+        margin:0;
+        padding:0;
+        display: block;
+    }
+    &__description {
+        display: none;
     }
 
     &--service1 {
-        background-image: url("./service-image-1.png")
+        // background-image: url("./service-image-1.png")
     }
     &--service2 {
-        background-image: url("./service-image-2.png")
+        // background-image: url("./service-image-2.png")
     }
     &--service3 {
-        background-image: url("./service-image-3.png")
+        // background-image: url("./service-image-3.png")
     }
 }
+
+@import './media-1400/slider.scss';

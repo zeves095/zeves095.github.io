@@ -11,6 +11,7 @@ html {
 
 body {
     font-size: $bfs;
+    counter-reset: section;
 }
 
 main {
@@ -48,6 +49,10 @@ main {
 
     &>.order {
         margin:0 getEm(20);
+    }
+
+    &__social-links {
+        display: none;
     }
 }
 

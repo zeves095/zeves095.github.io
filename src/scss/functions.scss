@@ -4,6 +4,24 @@
 }
 
 @function getEm($px, $em: rem) { // get value in pixels we need and return appropriated rem['ed] value;
+    // @return #{$px}px;
     @return #{$px / $hfsVal}#{$em}; // $em
     // @return #{$px / ($hfsVal * $bfsVal)}#{$em};
 }
+
+
+@mixin two-color() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
+    background: -moz-linear-gradient(left, rgba(255,255,255,0) 50%, $grey-light 50%, $grey-light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 50%,$grey-light 50%,$grey-light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(255,255,255,0) 50%,$grey-light 50%,$grey-light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#{$grey-light}',GradientType=1 ); /* IE6-9 */
+}
+@mixin two-color--reverse() {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
+    background: -moz-linear-gradient(left, $grey-light 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $grey-light 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $grey-light 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$grey-light}', endColorstr='#00ffffff',GradientType=1 ); /* IE6-9 */
+}
+

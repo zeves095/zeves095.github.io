@@ -1,0 +1,12 @@
+@media (min-width: 1400px) {
+    .subvideo-area__support-contact {
+        // width:50%; // если не фикировать
+        position: fixed;
+        width: getEm(504);
+        z-index:999;
+        padding: #{getEm(30)} 0 #{getEm(40)};
+        font-size: getEm(15);
+        line-height: getEm(18);
+        
+    }
+}

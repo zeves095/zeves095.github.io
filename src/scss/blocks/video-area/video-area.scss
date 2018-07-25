@@ -9,9 +9,13 @@
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-end;
-    align-items: flex-start;
+    align-items: stretch;
 }
 
 @import './video-area__caption';
 @import './video-area__button-buy-sertificate';
+@import './video-area__button-details';
+@import './video-area__buttons';
+
 @import './media-667/video-area';
+

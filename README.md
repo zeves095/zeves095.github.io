@@ -4,7 +4,7 @@
 
 ---
 
-**Обратите внимание на файлы:**
+**Pay attention to the files:**
 - [SPECIFICATION.md](SPECIFICATION.md) - Terms of Reference for the project
 - [CONTRIBUTING.md](CONTRIBUTING.md) - guide to making changes
 

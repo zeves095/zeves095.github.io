@@ -1,7 +1,9 @@
 .service__slider {
+    position: relative;
     width: auto;
     height: getEm(233);
     margin-right: -#{getEm(20)};
 }
 
 @import './media-667/service__slider';
+@import './media-1400/service__slider';

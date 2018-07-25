@@ -1,0 +1,14 @@
+@media (min-width: 1400px) {
+    .service__subnote {
+        display: block;
+        font: {
+            family: ProximaNova;
+            size: getEm(13);
+            weight: normal;
+            style: normal;
+            stretch: normal;
+        }
+        line-height: 1.54;
+        letter-spacing: normal;
+    }
+}

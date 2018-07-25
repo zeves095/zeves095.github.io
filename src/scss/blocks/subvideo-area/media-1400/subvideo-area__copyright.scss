@@ -1,0 +1,9 @@
+@media (min-width: 1400px) {
+    .subvideo-area__copyright {
+        width:50%;
+        padding: #{getEm(30)} #{getEm(40)};
+        font-size: getEm(15);
+        line-height: getEm(18);
+        margin-left: auto;
+    }
+}

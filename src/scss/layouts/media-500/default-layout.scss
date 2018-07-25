@@ -10,8 +10,20 @@
     }
 }
 
-@media (min-width: 860px) {
+@media (min-width: 1960px) {
     html {
         font-size: 13px;
+    }
+}
+
+@media (min-width: 1400px) {
+    html {
+        font-size: .6vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: .6vw;
     }
 }

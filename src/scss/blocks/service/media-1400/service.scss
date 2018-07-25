@@ -1,0 +1,70 @@
+@media (min-width: 1400px) {
+    .service {
+        flex-wrap: wrap;
+        align-content: space-between;
+        justify-content: space-between;
+        height:100%;
+        width:100%;
+        position: relative;
+
+        &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
+            width: 50%;
+            box-sizing: border-box;
+
+            padding-right: #{getEm(10)};
+            padding-left: getEm(143);
+            padding-right: #{getEm(155)};
+        }
+        &>.service__caption { 
+            padding-left: getEm(95);
+        }
+        &>.service__buttons { 
+            padding-left: getEm(95);
+        }
+        &>.service__link-call { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
+            margin: 0;
+            margin-top:-#{getEm(40)}; // просто поднимаем выше чтобы расширить основную картинку
+            visibility: hidden;
+            padding-right: 0;
+            padding-left: 0;
+        }
+        &>.service__image {
+            min-width: 50%;
+        }
+        &>.service__slider {
+            margin:0;
+            width: auto;
+            margin-left: -#{getEm(74)};
+            margin-right: #{getEm(40)};
+        }
+
+        &--reverse {
+            &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
+                // margin-left: -#{getEm(10)};
+                // padding-left: #{getEm(10)};
+                // margin-right:0;
+                // padding-right:0;
+                margin:0;
+                padding:0;
+                box-sizing: border-box;
+                padding-right: #{getEm(40)};
+                padding-left: #{getEm(105)};
+            }
+            &>.service__link-call {
+                
+            }
+            &>.service__image {
+                // margin:0;
+                padding-right: 0;
+                padding-left: 0;
+            }
+            &>.service__caption {
+                display: block;
+                padding-top: #{getEm(120)}; 
+                margin-left: -#{getEm(60)};
+                padding-right: 0;
+                padding-left: 0;
+            }
+        }
+    }
+}
