@@ -10,8 +10,12 @@
     flex-flow: column nowrap;
     justify-content: flex-end;
     align-items: stretch;
+
+    position:relative;
 }
 
+@import './video-area__video-container';
+@import './video-area__video';
 @import './video-area__caption';
 @import './video-area__button-buy-sertificate';
 @import './video-area__button-details';

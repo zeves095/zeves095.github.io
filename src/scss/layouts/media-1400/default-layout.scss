@@ -5,6 +5,7 @@
         position: fixed;
         width: 100vw;
         z-index: 999;
+
         &>*{
             max-width: getEm(1400);
             width: auto;
@@ -23,7 +24,7 @@
         // }
         
     }
-
+    
     .section {
         max-width: getEm(100,'%');
         max-width: getEm(1400);

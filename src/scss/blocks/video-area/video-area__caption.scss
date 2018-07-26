@@ -1,5 +1,6 @@
 .video-area__caption {
     display: none;
+    z-index:11;
 }
 
 @import './media-667/video-area__caption';

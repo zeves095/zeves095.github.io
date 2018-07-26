@@ -1,0 +1,14 @@
+.video-area__video-container {
+    position: absolute;
+    top:0;
+    left:0;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    height:100%;
+    width:100%;
+    z-index:10;
+    // height:100vh;
+    // top:0;
+    // position: absolute;
+}
