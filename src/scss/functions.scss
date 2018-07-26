@@ -7,6 +7,8 @@
     // @return #{$px}px;
     @if (($em == em) or ($em == rem)) {
         @return #{(12/14) * $px / $hfsVal}#{$em}; // $em
+    } @else if $em == '%' {
+        @return #{$px}#{$em};
     } @else {
         @return #{(12/14) * $px}#{$em};
     }

@@ -25,6 +25,7 @@
     }
 
     .section {
+        max-width: getEm(100,'%');
         max-width: getEm(1400);
         display: flex;
         flex-flow: row wrap;

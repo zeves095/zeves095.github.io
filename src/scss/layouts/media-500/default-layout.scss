@@ -10,11 +10,11 @@
     }
 }
 
-@media (min-width: #{getEm(1960,'px')}) {
-    html {
-        font-size: #{getEm(13,'px')};
-    }
-}
+// @media (min-width: #{getEm(1960,'px')}) {
+//     html {
+//         font-size: #{getEm(13,'px')};
+//     }
+// }
 
 @media (min-width: #{getEm(1400,'px')}) {
     html {
@@ -24,7 +24,7 @@
 
 @media (min-width: #{getEm(1600,'px')}) {
     html {
-        // font-size: #{getEm(11,'px')};
+        // font-size: #{getEm(16,'px')};
     }
 }
 
@@ -32,7 +32,7 @@
 // и фиксирование высоты если она меньше #{getEm(800,'px')}
 // чтобы не зависеть от порядка пожключения этого файла - для свойств прописаны impotrant'ы
 @media (min-width: #{getEm(1400,'px')}) {
-    @media (min-height: #{getEm(800,'px')}) {
+    @media (min-height: #{getEm(800)}) {
         .section {
             padding-top: calc( (( 100vh - #{getEm(800)} ) / 2 ) + #{getEm(120)}) !important;
             padding-bottom: calc( (( 100vh - #{getEm(800)} ) / 2 )) !important;
@@ -41,9 +41,14 @@
             }
         }
     }
-    @media (max-height: #{getEm(799,'px')}) {
+    @media (max-height: #{getEm(799)}) {
+        html {
+             font-size: 1.5vh;
+            //  font-size: .9vw !important;
+        }
         .section {
-            min-height: #{getEm(800,'px')} !important;
+            // padding-top: #{getEm(120)} !important;
+            // padding-bottom: 0 !important;
         }
     }
 }

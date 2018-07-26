@@ -2,6 +2,7 @@
     .service__slider.service__slider {
         min-height: 100%; // высоту во всю колонку чтобы при высоких мониторах не ломалось (иначе можно было бы getEm(593) задать)
         padding:0; // сброс паддингов
+        // overflow: hidden; //при маленькой высоте 
         // margin-bottom: calc(100% - #{getEm(593)}) !important;
     }
 }
