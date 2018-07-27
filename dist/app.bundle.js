@@ -10568,7 +10568,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
       blockleft.addClass(activeclass);
       blockright.addClass(activeclass2);
     },0);
-    window.setTimeout(function(){doing = false;},500);
+    window.setTimeout(function(){doing = false;},900);
     
 
     // $('.main-header__menu').toggleClass('main-header__menu--hidden');
