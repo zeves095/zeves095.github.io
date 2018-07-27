@@ -2,7 +2,7 @@
 @keyframes example {
   from {
     position: absolute;
-    left: 200%; }
+    left: 110%; }
   to {
     position: relative;
     left: 0; } }
@@ -10,7 +10,7 @@
 @keyframes example2 {
   from {
     position: absolute;
-    left: -200%; }
+    left: -110%; }
   to {
     position: relative;
     left: 0; } }
@@ -24,18 +24,18 @@
   .section__hover {
     position: relative;
     animation-name: example;
-    animation-duration: .2s;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-fill-mode: both; }
   .section__hover2 {
     position: relative;
     animation-name: example2;
-    animation-duration: .2s;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: linear;
     animation-fill-mode: both; } }
 
 @media (min-width: 274.28571px) {
