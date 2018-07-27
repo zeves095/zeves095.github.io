@@ -49,7 +49,7 @@
         animation-duration: 2s;
         animation-delay: 0s;
         animation-iteration-count: 1; // infinite
-        animation-timing-function: ease-in-out;
+        animation-timing-function: linear;
         animation-fill-mode: both;
     }
 
@@ -59,7 +59,7 @@
         animation-duration: 2s;
         animation-delay: 0s;
         animation-iteration-count: 1; // infinite
-        animation-timing-function: ease-in-out;
+        animation-timing-function: linear;
         animation-fill-mode: both;
     }
 }
