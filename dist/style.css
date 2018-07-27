@@ -1,4 +1,43 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);@charset "UTF-8";
+@keyframes example {
+  from {
+    position: absolute;
+    left: 200%; }
+  to {
+    position: relative;
+    left: 0; } }
+
+@keyframes example2 {
+  from {
+    position: absolute;
+    left: -200%; }
+  to {
+    position: relative;
+    left: 0; } }
+
+@media (min-width: 1200px) {
+  .section {
+    overflow: hidden;
+    position: relative; }
+  .section.off {
+    display: none; }
+  .section__hover {
+    position: relative;
+    animation-name: example;
+    animation-duration: .2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; }
+  .section__hover2 {
+    position: relative;
+    animation-name: example2;
+    animation-duration: .2s;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both; } }
+
 @media (min-width: 274.28571px) {
   h1 {
     font-family: "Arial black";
@@ -1078,7 +1117,7 @@
       width: 13.54286rem;
       bottom: 20vh;
       counter-increment: section;
-      content: counter(section) " \2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013   6";
+      content: attr(data-page) " \2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013   6";
       /* Точка поворота в правом верхнем углу */
       -webkit-transform-origin: 1.37143rem 0;
       -moz-transform-origin: 1.37143rem 0;

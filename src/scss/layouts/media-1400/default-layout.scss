@@ -75,7 +75,8 @@
             width: getEm(158);
             bottom:20vh;
             counter-increment: section;
-            content: counter(section) " –––––––––––– 6";
+            // content: counter(section) " –––––––––––– 6";
+            content: attr(data-page) " –––––––––––– 6";
             /* Точка поворота в правом верхнем углу */
             -webkit-transform-origin: getEm(16) 0;
             -moz-transform-origin: getEm(16) 0;

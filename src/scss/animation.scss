@@ -1,0 +1,65 @@
+@keyframes example {
+    from {
+        position: absolute;
+        left:200%;
+    }
+    to {
+        position: relative;
+        left: 0;
+    }
+    // 0% {left: -1000px;
+    // position:absolute;}
+    // 25% {left: 800px;}
+    // 50% {left: -200px;}
+    // 75% {left: 100px;}
+    // 100% {left: 0px;}
+}
+@keyframes example2 {
+    from {
+        position: absolute;
+        left:-200%;
+    }
+    to {
+        position: relative;
+        left: 0;
+    }
+}
+
+@media (min-width: #{getEm(1400,'px')}) { //AND (min-height: #{getEm(800,'px')}) {
+    .section {
+        overflow: hidden;
+        position: relative;
+
+        // animation-name: example;
+        // animation-duration: .5s;
+        // animation-delay: 0s;
+        // animation-iteration-count: 1; // infinite
+        // animation-timing-function: ease-in-out;
+        // animation-fill-mode: backwards;
+    }
+
+    .section.off {
+        display: none;
+    }
+
+
+    .section__hover {
+        position:relative;
+        animation-name: example;
+        animation-duration: .2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1; // infinite
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+
+    .section__hover2 {
+        position:relative;
+        animation-name: example2;
+        animation-duration: .2s;
+        animation-delay: 0s;
+        animation-iteration-count: 1; // infinite
+        animation-timing-function: ease-in-out;
+        animation-fill-mode: both;
+    }
+}

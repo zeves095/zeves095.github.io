@@ -10499,28 +10499,89 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
-  var trigger = jquery__WEBPACK_IMPORTED_MODULE_0___default()('#hamburger'),
-      isClosed = true;
 
-  trigger.click(function () {
-    burgerTime();
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
+
+  // $('body').append('<div style="height:1px"></div>');
+  var doing = false;
+  // window.addEventListener('wheel', function(e) {
+    
+  // });
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('wheel', function(e) {
+    if(!doing){
+      doing = true;
+      _scroll((e.originalEvent.deltaY < 0 ? -1 : 1));
+    }
+  });
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('mousewheel', function(e) {
+    if(!doing){
+      doing = true;
+      _scroll(1);
+    }
+  });
+
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('touchmove', function(e) { //touchmove works for iOS, I don't know if Android supports it
+    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).trigger('mousewheel');
+  });
+
+  // var trigger = $('#hamburger'),
+  var trigger = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.support'),
+      isClosed = true;
+      trigger.click(function () {
+      burgerTime();
   });
 
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-header__menu').toggleClass('main-header__menu--hidden');
 
+  var activeclass = 'section__hover';
+  var activeclass2 = 'section__hover2';
+  var items = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider');
+  
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').addClass('off');
+  var i = 0;
+  var last = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').eq(i);
+  last.removeClass('off');
+
+  function _scroll(direction) {
+    console.log(direction);
+    i = i + direction;
+    i = ( i < 0 )? 0 : i;
+    i = ( i > 5 )? 5 : i;
+    burgerTime();
+  }
+  
   function burgerTime() {
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-header__menu').toggleClass('main-header__menu--hidden');
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()('.menu').toggleClass('menu--is-open');
-    if (isClosed == true) {
-      trigger.removeClass('is-open');
-      trigger.addClass('is-closed');
-      isClosed = false;
-    } else {
-      trigger.removeClass('is-closed');
-      trigger.addClass('is-open');
-      isClosed = true;
-    }
+    // if(++i > 5) i = 1;
+    console.log(i);
+    last.addClass('off');
+    let item = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').eq(i);
+    item.removeClass('off');
+    last = item;
+
+    let blockleft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__slider',item);
+    blockleft.removeClass(activeclass);
+    let blockright = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__caption, .service__description, .service__note, .service__buttons',item);
+    blockright.removeClass(activeclass2);
+    window.setTimeout(function(){
+      blockleft.addClass(activeclass);
+      blockright.addClass(activeclass2);
+    },0);
+    window.setTimeout(function(){doing = false;},500);
+    
+
+    // $('.main-header__menu').toggleClass('main-header__menu--hidden');
+    // $('.menu').toggleClass('menu--is-open');
+    // if (isClosed == true) {
+    //   trigger.removeClass('is-open');
+    //   trigger.addClass('is-closed');
+    //   isClosed = false;
+    // } else {
+    //   trigger.removeClass('is-closed');
+    //   trigger.addClass('is-open');
+    //   isClosed = true;
+    // }
   }
 
 });

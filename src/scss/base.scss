@@ -1,6 +1,7 @@
 @import 'normalize-scss';
 @import './params';
 @import './functions';
+@import './animation';
 
 @media (min-width: #{getEm(320,'px')}) {
 
