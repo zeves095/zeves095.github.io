@@ -2,10 +2,10 @@
 @keyframes example {
   from {
     position: absolute;
-    left: 110%; }
+    right: -110%; }
   to {
-    position: relative;
-    left: 0; } }
+    position: absolute;
+    right: 0%; } }
 
 @keyframes example2 {
   from {
@@ -24,18 +24,18 @@
   .section__hover {
     position: relative;
     animation-name: example;
-    animation-duration: 1.5s;
+    animation-duration: 1.0s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     animation-fill-mode: both; }
   .section__hover2 {
     position: relative;
     animation-name: example2;
-    animation-duration: 1.5s;
+    animation-duration: 1.0s;
     animation-delay: 0s;
     animation-iteration-count: 1;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
     animation-fill-mode: both; } }
 
 @media (min-width: 274.28571px) {

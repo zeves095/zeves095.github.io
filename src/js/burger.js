@@ -56,15 +56,17 @@ $('document').ready(function () {
   function burgerTime() {
     // if(++i > 5) i = 1;
     console.log(i);
-    last.addClass('off');
+    
     let item = $('.section').eq(i);
-    item.removeClass('off');
+    last.addClass('off');
     last = item;
 
     let blockleft = $('.service__slider',item);
     blockleft.removeClass(activeclass);
     let blockright = $('.service__caption, .service__description, .service__note, .service__buttons',item);
     blockright.removeClass(activeclass2);
+    
+    item.removeClass('off');
     window.setTimeout(function(){
       blockleft.addClass(activeclass);
       blockright.addClass(activeclass2);

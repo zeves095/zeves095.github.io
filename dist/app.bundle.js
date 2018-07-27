@@ -10555,15 +10555,17 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
   function burgerTime() {
     // if(++i > 5) i = 1;
     console.log(i);
-    last.addClass('off');
+    
     let item = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').eq(i);
-    item.removeClass('off');
+    last.addClass('off');
     last = item;
 
     let blockleft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__slider',item);
     blockleft.removeClass(activeclass);
     let blockright = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__caption, .service__description, .service__note, .service__buttons',item);
     blockright.removeClass(activeclass2);
+    
+    item.removeClass('off');
     window.setTimeout(function(){
       blockleft.addClass(activeclass);
       blockright.addClass(activeclass2);
