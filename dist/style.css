@@ -306,14 +306,13 @@
     position: relative; }
   .video-area__video-container {
     position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     height: 100%;
     width: 100%;
-    z-index: 10; }
+    z-index: 10;
+    top: 0;
+    left: 0;
+    outline: 1px solid red; }
   .video-area__video {
     width: 100%;
     height: auto;
@@ -383,7 +382,8 @@
 @media (min-width: 274.28571px) and (min-width: 571.71429px) {
   .video-area {
     box-sizing: border-box;
-    padding-left: 1.71429rem; } }
+    padding-left: 1.71429rem;
+    position: relative; } }
 
 @media (min-width: 274.28571px) {
   .subvideo-area {

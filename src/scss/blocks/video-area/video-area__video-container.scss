@@ -1,14 +1,13 @@
 .video-area__video-container {
     position: absolute;
-    top:0;
-    left:0;
-    margin:0;
-    padding:0;
     overflow: hidden;
     height:100%;
     width:100%;
+    // padding-bottom: 55.75%;
     z-index:10;
     // height:100vh;
-    // top:0;
+    top:0;
+    left:0;
     // position: absolute;
+    outline:1px solid red;
 }
