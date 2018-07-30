@@ -14,10 +14,19 @@
     &__items {
         margin:0;
         padding:0;
+        display: flex;
+        flex-flow: row nowrap;
     }
     &__item {
         margin:0;
         padding:0;
+        display: none;
+        // position: relative;
+        // width: getEm(200);
+        // height: getEm(112);
+    }
+    $__item::nth-child(1) {
+        display: block;
     }
 
     &__image {

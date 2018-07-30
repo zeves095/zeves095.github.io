@@ -30,7 +30,7 @@ var doing = false;
 
 
 $('document').ready(function () {
-
+  // return;
   // $('body').append('<div style="height:1px"></div>');
   
   // window.addEventListener('wheel', function(e) {

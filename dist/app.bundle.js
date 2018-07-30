@@ -10532,7 +10532,7 @@ var doing = false;
 
 
 (0, _jquery2.default)('document').ready(function () {
-
+  // return;
   // $('body').append('<div style="height:1px"></div>');
 
   // window.addEventListener('wheel', function(e) {
