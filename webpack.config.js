@@ -1,4 +1,8 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
+
 const path = require('path');
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -6,12 +10,12 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 
 module.exports = {
-  mode: 'development',
+  mode: 'production',
   entry: {
     app: './src/app.js',
     print: './src/print.js'
   },
-  devtool: 'source-map',
+  devtool: 'none',
   devServer: {
     contentBase: './dist',
     allowedHosts: [
@@ -34,7 +38,7 @@ module.exports = {
         test: /\.scss$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
-          use: [{loader: 'css-loader',options: { url: false, minimize: true }}, 'postcss-loader', {loader: 'sass-loader',options: { url: false}}]
+          use: [ {loader: 'css-loader', options: {minimize: true, sourceMap: false, url: false }}, 'postcss-loader', {loader: 'sass-loader',options: { url: false, minimize: true}}]
         })
       }
     ]
@@ -47,5 +51,14 @@ module.exports = {
     //   title: 'Development'
     // }),
     new ExtractTextPlugin('style.css')
-  ]
+    // new MiniCssExtractPlugin({
+    //   filename: '[name].min.css',
+    //   chunkFilename: "[id].css"
+    // })
+  ],
+  optimization: {
+    minimizer: [
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  }
 };
