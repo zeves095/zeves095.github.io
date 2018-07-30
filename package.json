@@ -6,15 +6,22 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack --watch",
-    "start:dev": "webpack-dev-server --open2 --host 192.168.0.237",
+    "start:dev": "webpack-dev-server --mode development --open2 --host2 192.168.0.237",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "zeves095",
   "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1"
+    "jquery": "^3.3.1",
+    "rxjs": "^6.2.2",
+    "rxjs-compat": "^6.2.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "clean-webpack-plugin": "^0.1.19",
     "css-loader": "^1.0.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",

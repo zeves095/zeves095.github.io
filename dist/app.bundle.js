@@ -10466,23 +10466,24 @@ return jQuery;
 /*!********************!*\
   !*** ./src/app.js ***!
   \********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _js_burger__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/burger */ "./src/js/burger.js");
-/* harmony import */ var _scss_base_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scss/base.scss */ "./src/scss/base.scss");
-/* harmony import */ var _scss_base_scss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scss_base_scss__WEBPACK_IMPORTED_MODULE_2__);
-
-window.jQuery = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
-window.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
 
 
+var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
+var _jquery2 = _interopRequireDefault(_jquery);
 
+__webpack_require__(/*! ./js/burger */ "./src/js/burger.js");
+
+__webpack_require__(/*! ./scss/base.scss */ "./src/scss/base.scss");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+window.jQuery = _jquery2.default;
+window.$ = _jquery2.default;
 
 /***/ }),
 
@@ -10490,88 +10491,151 @@ window.$ = jquery__WEBPACK_IMPORTED_MODULE_0___default.a;
 /*!**************************!*\
   !*** ./src/js/burger.js ***!
   \**************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 
 
+var _jquery = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+var _jquery2 = _interopRequireDefault(_jquery);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+// import { timer } from 'rxjs';
+// import { Observable } from 'rxjs/Observable';
+// import 'rxjs/add/observable/of';
+// import 'rxjs/add/operator/map';
+
+// import 'rxjs/add/observable/fromEvent';
+// import 'rxjs/add/operator/do';
+// import 'rxjs/add/operator/filter';
+// import 'rxjs/add/operator/switchMap'
+// import 'rxjs/add/operator/share';
+// import 'rxjs/add/operator/takeWhile';
+// import 'rxjs/add/operator/throttle';
+// import 'rxjs/add/operator/delay';
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
+var doing = false;
+// var wheel$ = Observable.fromEvent(window, 'wheel')
+//             // .filter(ev=>!doing)
+//             .do((event) => {
+//                 // doing = true;
+//                 event.preventDefault();
+//                 event.stopPropagation();
+//             })
+//             .throttle(()=>timer(1000))
+//             .do(e=>console.info(doing));
+// .share();
+
+
+(0, _jquery2.default)('document').ready(function () {
 
   // $('body').append('<div style="height:1px"></div>');
-  var doing = false;
+
   // window.addEventListener('wheel', function(e) {
-    
+
   // });
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('wheel', function(e) {
-    if(!doing){
+  (0, _jquery2.default)(document).on('wheel', function (e) {
+    if (!doing) {
       doing = true;
-      _scroll((e.originalEvent.deltaY < 0 ? -1 : 1));
+      _scroll(e.originalEvent.deltaY < 0 ? -1 : 1);
+    } else {
+      e.preventDefault();
+      e.stopPropagation();
     }
   });
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('mousewheel', function(e) {
-    if(!doing){
+  (0, _jquery2.default)(document).on('mousewheel', function (e) {
+    if (!doing) {
       doing = true;
       _scroll(1);
+    } else {
+      e.preventDefault();
+      e.stopPropagation();
     }
   });
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).on('touchmove', function(e) { //touchmove works for iOS, I don't know if Android supports it
-    jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).trigger('mousewheel');
+  (0, _jquery2.default)(document).on('touchmove', function (e) {
+    //touchmove works for iOS, I don't know if Android supports it
+    (0, _jquery2.default)(document).trigger('mousewheel');
   });
 
   // var trigger = $('#hamburger'),
-  var trigger = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.support'),
+  var trigger = (0, _jquery2.default)('.support'),
       isClosed = true;
-      trigger.click(function () {
-      burgerTime();
+  trigger.click(function () {
+    burgerTime();
   });
 
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.main-header__menu').toggleClass('main-header__menu--hidden');
+  (0, _jquery2.default)('.main-header__menu').toggleClass('main-header__menu--hidden');
 
   var activeclass = 'section__hover';
   var activeclass2 = 'section__hover2';
-  var items = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.slider');
-  
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').addClass('off');
+  var items = (0, _jquery2.default)('.slider');
+
+  (0, _jquery2.default)('.section').addClass('off');
   var i = 0;
-  var last = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').eq(i);
+  var last = (0, _jquery2.default)('.section').eq(i);
   last.removeClass('off');
 
   function _scroll(direction) {
-    console.log(direction);
     i = i + direction;
-    i = ( i < 0 )? 0 : i;
-    i = ( i > 5 )? 5 : i;
+    i = i < 0 ? 0 : i;
+    i = i > 5 ? 5 : i;
     burgerTime();
   }
-  
-  function burgerTime() {
-    // if(++i > 5) i = 1;
-    console.log(i);
-    
-    let item = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.section').eq(i);
-    last.addClass('off');
-    last = item;
 
-    let blockleft = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__slider',item);
+  // wheel$.subscribe(
+  //   next => _scroll((next.deltaY < 0 ? -1 : 1)),
+  //   err => console.log('error:', err),
+  //   () => console.log('the end'),
+  // );
+
+  (0, _jquery2.default)('#menu a').click(function (e) {
+    e.preventDefault();
+    var dp = (0, _jquery2.default)(this).attr('data-page');
+    i = dp - 1;
+    burgerTime();
+  });
+
+  function burgerTime() {
+    var item = (0, _jquery2.default)('.section').eq(i);
+    var blockleft = void 0,
+        blockright = void 0;
+    if (item.hasClass('section--main')) {
+      // правые элементы
+      blockleft = (0, _jquery2.default)('.service__caption, .service__description, .service__note, .service__buttons', item);
+      // левые элементы
+      blockright = (0, _jquery2.default)('.service__image', item);
+    } else {
+      // правые элементы
+      blockleft = (0, _jquery2.default)('.service__slider', item);
+      // левые элементы
+      blockright = (0, _jquery2.default)('.service__caption, .service__description, .service__note, .service__buttons, .service__image', item);
+    }
+
+    // сбрасываем стили анимации
     blockleft.removeClass(activeclass);
-    let blockright = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.service__caption, .service__description, .service__note, .service__buttons',item);
     blockright.removeClass(activeclass2);
-    
-    item.removeClass('off');
-    window.setTimeout(function(){
-      blockleft.addClass(activeclass);
-      blockright.addClass(activeclass2);
-    },0);
-    window.setTimeout(function(){doing = false;},900);
-    
+
+    blockleft.addClass(activeclass);
+    blockright.addClass(activeclass2);
+
+    window.setTimeout(function () {
+      last.addClass('off');
+      item.removeClass('off');
+      last = item;
+
+      (0, _jquery2.default)('#menu a').removeClass('active');
+      (0, _jquery2.default)("#menu a[data-page='" + (i + 1) + "']").addClass('active');
+      // doing = false;
+      window.setTimeout(function () {
+        doing = false;
+      }, 1500);
+    }, 0);
 
     // $('.main-header__menu').toggleClass('main-header__menu--hidden');
     // $('.menu').toggleClass('menu--is-open');
@@ -10585,10 +10649,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('document').ready(function () {
     //   isClosed = true;
     // }
   }
-
 });
-
-
 
 /***/ }),
 

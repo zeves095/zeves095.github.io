@@ -1,25 +1,27 @@
 @keyframes example {
-    from {
+    0% {
         position: absolute;
-        right:-110%;
+        right:-60%;
     }
-    to {
-        position: absolute;
+    1% {
+        position: relative;
+        right:-50%;
+    }
+    100% {
+        position: relative;
         right: 0%;
     }
-    // 0% {left: -1000px;
-    // position:absolute;}
-    // 25% {left: 800px;}
-    // 50% {left: -200px;}
-    // 75% {left: 100px;}
-    // 100% {left: 0px;}
 }
 @keyframes example2 {
-    from {
+    0% {
         position: absolute;
-        left:-110%;
+        left:-60%;
     }
-    to {
+    1% {
+        position: relative;
+        left:-50%;
+    }
+    100% {
         position: relative;
         left: 0;
     }
@@ -44,22 +46,35 @@
 
 
     .section__hover {
-        position:relative;
+        z-index:2;
+        position:absolute;
+        right:-50%;
         animation-name: example;
-        animation-duration: 1.0s;
+        animation-duration: 1s;
         animation-delay: 0s;
         animation-iteration-count: 1; // infinite
         animation-timing-function: ease-out;
-        animation-fill-mode: both;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
     }
 
+    .section__hover2.service__image {
+        z-index:1;
+    }
+
+    .active {
+        text-decoration: underline !important;
+    }
     .section__hover2 {
-        position:relative;
+        z-index:2;
+        position:absolute;
+        left:-50%;
         animation-name: example2;
-        animation-duration: 1.0s;
+        animation-duration: 1s;
         animation-delay: 0s;
         animation-iteration-count: 1; // infinite
         animation-timing-function: ease-out;
-        animation-fill-mode: both;
+        animation-fill-mode: forwards;
+        animation-play-state: running;
     }
 }

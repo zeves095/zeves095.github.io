@@ -1,11 +1,38 @@
 import $ from 'jquery';
 
+// import { timer } from 'rxjs';
+// import { Observable } from 'rxjs/Observable';
+// import 'rxjs/add/observable/of';
+// import 'rxjs/add/operator/map';
+
+// import 'rxjs/add/observable/fromEvent';
+// import 'rxjs/add/operator/do';
+// import 'rxjs/add/operator/filter';
+// import 'rxjs/add/operator/switchMap'
+// import 'rxjs/add/operator/share';
+// import 'rxjs/add/operator/takeWhile';
+// import 'rxjs/add/operator/throttle';
+// import 'rxjs/add/operator/delay';
+
+
+var doing = false;
+// var wheel$ = Observable.fromEvent(window, 'wheel')
+//             // .filter(ev=>!doing)
+//             .do((event) => {
+//                 // doing = true;
+//                 event.preventDefault();
+//                 event.stopPropagation();
+//             })
+//             .throttle(()=>timer(1000))
+//             .do(e=>console.info(doing));
+            // .share();
+
 
 
 $('document').ready(function () {
 
   // $('body').append('<div style="height:1px"></div>');
-  var doing = false;
+  
   // window.addEventListener('wheel', function(e) {
     
   // });
@@ -13,6 +40,9 @@ $('document').ready(function () {
     if(!doing){
       doing = true;
       _scroll((e.originalEvent.deltaY < 0 ? -1 : 1));
+    }else{
+      e.preventDefault();
+      e.stopPropagation();
     }
   });
 
@@ -20,6 +50,9 @@ $('document').ready(function () {
     if(!doing){
       doing = true;
       _scroll(1);
+    }else{
+      e.preventDefault();
+      e.stopPropagation();
     }
   });
 
@@ -46,32 +79,59 @@ $('document').ready(function () {
   last.removeClass('off');
 
   function _scroll(direction) {
-    console.log(direction);
     i = i + direction;
     i = ( i < 0 )? 0 : i;
     i = ( i > 5 )? 5 : i;
     burgerTime();
   }
+
+  // wheel$.subscribe(
+  //   next => _scroll((next.deltaY < 0 ? -1 : 1)),
+  //   err => console.log('error:', err),
+  //   () => console.log('the end'),
+  // );
+
+  $('#menu a').click(function(e){
+    e.preventDefault();
+    var dp = $(this).attr('data-page');
+    i = dp - 1;
+    burgerTime();
+  });
   
   function burgerTime() {
-    // if(++i > 5) i = 1;
-    console.log(i);
-    
     let item = $('.section').eq(i);
-    last.addClass('off');
-    last = item;
-
-    let blockleft = $('.service__slider',item);
-    blockleft.removeClass(activeclass);
-    let blockright = $('.service__caption, .service__description, .service__note, .service__buttons',item);
-    blockright.removeClass(activeclass2);
+    let blockleft,blockright;
+    if( item.hasClass('section--main') ) {
+      // правые элементы
+      blockleft = $('.service__caption, .service__description, .service__note, .service__buttons',item);
+      // левые элементы
+      blockright = $('.service__image',item);
+    } else {
+      // правые элементы
+      blockleft = $('.service__slider',item);
+      // левые элементы
+      blockright = $('.service__caption, .service__description, .service__note, .service__buttons, .service__image',item);
+    }
     
-    item.removeClass('off');
-    window.setTimeout(function(){
-      blockleft.addClass(activeclass);
-      blockright.addClass(activeclass2);
+    // сбрасываем стили анимации
+    blockleft.removeClass(activeclass);
+    blockright.removeClass(activeclass2);
+
+    blockleft.addClass(activeclass);
+    blockright.addClass(activeclass2);
+    
+    window.setTimeout( function() {
+      last.addClass('off');
+      item.removeClass('off');
+      last = item;
+
+      $('#menu a').removeClass('active');
+      $("#menu a[data-page='"+(i+1)+"']").addClass('active');
+      // doing = false;
+      window.setTimeout(function(){
+        doing = false;
+      },1500);
     },0);
-    window.setTimeout(function(){doing = false;},900);
     
 
     // $('.main-header__menu').toggleClass('main-header__menu--hidden');
