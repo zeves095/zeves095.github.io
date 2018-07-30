@@ -2,10 +2,9 @@
 @import './params';
 @import './functions';
 @import './animation';
+@import './typography';
 
 @media (min-width: #{getEm(320,'px')}) {
-
-@import './typography';
 
 // blocks
 @import './blocks/button/button';
@@ -37,4 +36,3 @@ div {
     margin:0;
     padding:0;
 }
-
