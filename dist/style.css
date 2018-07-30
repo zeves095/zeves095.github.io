@@ -29,14 +29,23 @@
     display: none; }
   .section__hover {
     z-index: 2;
-    position: absolute;
+    position: relative;
     right: -50%;
     animation-name: example;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    /* it works with Chrome */
+    -moz-animation-fill-mode: forwards;
+    /* works with Mozilla Firefox */
+    -ms-animation-fill-mode: forwards;
+    /* works with IE */
+    -o-animation-fill-mode: forwards;
+    /* works with Opera */
     animation-fill-mode: forwards;
+    /* should work with all browser .... in theory */
     animation-play-state: running; }
   .section__hover2.service__image {
     z-index: 1; }
@@ -44,14 +53,23 @@
     text-decoration: underline !important; }
   .section__hover2 {
     z-index: 2;
-    position: absolute;
+    position: relative;
     left: -50%;
     animation-name: example2;
     animation-duration: 1s;
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+    /* it works with Chrome */
+    -moz-animation-fill-mode: forwards;
+    /* works with Mozilla Firefox */
+    -ms-animation-fill-mode: forwards;
+    /* works with IE */
+    -o-animation-fill-mode: forwards;
+    /* works with Opera */
     animation-fill-mode: forwards;
+    /* should work with all browser .... in theory */
     animation-play-state: running; } }
 
 @media (min-width: 274.28571px) {
