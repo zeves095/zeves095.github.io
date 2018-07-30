@@ -13,6 +13,14 @@ import $ from 'jquery';
 // import 'rxjs/add/operator/takeWhile';
 // import 'rxjs/add/operator/throttle';
 // import 'rxjs/add/operator/delay';
+$.fn.swapWith = function(to) {
+  return this.each(function() {
+      var copy_to = $(to).clone(true);
+      var copy_from = $(this).clone(true);
+      $(to).replaceWith(copy_from);
+      $(this).replaceWith(copy_to);
+  });
+};
 
 
 var doing = false;
@@ -36,6 +44,13 @@ $('document').ready(function () {
   // window.addEventListener('wheel', function(e) {
     
   // });
+  $('.slider').each(function(num, item){
+    $('.slider__item',item).click(function(e){
+      const $first = $('.slider__item:nth-child(1)',item);
+      $(this).swapWith($first);
+    });
+  });
+
   $(document).on('wheel', function(e) {
     if(!doing){
       doing = true;
