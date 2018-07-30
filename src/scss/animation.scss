@@ -55,10 +55,10 @@
         animation-iteration-count: 1; // infinite
         animation-timing-function: ease-out;
         
-        -webkit-animation-fill-mode: forwards;  /* it works with Chrome */
-        -moz-animation-fill-mode: forwards;  /* works with Mozilla Firefox */
-        -ms-animation-fill-mode: forwards;  /* works with IE */
-        -o-animation-fill-mode: forwards;  /* works with Opera */
+        // -webkit-animation-fill-mode: forwards;  /* it works with Chrome */
+        // -moz-animation-fill-mode: forwards;  /* works with Mozilla Firefox */
+        // -ms-animation-fill-mode: forwards;  /* works with IE */
+        // -o-animation-fill-mode: forwards;  /* works with Opera */
          animation-fill-mode: forwards;  /* should work with all browser .... in theory */
 
         animation-play-state: running;
@@ -81,10 +81,10 @@
         animation-iteration-count: 1; // infinite
         animation-timing-function: ease-out;
         
-        -webkit-animation-fill-mode: forwards;  /* it works with Chrome */
-        -moz-animation-fill-mode: forwards;  /* works with Mozilla Firefox */
-        -ms-animation-fill-mode: forwards;  /* works with IE */
-        -o-animation-fill-mode: forwards;  /* works with Opera */
+        // -webkit-animation-fill-mode: forwards;  /* it works with Chrome */
+        // -moz-animation-fill-mode: forwards;  /* works with Mozilla Firefox */
+        // -ms-animation-fill-mode: forwards;  /* works with IE */
+        // -o-animation-fill-mode: forwards;  /* works with Opera */
          animation-fill-mode: forwards;  /* should work with all browser .... in theory */
 
         animation-play-state: running;
