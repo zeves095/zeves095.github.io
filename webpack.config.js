@@ -55,10 +55,11 @@ module.exports = {
     //   filename: '[name].min.css',
     //   chunkFilename: "[id].css"
     // })
-  ],
-  optimization: {
-    minimizer: [
-      new OptimizeCSSAssetsPlugin({})
-    ]
-  }
+  ]
+  // ,
+  // optimization: {
+  //   minimizer: [
+  //     new OptimizeCSSAssetsPlugin({})
+  //   ]
+  // }
 };
