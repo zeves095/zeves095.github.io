@@ -11,23 +11,68 @@
     // padding:0 !important;
     // overflow:hidden;
 
-    &__items {
-        margin:0;
-        padding:0;
-        display: flex;
-        flex-flow: row nowrap;
-    }
-    &__item {
-        margin:0;
-        padding:0;
-        display: none;
-        // position: relative;
-        // width: getEm(200);
-        // height: getEm(112);
-    }
-    $__item::nth-child(1) {
-        display: block;
-    }
+    // &__items {
+    //     margin:0;
+    //     padding:0;
+    //     display: flex;
+    //     flex-flow: row nowrap;
+    // }
+    // &__item {
+    //     margin:0;
+    //     padding:0;
+    //     display: none;
+    //     // position: relative;
+    //     // width: getEm(200);
+    //     // height: getEm(112);
+    // }
+    // $__item::nth-child(1) {
+    //     display: block;
+    // }
+    // width: 100%;
+        // position:relative;
+        &__items {
+            // width: 100%;
+            // position:relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            position: relative;
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+        &__item {
+            width: 100%;
+            height: 100%;
+            position:relative;
+            display: block;
+        }
+        &__item:nth-child(n + 2) {
+            & img { opacity: .2; }
+            position: absolute;
+            bottom:getEm(5,'%');
+            height: auto;
+            background: $white;
+            & .slider__description {
+                display: none;
+            }
+
+            & img:hover {
+                opacity: 1;
+            }
+        }
+        &__item:nth-child(2) {
+            right: calc( (#{getEm(25,'%')} * 0) + 0%);
+            width: getEm(25,'%');
+        }
+        &__item:nth-child(3) {
+            right: calc( (#{getEm(25,'%')} * 1) + 1%);
+            width: getEm(25,'%');
+        }
+        &__item:nth-child(4) {
+            right: calc( (#{getEm(25,'%')} * 2) + 2%);
+            width: getEm(25,'%');
+        }
 
     &__image {
         width:100%;
@@ -51,4 +96,5 @@
     }
 }
 
+@import './media-667/slider.scss';
 @import './media-1400/slider.scss';

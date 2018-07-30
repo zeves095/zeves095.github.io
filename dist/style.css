@@ -478,21 +478,47 @@ h1 {
   .slider {
     position: relative; }
     .slider__items {
-      margin: 0;
-      padding: 0;
+      width: 100%;
+      height: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-orient: horizontal;
+      -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-flow: row nowrap;
-              flex-flow: row nowrap; }
+          -ms-flex-flow: column nowrap;
+              flex-flow: column nowrap;
+      position: relative;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
     .slider__item {
-      margin: 0;
-      padding: 0;
-      display: none; }
-    .slider :nth-child(1) {
+      width: 100%;
+      height: 100%;
+      position: relative;
       display: block; }
+    .slider__item:nth-child(n + 2) {
+      position: absolute;
+      bottom: 5%;
+      height: auto;
+      background: #ffffff; }
+      .slider__item:nth-child(n + 2) img {
+        opacity: .2; }
+      .slider__item:nth-child(n + 2) .slider__description {
+        display: none; }
+      .slider__item:nth-child(n + 2) img:hover {
+        opacity: 1; }
+    .slider__item:nth-child(2) {
+      right: calc( (25% * 0) + 0%);
+      width: 25%; }
+    .slider__item:nth-child(3) {
+      right: calc( (25% * 1) + 1%);
+      width: 25%; }
+    .slider__item:nth-child(4) {
+      right: calc( (25% * 2) + 2%);
+      width: 25%; }
     .slider__image {
       width: 100%;
       max-height: 100%;
@@ -502,13 +528,26 @@ h1 {
     .slider__description {
       display: none; } }
 
+@media (min-width: 274.28571px) and (min-width: 571.71429px) {
+  .slider__item:nth-child(n + 2) {
+    top: 5%;
+    bottom: auto; }
+  .slider__item:nth-child(2) {
+    right: calc( (25% * 0) + 0%); }
+  .slider__item:nth-child(3) {
+    right: calc( (25% * 1) + 1%); }
+  .slider__item:nth-child(4) {
+    right: calc( (25% * 2) + 2%); } }
+
 @media (min-width: 274.28571px) and (min-width: 1200px) {
-  .slider__items {
-    width: 100%;
-    height: 100%; }
-  .slider__item {
-    width: 100%;
-    height: 100%; }
+  .slider__item:nth-child(n + 2) {
+    top: 5%; }
+  .slider__item:nth-child(2) {
+    right: calc(-5% + (25% * 0) + 0%); }
+  .slider__item:nth-child(3) {
+    right: calc(-5% + (25% * 1) + 1%); }
+  .slider__item:nth-child(4) {
+    right: calc(-5% + (25% * 2) + 2%); }
   .slider__description {
     display: -webkit-box;
     display: -ms-flexbox;
