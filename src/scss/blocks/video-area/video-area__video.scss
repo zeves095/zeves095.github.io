@@ -1,7 +1,7 @@
 .video-area__video {
     // display: none;
     width:100%;
-    height:auto;
+    height:100%;
     position:absolute;
     top: 0;
     left: 0;
@@ -14,5 +14,10 @@
     object-fit: fill;
     margin:0;
     padding:0;
+}
 
+// https://stackoverflow.com/questions/20541306/how-to-write-a-css-hack-for-ie-11
+@media all and (-ms-high-contrast:none){
+    .video-area__video { height: auto; } /* IE10 */
+    *::-ms-backdrop, .video-area__video { height: auto; } /* IE11 */
 }

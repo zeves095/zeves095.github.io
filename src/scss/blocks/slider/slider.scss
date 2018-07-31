@@ -1,97 +1,60 @@
 .slider {
-
-    background: {
-        // image: url("./pic.jpg");
-        // repeat:  no-repeat;
-        // size: cover;
-    }
-
-    // outline: #{getEm(1,'px')} solid $grey;
-    position:relative;
-    // padding:0 !important;
-    // overflow:hidden;
-
-    // &__items {
-    //     margin:0;
-    //     padding:0;
-    //     display: flex;
-    //     flex-flow: row nowrap;
-    // }
-    // &__item {
-    //     margin:0;
-    //     padding:0;
-    //     display: none;
-    //     // position: relative;
-    //     // width: getEm(200);
-    //     // height: getEm(112);
-    // }
-    // $__item::nth-child(1) {
-    //     display: block;
-    // }
-    // width: 100%;
-        // position:relative;
+    position: relative;
         &__items {
-            // width: 100%;
-            // position:relative;
-            width: 100%;
-            height: 100%;
+            width: getEm(100,'%');
+            height: getEm(100,'%');
+            position:relative;
+            overflow: hidden;
             display: flex;
-            flex-flow: column nowrap;
-            position: relative;
-            align-items: flex-start;
-            justify-content: flex-start;
+            flex-flow: row nowrap;
         }
         &__item {
-            width: 100%;
-            height: 100%;
-            position:relative;
+            flex-basis: getEm(100,'%');
+            min-width: getEm(100,'%');
             display: flex;
             flex-flow: column nowrap;
-            justify-items: center;
             justify-content: center;
             align-items: center;
-            overflow: hidden;
+            flex-shrink: 0;
         }
-        &__item:nth-child(n + 2) {
-            & img {
-                 opacity: .8; 
-                 width:auto;
-                 max-height:100%;
-                 max-width:100%;
-            }
-            padding: 1%;
-            position: absolute;
-            bottom:getEm(5,'%');
-            height: getEm(20,'%');
-            background: $white;
-            & .slider__description {
-                display: none;
-            }
+        
 
-            & img:hover {
-                opacity: 1;
-            }
-        }
-        &__item:nth-child(2) {
-            right: calc( (#{getEm(25,'%')} * 0) + 0%);
-            width: getEm(25,'%');
-        }
-        &__item:nth-child(3) {
-            right: calc( (#{getEm(25,'%')} * 1) + 1%);
-            width: getEm(25,'%');
-        }
-        &__item:nth-child(4) {
-            right: calc( (#{getEm(25,'%')} * 2) + 2%);
-            width: getEm(25,'%');
-        }
+    &__image-preview-wrapper {
+        display: none;
+        position: absolute;
+        bottom:getEm(5,'%');
+        height: getEm(20,'%');
+        background: $white;
 
-    &__image {
-        width:100%;
-        max-height:100%;
-        margin:0;
-        padding:0;
-        display: block;
+        outline: 10px solid yellow;
     }
+    &__image-preview {
+            opacity: .8; 
+            width:auto;
+            max-height:100%;
+            max-width:100%;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    &__image-wrapper {
+        // min-width:100%;
+        // min-height: 100%;
+        width: getEm(100,'%');
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+    }
+    &__image {
+        width: getEm(100,'%');
+        height: auto;
+        flex-shrink: 0;
+        flex-grow: 1;
+    }
+
     &__description {
         display: none;
     }

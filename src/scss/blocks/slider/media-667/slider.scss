@@ -1,17 +1,17 @@
 @media (min-width: #{getEm(667,'px')}) {
     .slider {
-        &__item:nth-child(n + 2) {
-            top:getEm(5,'%');
-            bottom: auto;
-        }
-        &__item:nth-child(2) {
-            right: calc( (#{getEm(25,'%')} * 0) + 0%);
-        }
-        &__item:nth-child(3) {
-            right: calc( (#{getEm(25,'%')} * 1) + 1%);
-        }
-        &__item:nth-child(4) {
-            right: calc( (#{getEm(25,'%')} * 2) + 2%);
-        }
+        // &__item:nth-child(n + 2) {
+        //     top:getEm(5,'%');
+        //     bottom: auto;
+        // }
+        // &__item:nth-child(2) {
+        //     right: calc( (#{getEm(25,'%')} * 0) + 0%);
+        // }
+        // &__item:nth-child(3) {
+        //     right: calc( (#{getEm(25,'%')} * 1) + 1%);
+        // }
+        // &__item:nth-child(4) {
+        //     right: calc( (#{getEm(25,'%')} * 2) + 2%);
+        // }
     }
 }

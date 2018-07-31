@@ -1,13 +1,13 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .order__image {
         display: block;
-        height: 100%;
+        height: getEm(100,'%');
         order: -1;
         display: flex;
         &>img {
             margin: auto;
-            width: getEm(441);
-            height: getEm(435);
+            width: getEm(441,'rem',12);
+            height: getEm(435,'rem',12);
             flex-grow: 0;
         }
     }

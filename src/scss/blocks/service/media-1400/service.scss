@@ -1,41 +1,42 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .service {
         flex-wrap: wrap;
         align-content: space-between;
         justify-content: space-between;
-        height:100%;
-        width:100%;
+        height: getEm(100,'%');
+        // width:getEm(1440);
+        width: getEm(100,'%');
         position: relative;
 
         &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
-            width: 50%;
+            width: getEm(50,'%');
             box-sizing: border-box;
 
-            padding-right: #{getEm(10)};
-            padding-left: getEm(143);
-            padding-right: #{getEm(155)};
+            padding-right: #{getEm(10,'rem',12)};
+            padding-left: getEm(143,'rem',12);
+            padding-right: #{getEm(155,'rem',12)};
         }
         &>.service__caption { 
-            padding-left: getEm(95);
+            padding-left: getEm(95,'rem',12);
         }
         &>.service__buttons { 
-            padding-left: getEm(95);
+            padding-left: getEm(95,'rem',12);
         }
         &>.service__link-call { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
             margin: 0;
-            margin-top:-#{getEm(40)}; // просто поднимаем выше чтобы расширить основную картинку
+            margin-top:-#{getEm(40,'rem',14)}; // просто поднимаем выше чтобы расширить основную картинку // Не помню почему - но тут надо использовать размер 14 - скорее всего отступ прописан в более ранних медиа - а там используется 14-ый.. 
             visibility: hidden;
             padding-right: 0;
             padding-left: 0;
         }
         &>.service__image {
-            min-width: 50%;
+            min-width: getEm(50,'%');
         }
         &>.service__slider {
             margin:0;
             width: auto;
-            margin-left: -#{getEm(74)};
-            margin-right: #{getEm(40)};
+            margin-left: -#{getEm(74,'rem',12)};
+            margin-right: #{getEm(40,'rem',12)};
         }
 
         &--reverse {
@@ -47,8 +48,8 @@
                 margin:0;
                 padding:0;
                 box-sizing: border-box;
-                padding-right: #{getEm(40)};
-                padding-left: #{getEm(105)};
+                padding-right: #{getEm(40,'rem',12)};
+                padding-left: #{getEm(105,'rem',12)};
             }
             &>.service__link-call {
                 
@@ -60,8 +61,8 @@
             }
             &>.service__caption {
                 display: block;
-                padding-top: #{getEm(120)}; 
-                margin-left: -#{getEm(60)};
+                padding-top: #{getEm(120,'rem',12)}; 
+                margin-left: -#{getEm(60,'rem',12)};
                 padding-right: 0;
                 padding-left: 0;
             }

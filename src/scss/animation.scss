@@ -27,7 +27,7 @@
     }
 }
 
-@media (min-width: #{getEm(1400,'px')}) { //AND (min-height: #{getEm(800,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) { //AND (min-height: #{getEm(800,'px')}) {
     .section {
         overflow: hidden;
         position: relative;

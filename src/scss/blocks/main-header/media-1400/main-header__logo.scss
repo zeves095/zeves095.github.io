@@ -1,6 +1,6 @@
 @media (min-width: #{getEm(1400,'px')}) {
     .main-header__logo {
-        width: getEm(82);
-        height: getEm(82);
+        width: getEm(82,'rem',12);
+        height: getEm(82,'rem',12);
     }
 }

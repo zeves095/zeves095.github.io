@@ -2,5 +2,6 @@
     .service__slider.service__slider {
         height: getEm(275); // фиксированая высота - вероятно вынести на уровень настроек layout'a
         order: 3;
+        width:calc(50% + #{getEm(40)}) !important;
     }
 }

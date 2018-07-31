@@ -1,33 +1,33 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .order {
         flex-wrap: wrap;
         align-content: space-between;
         justify-content: space-between;
-        height:100%;
-        width:100%;
+        height: getEm(100,'%');
+        width: getEm(100,'%');
         position: relative;
 
         &>* {
-            width: 50%;
+            width:  getEm(50,'%');
             margin:0;
             padding:0;
             box-sizing: border-box;
-            padding-right: #{getEm(40)};
-            padding-left: #{getEm(105)};
+            padding-right: #{getEm(40,'rem',12)};
+            padding-left: #{getEm(105,'rem',12)};
         }
         &>.order__caption { 
-            padding-left: getEm(95);
+            padding-left: getEm(95,'rem',12);
         }
 
         &>.order__image {
-            min-width: 50%;
+            min-width:  getEm(50,'%');
             padding-right: 0;
             padding-left: 0;
         }
         &>.order__caption {
             display: block;
-            padding-top: #{getEm(120)}; 
-            margin-left: -#{getEm(60)};
+            padding-top: #{getEm(120,'rem',12)}; 
+            margin-left: -#{getEm(60,'rem',12)};
             padding-right: 0;
             padding-left: 0;
         }

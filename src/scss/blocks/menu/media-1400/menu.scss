@@ -1,11 +1,11 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .menu {
         display: flex;
         flex-flow: row nowrap;
         justify-content: center;
         align-items: stretch;
         box-sizing: border-box;
-        padding: 0 getEm(30);
+        padding: 0 getEm(30,'rem',12);
         background: transparent;
         &>a {
             display: block;
@@ -13,13 +13,13 @@
             font: {
                 family: ProximaNova;
                 weight: 600;
-                size: getEm(13);
+                size: getEm(13,'rem',12);
             }
             text: {
                 transform: uppercase;
                 decoration: none;
             }
-            margin: 0 getEm(20);
+            margin: 0 getEm(20,'rem',12);
         }
     }
 }

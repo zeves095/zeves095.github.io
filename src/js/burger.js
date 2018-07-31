@@ -51,13 +51,16 @@ $('document').ready(function () {
     });
   });
 
+
+
   $(document).on('wheel', function(e) {
+    console.log(window.innerWidth);
     if(!doing){
       doing = true;
       _scroll((e.originalEvent.deltaY < 0 ? -1 : 1));
     }else{
-      e.preventDefault();
-      e.stopPropagation();
+      // e.preventDefault();
+      // e.stopPropagation();
     }
   });
 
@@ -66,8 +69,8 @@ $('document').ready(function () {
       doing = true;
       _scroll(1);
     }else{
-      e.preventDefault();
-      e.stopPropagation();
+      // e.preventDefault();
+      // e.stopPropagation();
     }
   });
 
@@ -81,13 +84,11 @@ $('document').ready(function () {
       trigger.click(function () {
       burgerTime();
   });
-
   $('.main-header__menu').toggleClass('main-header__menu--hidden');
 
   var activeclass = 'section__hover';
   var activeclass2 = 'section__hover2';
   var items = $('.slider');
-  
   $('.section').addClass('off');
   var i = 0;
   var last = $('.section').eq(i);

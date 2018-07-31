@@ -1,4 +1,4 @@
-@media (min-width: #{getEm(1400,'px')}) { //AND (min-height: #{getEm(800,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) { //AND (min-height: #{getEm(800,'px')}) {
     
     
     .page-header {
@@ -7,10 +7,11 @@
         z-index: 999;
 
         &>*{
-            max-width: getEm(1400);
+            // max-width: getEm(1400,'rem',12);
+            max-width: 100%;
             width: auto;
             margin: 0 auto getEm(0);
-            height: getEm(140);
+            height: getEm(140,'rem',12);
         }
     }
     
@@ -33,7 +34,7 @@
         min-height: 100vh;
 
         box-sizing: border-box;
-        padding-top: #{getEm(120)}; 
+        padding-top: #{getEm(120,'rem',12)}; 
         background-clip: content-box;
         position: relative;
         
@@ -41,22 +42,22 @@
         
 
         &>.video-area {
-            width: getEm(1244);
+            width: getEm(1244,'rem',12);
             min-width:50%;
             flex-grow: 1;
-            height: getEm(533);
-            margin: 0 #{getEm(60)};
+            height: getEm(533,'rem',12);
+            margin: 0 #{getEm(60,'rem',12)};
             // margin-left: #{getEm(40)};
             // margin-right: #{getEm(20)};
             // max-height: 100%;
         }
     
         &>.service {
-            margin:0 getEm(20);
+            margin:0 getEm(20,'rem',12);
         }
     
         &>.order {
-            margin:0 getEm(20);
+            margin:0 getEm(20,'rem',12);
             
         }
         &--order {
@@ -72,17 +73,17 @@
             position: absolute;
             overflow: hidden;
 
-            width: getEm(158);
+            width: getEm(158,'rem',12);
             bottom:20vh;
             counter-increment: section;
             // content: counter(section) " –––––––––––– 6";
             content: attr(data-page) " –––––––––––– 6";
             /* Точка поворота в правом верхнем углу */
-            -webkit-transform-origin: getEm(16) 0;
-            -moz-transform-origin: getEm(16) 0;
-            -o-transform-origin: getEm(16) 0;
-            -ms-transform-origin: getEm(16) 0;
-            transform-origin: getEm(16) 0;
+            -webkit-transform-origin: getEm(16,'rem',12) 0;
+            -moz-transform-origin: getEm(16,'rem',12) 0;
+            -o-transform-origin: getEm(16,'rem',12) 0;
+            -ms-transform-origin: getEm(16,'rem',12) 0;
+            transform-origin: getEm(16,'rem',12) 0;
 
             -moz-transform: rotate(270deg); /* Для Firefox */
             -ms-transform: rotate(270deg); /* Для IE */
@@ -92,7 +93,7 @@
             
             font: {
                 family: Athelas;
-                size: getEm(21);
+                size: getEm(21,'rem',12);
                 weight: bold;
                 style: normal;
                 stretch: normal;
@@ -108,10 +109,10 @@
             display: flex; // switched from <-- display: none 
             position: absolute;
             z-index: 999;
-            right: getEm(22);
+            right: getEm(22,'rem',12);
             bottom: 20vh;
-            height: getEm(158);
-            font-size: getEm(22);
+            height: getEm(158,'rem',12);
+            font-size: getEm(22,'rem',12);
         }
     }
 

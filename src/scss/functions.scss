@@ -3,14 +3,14 @@
     // box-sizing: border-box;
 }
 
-@function getEm($px, $em: rem) { // get value in pixels we need and return appropriated rem['ed] value;
+@function getEm($px, $em: rem, $indexp: 14) { // get value in pixels we need and return appropriated rem['ed] value;
     // @return #{$px}px;
     @if (($em == em) or ($em == rem)) {
-        @return #{(12/14) * $px / $hfsVal}#{$em}; // $em
+        @return #{( $indexp / 14 ) * $px / $hfsVal}#{$em}; // $em
     } @else if $em == '%' {
         @return #{$px}#{$em};
     } @else {
-        @return #{(12/14) * $px}#{$em};
+        @return #{( $indexp / 14 ) * $px}#{$em};
     }
     // @return #{$px / ($hfsVal * $bfsVal)}#{$em};
 }

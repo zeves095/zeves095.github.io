@@ -1,4 +1,4 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .main-header__menu {
         &--hidden {
             display: block;

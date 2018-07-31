@@ -1,9 +1,9 @@
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     .service__subnote {
         display: block;
         font: {
             family: ProximaNova;
-            size: getEm(13);
+            size: getEm(13,'rem',12);
             weight: normal;
             style: normal;
             stretch: normal;

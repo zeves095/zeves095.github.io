@@ -16,13 +16,13 @@
 //     }
 // }
 
-@media (min-width: #{getEm(1400,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
     html {
         font-size: .7vw;
     }
 }
 
-@media (min-width: #{getEm(1600,'px')}) {
+@media (min-width: #{getEm(1600,'px',12)}) {
     html {
         // font-size: #{getEm(16,'px')};
     }
@@ -31,17 +31,17 @@
 // Включить центрирование контента по высоте 800 относительных пикселей ===> (800*100/1400)em 
 // и фиксирование высоты если она меньше #{getEm(800,'px')}
 // чтобы не зависеть от порядка пожключения этого файла - для свойств прописаны impotrant'ы
-@media (min-width: #{getEm(1400,'px')}) {
-    @media (min-height: #{getEm(800,'px')}) {
+@media (min-width: #{getEm(1400,'px',12)}) {
+    @media (min-height: #{getEm(800,'px',12)}) {
         .section {
-            padding-top: calc( (( 100vh - #{getEm(800)} ) / 2 ) + #{getEm(120)}) !important;
-            padding-bottom: calc( (( 100vh - #{getEm(800)} ) / 2 )) !important;
+            padding-top: calc( (( 100vh - #{getEm(800,'rem',12)} ) / 2 ) + #{getEm(120,'rem',12)}) !important;
+            padding-bottom: calc( (( 100vh - #{getEm(800,'rem',12)} ) / 2 )) !important;
             &--main {
-                padding-top: calc( (( 100vh - #{getEm(800)} ) / 2 )) !important;
+                padding-top: calc( (( 100vh - #{getEm(800,'rem',12)} ) / 2 )) !important;
             }
         }
     }
-    @media (max-height: #{getEm(800,'px')}){
+    @media (max-height: #{getEm(800,'px',12)}){
         html {
              font-size: 1.4vh !important;
             //  font-size: .9vw !important;
