@@ -27,8 +27,8 @@
     }
     
     .section {
-        max-width: getEm(100,'%');
-        max-width: 100%;//getEm(1400);
+        max-width: getEm(100,'%',12);
+        // max-width: 100%;//getEm(1400);
         display: flex;
         flex-flow: row wrap;
         min-height: 100vh;

@@ -21,3 +21,5 @@
     .video-area__video { height: auto; } /* IE10 */
     *::-ms-backdrop, .video-area__video { height: auto; } /* IE11 */
 }
+
+@import './media-667/video-area__video';

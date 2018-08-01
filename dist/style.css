@@ -951,6 +951,10 @@ h1 {
     height: auto; }
   /* IE11 */ }
 
+@media (min-width: 320px) and (min-width: 667px) {
+  .video-area__video {
+    height: auto; } }
+
 @media (min-width: 320px) {
   .video-area__caption {
     display: none;
@@ -1842,7 +1846,6 @@ h1 {
       margin: 0 auto 0rem;
       height: 12rem; }
   .section {
-    max-width: 100%;
     max-width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

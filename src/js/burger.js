@@ -129,6 +129,8 @@ $('document').ready(function () {
   });
 
   var $supportContact = $('#support-contact');
+  var $reactForm = $('#cert-app-wed');
+  $reactForm.hide();
   $('body').append($supportContact);
 
   $(document).on('wheel', function(e) {
