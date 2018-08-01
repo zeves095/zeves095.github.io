@@ -3,4 +3,5 @@ window.jQuery = $;
 window.$ = $;
 
 import "./js/burger";
-import './scss/base.scss'
+import "./js/cert_app.jsx";
+import './scss/base.scss';

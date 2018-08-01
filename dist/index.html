@@ -13,7 +13,7 @@
 <body>
     <header class="page-header">
         <div class="main-header">
-            <div class="main-header__logo logo"></div>
+            <a href="#page-1" data-page="1" id="logo" class="main-header__logo logo"></a>
             <nav class="main-header__menu menu" id="menu">
                 <a href="#page-2" data-page="2">О сертификате</a>
                 <a href="#page-3" data-page="3">Фарфор</a>
@@ -66,7 +66,7 @@
                 </div>
             </div>
             <div class="subvideo-area">
-                <div class="subvideo-area__support-contact">Подробнее о Сертификате вам расскажет менеджер Татьяна: 8 800 250 61 81 Доставка по России бесплатно</div>
+                <div class="subvideo-area__support-contact" id="support-contact">Подробнее о Сертификате вам расскажет менеджер Татьяна: 8 800 250 61 81 Доставка по России бесплатно</div>
                 <div class="subvideo-area__copyright">2018 © «Дом Фарфора» – магазинфарфора и предметов декора интерьера Договор-оферта</div>
             </div>
         </section>
@@ -257,6 +257,7 @@
                 </div>
                 <p class="order__question">На какую сумму вы хотите подарить «Свадебный Сертифакт» от «Дома Фарфора»?</p>
                 <form class="order__form order-form" action="">
+                    <div id="cert-app-wed">react</div>
                     <label class="order-form__label" for="denomination">Номинал Сертификата</label>
                     <div class="order-form__denomination denomination" id="denomination">
                         <div>-</div>

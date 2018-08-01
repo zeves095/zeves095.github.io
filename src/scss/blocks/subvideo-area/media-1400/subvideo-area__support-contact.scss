@@ -7,6 +7,7 @@
         padding: #{getEm(30,'rem',12)} 0 #{getEm(40,'rem',12)};
         font-size: #{getEm(15,'rem',12)};
         line-height: #{getEm(18,'rem',12)};
-        
+        bottom:0;
+        left: getEm(30,'rem',12);
     }
 }

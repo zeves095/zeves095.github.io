@@ -128,7 +128,8 @@ $('document').ready(function () {
     });
   });
 
-
+  var $supportContact = $('#support-contact');
+  $('body').append($supportContact);
 
   $(document).on('wheel', function(e) {
     console.log(window.innerWidth);
@@ -184,7 +185,7 @@ $('document').ready(function () {
   //   () => console.log('the end'),
   // );
 
-  $('#menu a').click(function(e){
+  $('#menu a, #logo').click(function(e){
     e.preventDefault();
     var dp = $(this).attr('data-page');
     i = dp - 1;

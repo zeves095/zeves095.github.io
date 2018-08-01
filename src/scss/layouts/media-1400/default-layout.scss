@@ -42,14 +42,18 @@
         
 
         &>.video-area {
+            flex:0 0 auto;
             width: getEm(1244,'rem',12);
-            min-width:50%;
+            min-width:51%;
             flex-grow: 1;
             height: getEm(533,'rem',12);
             margin: 0 #{getEm(60,'rem',12)};
             // margin-left: #{getEm(40)};
             // margin-right: #{getEm(20)};
             // max-height: 100%;
+        }
+        &>.subvideo-area {
+            min-width:51%;
         }
     
         &>.service {

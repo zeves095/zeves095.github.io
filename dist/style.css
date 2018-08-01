@@ -1,4 +1,44 @@
 @charset "UTF-8";
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes blink {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 0; }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.slider__item .slider__description {
+  opacity: 0; }
+
+.slider__item--active .slider__description {
+  opacity: 1;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  /* should work with all browser .... in theory */
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+
 .slider__item--right {
   -webkit-transition: margin-left 1s;
   -o-transition: margin-left 1s;
@@ -652,7 +692,7 @@ h1 {
     width: 4.5rem;
     height: 4.5rem; } }
 
-@media (min-width: 320px) and (min-width: 1400px) {
+@media (min-width: 320px) and (min-width: 1200px) {
   .main-header__logo {
     width: 7.02857rem;
     height: 7.02857rem; } }
@@ -1003,7 +1043,9 @@ h1 {
     z-index: 999;
     padding: 2.57143rem 0 3.42857rem;
     font-size: 1.28571rem;
-    line-height: 1.54286rem; } }
+    line-height: 1.54286rem;
+    bottom: 0;
+    left: 2.57143rem; } }
 
 @media (min-width: 320px) {
   .subvideo-area__copyright {
@@ -1825,13 +1867,18 @@ h1 {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#e7e8ee',GradientType=1 );
     /* IE6-9 */ }
     .section > .video-area {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 auto;
+              flex: 0 0 auto;
       width: 106.62857rem;
-      min-width: 50%;
+      min-width: 51%;
       -webkit-box-flex: 1;
           -ms-flex-positive: 1;
               flex-grow: 1;
       height: 45.68571rem;
       margin: 0 5.14286rem; }
+    .section > .subvideo-area {
+      min-width: 51%; }
     .section > .service {
       margin: 0 1.71429rem; }
     .section > .order {
