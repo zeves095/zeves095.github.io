@@ -31,9 +31,9 @@ function swipedetect(el, callback){
   dist,
   distX,
   distY,
-  threshold = 150, //required min distance traveled to be considered swipe
+  threshold = 15, //required min distance traveled to be considered swipe
   restraint = 100, // maximum distance allowed at the same time in perpendicular direction
-  allowedTime = 3000, // maximum time allowed to travel that distance
+  allowedTime = 300, // maximum time allowed to travel that distance
   elapsedTime,
   startTime,
   handleswipe = callback || function(swipedir){}
@@ -45,11 +45,11 @@ function swipedetect(el, callback){
       startX = touchobj.pageX
       startY = touchobj.pageY
       startTime = new Date().getTime() // record time when finger first makes contact with surface
-      e.preventDefault()
+      // e.preventDefault()
   }, false)
 
   touchsurface.addEventListener('touchmove', function(e){
-      e.preventDefault() // prevent scrolling when inside DIV
+      // e.preventDefault() // prevent scrolling when inside DIV
   }, false)
 
   touchsurface.addEventListener('touchend', function(e){
@@ -66,7 +66,7 @@ function swipedetect(el, callback){
           }
       }
       handleswipe(swipedir)
-      e.preventDefault()
+      // e.preventDefault()
   }, false)
 }
 
@@ -93,9 +93,21 @@ $('document').ready(function () {
     
   // });
   $('.slider').each(function(sliderNum, slider){
-    swipedetect(slider, function(swipedir){ });
     $('.slider__item',slider).each(function(itemNum, item){
       var itemNumS = itemNum;
+
+      swipedetect(item, function(swipedir){ 
+        
+        if(swipedir === 'right'){
+          if($(item).prev().length){
+            $(item).prev().removeClass('slider__item--left').addClass('slider__item--right');
+          }
+        }else if(swipedir === 'left'){
+          if($(item).next().length){
+            $(item).removeClass('slider__item--right').addClass('slider__item--left'); 
+          }
+        }
+      });
       $(item).click(function(e){
         if(!itemNum) itemNum = 0;
         let $rightItems = $('.slider__item:nth-child(n + ' + (itemNum) + ')', slider);

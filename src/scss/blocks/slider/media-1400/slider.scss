@@ -4,13 +4,13 @@
         &__image-preview-wrapper {
 
         }
-        &__item:nth-child(1) &__image-preview-wrapper {
+        &__item:nth-child(3) &__image-preview-wrapper {
             right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 0) + 0%);
         }
         &__item:nth-child(2) &__image-preview-wrapper {
             right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 1) + 2%);
         }
-        &__item:nth-child(3) &__image-preview-wrapper {
+        &__item:nth-child(1) &__image-preview-wrapper {
             right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 2) + 4%);
         }
 
