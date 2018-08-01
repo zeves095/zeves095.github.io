@@ -1,17 +1,18 @@
 @media (min-width: #{getEm(1400,'px',12)}) {
     .slider {
-        // &__item:nth-child(n + 2) {
-        //     top:getEm(5,'%');
-        // }
-        // &__item:nth-child(2) {
-        //     right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 0) + 0%);
-        // }
-        // &__item:nth-child(3) {
-        //     right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 1) + 2%);
-        // }
-        // &__item:nth-child(4) {
-        //     right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 2) + 4%);
-        // }
+        
+        &__image-preview-wrapper {
+
+        }
+        &__item:nth-child(1) &__image-preview-wrapper {
+            right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 0) + 0%);
+        }
+        &__item:nth-child(2) &__image-preview-wrapper {
+            right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 1) + 2%);
+        }
+        &__item:nth-child(3) &__image-preview-wrapper {
+            right: calc(-#{getEm(5,'%')} + (#{getEm(25,'%')} * 2) + 4%);
+        }
 
         &__description {
             align-self: flex-start;

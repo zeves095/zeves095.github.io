@@ -1,3 +1,13 @@
+.slider__item--right {
+    transition: margin-left 1s;
+    margin-left:0%;
+}
+
+.slider__item--left {
+    transition: margin-left 1s;
+    margin-left:-100%;
+}
+
 @keyframes example {
     0% {
         position: absolute;
