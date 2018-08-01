@@ -22,7 +22,9 @@
             flex-shrink: 0;
         }
 
-        
+        &__item--active &__image-preview-wrapper {
+            outline: 1px solid $grey;
+        }
         
         
 

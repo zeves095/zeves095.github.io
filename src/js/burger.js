@@ -101,14 +101,22 @@ $('document').ready(function () {
         if(swipedir === 'right'){
           if($(item).prev().length){
             $(item).prev().removeClass('slider__item--left').addClass('slider__item--right');
+            
+            $(item).removeClass('slider__item--active');
+            $(item).prev().addClass('slider__item--active');
           }
         }else if(swipedir === 'left'){
           if($(item).next().length){
             $(item).removeClass('slider__item--right').addClass('slider__item--left'); 
+            $(item).removeClass('slider__item--active');
+            $(item).next().addClass('slider__item--active');
           }
         }
       });
       $(item).click(function(e){
+        $('.slider__item',slider).removeClass('slider__item--active');
+        $(item).addClass('slider__item--active');
+
         if(!itemNum) itemNum = 0;
         let $rightItems = $('.slider__item:nth-child(n + ' + (itemNum) + ')', slider);
         let $leftItems = $('.slider__item:nth-child(-n + ' + (itemNum) + ')', slider);

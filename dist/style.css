@@ -524,6 +524,8 @@ h1 {
               align-items: center;
       -ms-flex-negative: 0;
           flex-shrink: 0; }
+    .slider__item--active .slider__image-preview-wrapper {
+      outline: 1px solid #575757; }
     .slider__image-preview-wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
