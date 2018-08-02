@@ -1,0 +1,16 @@
+@media (min-width: #{getEm(667,'px')}) {
+    .subvideo-area__support-contact {
+        width:50%; // если не фикировать
+        box-sizing: border-box;
+        padding: #{getEm(30)} #{getEm(67)} #{getEm(40)} 0;
+        font-size: #{getEm(12)};
+        line-height: #{getEm(17)};
+        bottom:0;
+        left: getEm(30);
+
+        &>a {
+            color: $black;
+            text-decoration: none;
+        }
+    }
+}

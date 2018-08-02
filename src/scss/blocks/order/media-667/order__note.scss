@@ -1,3 +1,9 @@
 .order__note {
     order:5;
+    font: {
+        size: getEm(12);
+    }
+    box-sizing: border-box;
+    padding: 0 getEm(20);
+    margin: 0;
 }

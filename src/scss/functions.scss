@@ -15,7 +15,6 @@
     // @return #{$px / ($hfsVal * $bfsVal)}#{$em};
 }
 
-
 @mixin two-color() {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
     background: -moz-linear-gradient(left, rgba(255,255,255,0) 50%, $grey-light 50%, $grey-light 100%); /* FF3.6-15 */

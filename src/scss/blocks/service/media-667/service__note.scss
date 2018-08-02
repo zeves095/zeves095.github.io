@@ -1,0 +1,7 @@
+@media (min-width: #{getEm(667,'px')}) {
+    .service__note {
+        margin:0;
+        margin-top: getEm(15);
+        margin-bottom: auto;
+    }
+}

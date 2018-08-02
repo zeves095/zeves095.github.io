@@ -7,6 +7,9 @@
     /* маленький хак чтобы социалки не вылезали за ширину экрана */
     max-width:100%; 
     overflow: hidden;
+
+    margin-top: getEm(80);
+    margin-bottom: getEm(80);
 }
 
 @import './media-667/main-footer__social-links';

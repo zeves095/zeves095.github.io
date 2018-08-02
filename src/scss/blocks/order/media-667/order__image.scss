@@ -1,6 +1,13 @@
 @media (min-width: #{getEm(667,'px')}) {
     .order__image {
-        height: getEm(203);
+        // height: getEm(247);
+        // height: 80%;
+        height: auto;
+        width: getEm(250);
+        // height: 60%;
+        box-sizing: border-box;
+        padding: getEm(20) getEm(20) 0;
+        margin-bottom:0;
         order:4;
     }
 }

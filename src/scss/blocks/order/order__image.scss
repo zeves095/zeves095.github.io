@@ -1,5 +1,11 @@
 .order__image {
     height: getEm(203);
+    overflow: hidden;
+    & img {
+        width:100%;
+    }
+
+    margin-top: getEm(30);
 }
 
 @import './media-667/order__image';

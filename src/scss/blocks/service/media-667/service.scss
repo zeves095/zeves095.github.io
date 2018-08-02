@@ -33,7 +33,7 @@
         &--reverse {
             &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
                 margin-left: -#{getEm(10)};
-                padding-left: #{getEm(10)};
+                padding-left: #{getEm(10 + 27)};
                 margin-right:0;
                 padding-right:0;
             }
@@ -44,6 +44,12 @@
             }
             &>.service__image {
                 margin-left: -#{getEm(20)};
+            }
+            &>.service__button-buy-sertificate {
+                max-width: getEm(230 + 27);
+            }
+            &>.service__description {
+                margin-top:0;
             }
         }
     }

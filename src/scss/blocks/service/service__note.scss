@@ -14,4 +14,10 @@
         padding: #{getEm(0,'px')};
         &>li {}
     }
+
+    margin:0;
+    margin-top: getEm(15);
 }
+
+
+@import './media-667/service__note';

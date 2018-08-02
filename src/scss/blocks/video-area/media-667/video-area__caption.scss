@@ -3,16 +3,17 @@
         display: flex;
         flex-flow: column nowrap;
         font: {
-            family: AcademyC;
-            size: getEm(51);
+            family: KudryashevDisplay; //AcademyC;
+            size: getEm(45);
             weight: normal;
             style: normal;
             stretch: normal;
         }
-        line-height: normal;
+        line-height: getEm(50);
         letter-spacing: normal;
         color: $white;
         margin:0;
+        margin-top: auto;//getEm(100);
         padding:0;
     }
 }

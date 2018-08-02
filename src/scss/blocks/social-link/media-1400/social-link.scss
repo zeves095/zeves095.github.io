@@ -1,0 +1,24 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .social-link {
+        // &--vk {
+        //     background: {
+        //         image: url('./images/icons/vk@3x.png');
+        //     }
+        // }
+        // &--instagram {
+        //     background: {
+        //         image: url('./images/icons/instagram@3x.png');
+        //     }
+        // }
+        // &--facebook {
+        //     background: {
+        //         image: url('./images/icons/fb@3x.png');
+        //     }
+        // }
+
+        &>a {
+            max-width:getEm(20);
+            max-height:getEm(20);
+        }
+    }
+}

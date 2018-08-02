@@ -10,7 +10,8 @@
 
     .section {
         max-width: getEm(667);
-        height: getEm(332);
+        height: getEm(335);
+        margin-bottom: getEm(50);
 
         &--up38next {
             margin-bottom: 0;
@@ -26,7 +27,7 @@
             margin:0 getEm(20);
         }
         &--order {
-            height: getEm(425);
+            height: getEm(400);
         }
     }
 

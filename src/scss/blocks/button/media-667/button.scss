@@ -1,5 +1,8 @@
 @media (min-width: #{getEm(667,'px')}) {
     .button {
+        font: {
+            size: getEm(13);
+        };
         &--link-call {
             justify-content: flex-start;
         }

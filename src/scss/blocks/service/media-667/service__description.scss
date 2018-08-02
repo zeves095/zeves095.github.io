@@ -1,4 +1,6 @@
-.service__description {
-    max-height: getEm(140);
-    overflow: hidden;
+@media (min-width: #{getEm(667,'px')}) {
+    .service__description {
+        max-height: getEm(140);
+        overflow: hidden;
+    }
 }

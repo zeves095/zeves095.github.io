@@ -3,7 +3,7 @@
     margin:0;
     
     font: {
-        family: AcademyC;
+        family: KudryashevDisplay; //AcademyC;
         size: getEm(40);
         weight: normal;
         style: normal;
@@ -13,3 +13,6 @@
     letter-spacing: normal;
     color: $black;
 }
+
+
+@import './media-667/order__caption';

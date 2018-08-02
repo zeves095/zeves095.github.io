@@ -6,6 +6,8 @@
     &>* {
         flex: 0 0 auto;
     }
+
+    margin-bottom: getEm(50);
 }
 
 @import './service__caption';

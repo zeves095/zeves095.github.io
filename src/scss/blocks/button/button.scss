@@ -1,6 +1,6 @@
 .button {
     font: {
-        family: LucidaGrande;
+        family: KudryashevDisplay; //LucidaGrande;
         size: getEm(16);
         weight: bold;
         style: normal;
@@ -68,6 +68,7 @@
     }
     &--link-call {
         text-transform: none;
+        color: $black;
         font: {
             weight: normal;
         }
@@ -78,6 +79,5 @@
         }
     }
 }
-
 
 @import './media-667/button';

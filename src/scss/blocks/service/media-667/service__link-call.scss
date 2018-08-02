@@ -3,6 +3,7 @@
         height: getEm(35);
         order:5;
         &--reverse {
+            display: block;
             order:-1;
         }
     }

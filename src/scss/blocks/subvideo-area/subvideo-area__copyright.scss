@@ -1,6 +1,11 @@
 .subvideo-area__copyright {
     box-sizing: border-box;
     width:40%;
+
+    & > a {
+        color: $black;
+    }
 }
 
+@import './media-667/subvideo-area__copyright';
 @import './media-1400/subvideo-area__copyright';

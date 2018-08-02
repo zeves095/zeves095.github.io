@@ -131,7 +131,7 @@ $('document').ready(function () {
   var $supportContact = $('#support-contact');
   var $reactForm = $('#cert-app-wed');
   $reactForm.hide();
-  $('body').append($supportContact);
+  // $('body').append($supportContact);
 
   $(document).on('wheel', function(e) {
     console.log(window.innerWidth);
@@ -199,7 +199,7 @@ $('document').ready(function () {
     let blockleft,blockright;
     if( item.hasClass('section--main') ) {
       // правые элементы
-      blockleft = $('.service__caption, .service__description, .service__note, .service__buttons',item);
+      blockleft = $('.service__caption, .service__description, .service__note-caption, .service__note, .service__buttons',item);
       // левые элементы
       blockright = $('.service__image',item);
     } else {

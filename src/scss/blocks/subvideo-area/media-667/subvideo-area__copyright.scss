@@ -1,0 +1,20 @@
+@media (min-width: #{getEm(667,'px')}) {
+    .subvideo-area__copyright {
+        width: getEm(50,'%');
+        padding: #{getEm(30)} #{getEm(40)};
+        font-size: getEm(15);
+        line-height: getEm(18);
+        margin-left: auto;
+
+        width: getEm(50,'%');
+        box-sizing: border-box;
+        padding: #{getEm(30)} #{getEm(40)} #{getEm(40)};
+        font-size: #{getEm(12)};
+        line-height: #{getEm(17)};
+
+        &>a {
+            color: $black;
+            // text-decoration: none;
+        }
+    }
+}
