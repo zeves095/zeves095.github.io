@@ -1586,8 +1586,11 @@ h1 {
     text-align: center;
     color: #000000;
     margin-bottom: 0;
+    padding: 0;
     margin-top: 4rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem; } }
+
+@media (min-width: 320px) and (min-width: 667px) {
   .order__note {
     -webkit-box-ordinal-group: 6;
         -ms-flex-order: 5;
@@ -1596,7 +1599,9 @@ h1 {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 0 2rem;
-    margin: 0; }
+    margin: 0; } }
+
+@media (min-width: 320px) {
   .order__button-submit > span:nth-child(2) {
     margin-left: 1.4rem; } }
 
@@ -1757,7 +1762,19 @@ h1 {
     margin-bottom: 0; }
   .main-footer__button_call {
     height: 5rem;
-    margin-top: 2.5rem; }
+    margin-top: 2.5rem; } }
+
+@media (min-width: 320px) and (min-width: 667px) {
+  .main-footer__button_call {
+    height: 3.5rem;
+    max-width: 27.1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center; } }
+
+@media (min-width: 320px) {
   .main-footer__social-links {
     -ms-flex-item-align: stretch;
         align-self: stretch;
@@ -1773,7 +1790,9 @@ h1 {
 @media (min-width: 320px) and (min-width: 667px) {
   .main-footer__social-links {
     -ms-flex-item-align: center;
-        align-self: center; } }
+        align-self: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem; } }
 
 @media (min-width: 320px) {
   .main-footer__copyright {
@@ -2005,6 +2024,7 @@ h1 {
     padding-top: 10.28571rem;
     background-clip: content-box;
     position: relative;
+    margin-bottom: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
     /* FF3.6-15 */
     /* Chrome10-25,Safari5.1-6 */
@@ -2056,7 +2076,7 @@ h1 {
       z-index: 999;
       position: absolute;
       overflow: hidden;
-      width: 13.54286rem;
+      width: 17.14286rem;
       bottom: 20vh;
       counter-increment: section;
       content: attr(data-page) " \2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013\2013   6";

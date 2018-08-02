@@ -1,5 +1,8 @@
 @media (min-width: #{getEm(667,'px')}) {
     .main-footer__social-links {
         align-self: center;
+
+        margin-top: getEm(30);
+        margin-bottom: getEm(30);
     }
 }

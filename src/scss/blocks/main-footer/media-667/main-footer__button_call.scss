@@ -1,0 +1,8 @@
+@media (min-width: #{getEm(667,'px')}) {
+    .main-footer__button_call {
+        height: getEm(35);
+        max-width: getEm(271);
+        display: flex;
+        align-self: center;
+    }
+}
