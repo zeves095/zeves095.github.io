@@ -38,5 +38,9 @@
         &__description-price-list {
             // flex: 0 0 auto;
         }
+
+        &__description-price-old {
+            text-decoration: line-through;
+        }
     }
 }

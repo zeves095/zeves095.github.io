@@ -689,7 +689,9 @@ h1 {
             flex: 1 1 auto;
     margin: 0 auto 0 10.28571rem;
     -ms-flex-item-align: start;
-        align-self: flex-start; } }
+        align-self: flex-start; }
+  .slider__description-price-old {
+    text-decoration: line-through; } }
 
 @media (min-width: 320px) {
   .main-header {
@@ -1062,7 +1064,7 @@ h1 {
             flex-grow: 0;
     height: 3.6rem;
     padding: 1.11429rem 2.57143rem;
-    max-width: 24rem;
+    max-width: 25.71429rem;
     margin-top: 0; } }
 
 @media (min-width: 320px) {
@@ -1307,9 +1309,7 @@ h1 {
 
 @media (min-width: 320px) and (min-width: 1200px) {
   .service__description {
-    font-size: 1.6rem;
-    line-height: 1.38;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     line-height: 1.38; } }
 
 @media (min-width: 320px) {
@@ -1353,7 +1353,7 @@ h1 {
 
 @media (min-width: 320px) and (min-width: 1200px) {
   .service__note {
-    font-size: 2rem; } }
+    font-size: 1.4rem; } }
 
 @media (min-width: 320px) {
   .service__subnote {
@@ -1539,6 +1539,8 @@ h1 {
       width: auto;
       margin-left: -6.34286rem;
       margin-right: 3.42857rem; }
+    .service > .service__description {
+      max-height: 15rem; }
     .service--reverse > * {
       margin: 0;
       padding: 0;
@@ -1558,8 +1560,9 @@ h1 {
       font-size: 6.17143rem;
       font-weight: bold; }
     .service--reverse > .service__description {
-      font-size: 3.2rem;
-      line-height: 1.38; }
+      font-size: 2.6rem;
+      line-height: 1.38;
+      margin-bottom: -4.5rem; }
     .service--reverse > .service__note-caption {
       margin-bottom: -4.5rem; } }
 

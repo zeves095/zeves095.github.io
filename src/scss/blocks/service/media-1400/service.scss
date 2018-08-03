@@ -42,6 +42,9 @@
             margin-left: -#{getEm(74,'rem',12)};
             margin-right: #{getEm(40,'rem',12)};
         }
+        &>.service__description {
+            max-height: getEm(150);
+        }
 
         &--reverse {
             &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
@@ -76,9 +79,10 @@
 
             &>.service__description {
                 font: {
-                    size: getEm(32);
+                    size: getEm(26);
                 };
                 line-height: 1.38;
+                margin-bottom: -#{getEm(45)};
             }
 
             &>.service__note-caption {
