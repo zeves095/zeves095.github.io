@@ -1253,7 +1253,7 @@ h1 {
 @media (min-width: 320px) and (min-width: 667px) {
   .service__image {
     display: block;
-    height: 27.6rem;
+    height: 32rem;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1; } }
@@ -1276,7 +1276,7 @@ h1 {
 
 @media (min-width: 320px) and (min-width: 667px) {
   .service__slider.service__slider {
-    height: 27.5rem;
+    height: 32rem;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -2086,7 +2086,7 @@ h1 {
     max-width: 66.7rem; }
   .section {
     max-width: 66.7rem;
-    height: 33.5rem;
+    height: 38rem;
     margin-bottom: 5rem; }
     .section--up38next {
       margin-bottom: 0;
