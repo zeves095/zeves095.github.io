@@ -18,6 +18,10 @@
         }
         &>.service__caption { 
             padding-left: getEm(95,'rem',12);
+
+            font-size: getEm(65,'rem',12);
+            line-height: 100%;
+            font-weight: bold;
         }
         &>.service__buttons { 
             padding-left: getEm(95,'rem',12);
@@ -65,6 +69,24 @@
                 margin-left: -#{getEm(60,'rem',12)};
                 padding-right: 0;
                 padding-left: 0;
+
+                font-size: getEm(72,'rem',12);
+                font-weight: bold;
+            }
+
+            &>.service__description {
+                font: {
+                    size: getEm(32);
+                };
+                line-height: 1.38;
+            }
+
+            &>.service__note-caption {
+                margin-bottom: -#{getEm(45)};
+            }
+
+            &>.service__note {
+
             }
         }
     }

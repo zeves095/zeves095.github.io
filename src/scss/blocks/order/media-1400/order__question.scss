@@ -1,0 +1,7 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .order__question {
+        font: {
+            size: getEm(28);
+        };
+    }
+}

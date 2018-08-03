@@ -54,6 +54,22 @@
             border: none;
         }
     }
+    &--transparent-white {
+        color: $white;
+        background-color: transparent;
+        border: solid getEm(1) $white;
+
+        &:hover {
+            color: $grey-darkest;
+            background-color: $grey-lightest;
+        }
+        &:active {
+            color: $grey-darkest;
+            background-color: $grey-lightest;
+            border: none;
+        }        
+    }
+
     &--black {
         color: $white;
         background-color: $grey-darkest;
@@ -81,3 +97,4 @@
 }
 
 @import './media-667/button';
+@import './media-1400/button';

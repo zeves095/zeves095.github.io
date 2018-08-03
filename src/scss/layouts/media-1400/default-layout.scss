@@ -80,6 +80,7 @@
 
             width: getEm(200,'rem',12);
             bottom:20vh;
+            bottom: calc(50% - #{getEm(200,'rem',12)});//20vh;
             counter-increment: section;
             // content: counter(section) " –––––––––––– 6";
             content: attr(data-page) " \2212\2212\2212\2212\2212\2212\2212\2212\2212\2212\2212\2212 6";
@@ -115,8 +116,8 @@
             position: absolute;
             z-index: 999;
             right: getEm(22,'rem',12);
-            bottom: 20vh;
-            height: getEm(158,'rem',12);
+            bottom: calc(50% - #{getEm(200,'rem',12)});//20vh;
+            height: getEm(200,'rem',12);
             font-size: getEm(22,'rem',12);
         }
     }

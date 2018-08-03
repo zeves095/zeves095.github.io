@@ -2,10 +2,10 @@
     .menu {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
+        justify-content: space-between;
         align-items: stretch;
         box-sizing: border-box;
-        padding: 0 getEm(30,'rem',12);
+        padding: 0 getEm(190,'rem',12);
         background: transparent;
         &>a {
             display: block;
@@ -19,7 +19,7 @@
                 transform: uppercase;
                 decoration: none;
             }
-            margin: 0 getEm(20,'rem',12);
+            // margin: 0 getEm(20,'rem',12);
         }
     }
 }

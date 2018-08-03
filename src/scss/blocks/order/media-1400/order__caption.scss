@@ -1,0 +1,6 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .order__caption {
+        font-size: getEm(72,'rem',12);
+        font-weight: bold;
+    }
+}

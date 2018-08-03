@@ -11,7 +11,7 @@
     color: $grey;
     &--list {
         list-style: none;
-        padding: #{getEm(0,'px')};
+        padding: 0;
         &>li {}
     }
 
@@ -21,3 +21,4 @@
 
 
 @import './media-667/service__note';
+@import './media-1400/service__note';

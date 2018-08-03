@@ -40,6 +40,10 @@
                 padding-top: calc( (( 100vh - #{getEm(800,'rem',12)} ) / 2 )) !important;
             }
         }
+
+        .page-header {
+            padding-top: calc( (( 100vh - #{getEm(800,'rem',12)} ) / 2 )) !important;
+        }
     }
     @media (max-height: #{getEm(800,'px',12)}){
         html {
@@ -53,4 +57,9 @@
         //     // max-width: #{getEm(80,'%')} !important;
         // }
     }
+    // @media (max-height: #{getEm(900,'px',12)}){
+    //     .section {
+    //         min-height: calc(100vh - 100px) !important;
+    //     }
+    // }
 }

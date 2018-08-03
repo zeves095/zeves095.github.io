@@ -1,0 +1,7 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .order__note {
+        font: {
+            size: getEm(16,'rem',12);
+        }
+    }
+}

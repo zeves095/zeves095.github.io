@@ -1,0 +1,9 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .video-area__caption {
+        font: {
+            size: getEm(104,'rem',12);
+        }
+        line-height: 110%;
+        margin-bottom: getEm(40,'rem',12);
+    }
+}

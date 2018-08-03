@@ -1,0 +1,7 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .service__note-caption {
+        font: {
+            size: getEm(20);
+        };
+    }
+}

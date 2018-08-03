@@ -7,7 +7,16 @@
         padding:0;
 
         &>*{
-            flex-basis: getEm(50,'%');
+            // flex-basis: getEm(50,'%');
+            // margin:0 getEm(20,'rem',12);
+            // look .button
+            margin:0 getEm(10,'rem',12);
+            flex-grow: 1;
+            &>a { 
+                font-size: getEm(13,'rem',12);
+                padding: getEm(13,'rem',12) getEm(10,'rem',12);
+                max-width: getEm(280,'rem',12);
+            }
         }
     }
 }

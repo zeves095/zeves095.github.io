@@ -2,6 +2,7 @@
     .video-area__caption {
         display: flex;
         flex-flow: column nowrap;
+        justify-content: flex-end;
         font: {
             family: KudryashevDisplay; //AcademyC;
             size: getEm(45);
@@ -13,7 +14,7 @@
         letter-spacing: normal;
         color: $white;
         margin:0;
-        margin-top: auto;//getEm(100);
+        // margin-top: auto;//getEm(100);  // Нельзя, в IE-11 поедет верстка.
         padding:0;
     }
 }

@@ -1,11 +1,9 @@
 @media (min-width: #{getEm(1400,'px',12)}) {
-    .video-area__button-details {
-        display: flex;
-        flex-grow: 0;
+    .video-area__button-buy-sertificate {
         height: getEm(42,'rem',12);
         padding: getEm(13,'rem',12) getEm(30,'rem',12);
         max-width: getEm(280,'rem',12);
         margin-top:0;
-
+        margin-right: getEm(10,'rem',12);
     }
 }
