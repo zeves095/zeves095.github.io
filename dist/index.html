@@ -6,8 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Свадебный сертификат</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script type="text/javascript" src="app.bundle.js"></script>
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> -->
+    <style>
+        body>header,
+        body>main,
+        body>footer { display: none; }
+        body { display: flex; height: 100vh; }
+        body::before {
+            content: 'сайт загружается..';
+            display: block;
+            margin: auto;
+            font-size: 5vw;
+        }
+    </style>
+    <script type="text/javascript" src="app.bundle.js" async></script>
 </head>
 
 <body>
@@ -114,16 +126,16 @@
                         <div class="slider__item slider__item--left">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/1.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/1.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/1.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/1.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/1.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/1.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/1.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/1.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/1.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/1.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/1.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/1.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -137,16 +149,16 @@
                         <div class="slider__item slider__item--noop slider__item--active">
                             <div class="slider__image-wrapper slider__image-wrapper--active">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/2.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/2.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/2.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/2.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/2.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/2.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/2.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/2.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/2.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/2.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/2.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/2.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -161,16 +173,16 @@
                         <div class="slider__item slider__item--noop">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/3.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/3.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/3.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/3.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/3.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/3.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/3.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/3.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/3.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/3.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/3.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/3.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -207,16 +219,16 @@
                         <div class="slider__item slider__item--left">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/4.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/4.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/4.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/4.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/4.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/4.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/4.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/4.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/4.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/4.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/4.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/4.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -230,16 +242,16 @@
                         <div class="slider__item slider__item--noop slider__item--active">
                             <div class="slider__image-wrapper slider__image-wrapper--active">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/5.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/5.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/5.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/5.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/5.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/5.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/5.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/5.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/5.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/5.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/5.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/5.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -253,16 +265,16 @@
                         <div class="slider__item slider__item--noop">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/6.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/6.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/6.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/6.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/6.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/6.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/6.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/6.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/6.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/6.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/6.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/6.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -298,16 +310,16 @@
                         <div class="slider__item slider__item--left">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/7.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/7.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/7.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/7.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/7.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/7.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/7.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/7.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/7.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/7.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/7.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/7.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -321,16 +333,16 @@
                         <div class="slider__item slider__item--noop slider__item--active">
                             <div class="slider__image-wrapper slider__image-wrapper--active">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/8.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/8.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/8.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/8.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/8.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/8.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/8.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/8.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/8.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/8.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/8.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/8.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -344,16 +356,16 @@
                         <div class="slider__item slider__item--noop">
                             <div class="slider__image-wrapper">
                                 <picture class="slider__picture">
-                                    <source srcset="./images/9.1000х793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/9.618х490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/9.480х381.jpg" alt="" class="slider__image" />
+                                    <source srcset="./images/9.1000x793.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/9.618x490.jpg" media="(min-width: 667px)">
+                                    <img src="./images/9.480x381.jpg" alt="" class="slider__image" />
                                 </picture>
                             </div>
                             <div class="slider__image-preview-wrapper">
                                 <picture class="slider__picture-preview">
-                                    <source srcset="./images/9.206х165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/9.125х100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/9.79х63.jpg" alt="" class="slider__image-preview" />
+                                    <source srcset="./images/9.206x165.jpg" media="(min-width: 1200px)">
+                                    <source srcset="./images/9.125x100.jpg" media="(min-width: 667px)">
+                                    <img src="./images/9.79x63.jpg" alt="" class="slider__image-preview" />
                                 </picture>
                             </div>
                             <div class="slider__description">
@@ -428,6 +440,10 @@
             </div>
         </div>
     </footer>
+    
+    <noscript id="deferred-styles" >
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </noscript >
 </body>
 <!--
     Copyright © 2018 «Дом Фарфора». All rights reserved.

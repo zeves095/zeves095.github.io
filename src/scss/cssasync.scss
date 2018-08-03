@@ -1,0 +1,7 @@
+body>header,
+body>main,
+body>footer { display: block; }
+body { display: block; height: auto; }
+body::before {
+    display: none;
+}
