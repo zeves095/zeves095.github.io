@@ -6,10 +6,13 @@
     };
     width:auto;
     align-self: stretch;
-    &--service0 {
-        background-image: url("./service-image-0.png");
+    &--service-wedding {
+        // background-image: url("./images/wedding/wedding-pad.jpg");
     }
     &--order {
-        background-image: url("./order-image.png");
+        background-image: url("./images/order/order-image.png");
     }
 }
+
+@import './media-667/image';
+@import './media-1400/image';

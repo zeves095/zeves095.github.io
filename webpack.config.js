@@ -56,10 +56,10 @@ module.exports = {
     //   chunkFilename: "[id].css"
     // })
   ]
-  // ,
-  // optimization: {
-  //   minimizer: [
-  //     new OptimizeCSSAssetsPlugin({})
-  //   ]
-  // }
+  ,
+  optimization: {
+    minimizer: [
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  }
 };

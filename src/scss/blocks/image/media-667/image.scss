@@ -1,0 +1,10 @@
+@media (min-width: #{getEm(667,'px')}) {
+    .image {
+        &--service-wedding {
+            background-image: url("./images/wedding/wedding-pad.jpg");
+        }
+        &--order {
+            // background-image: url("./images/order/order-image.png");
+        }
+    }
+}

@@ -1,0 +1,10 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .image {
+        &--service-wedding {
+            background-image: url("./images/wedding/wedding-desktop.jpg");
+        }
+        &--order {
+            // background-image: url("./images/order/order-image.png");
+        }
+    }
+}
