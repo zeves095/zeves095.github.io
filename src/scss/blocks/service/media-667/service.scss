@@ -26,7 +26,7 @@
             width: auto;
             margin-left: -#{getEm(10)};
             margin-right: -#{getEm(20)};
-            padding-right:0;
+            padding-right: 0px;
             // z-index:-1;
         }
 
@@ -34,13 +34,13 @@
             &>* { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
                 margin-left: -#{getEm(10)};
                 padding-left: #{getEm(10 + 27)};
-                margin-right:0;
-                padding-right:0;
+                margin-right: 0px;
+                padding-right: 0px;
             }
             &>.service__link-call { // чтобы не упустить переопределение размеров в детях - определяем тут. Но придется повысить приоритет для слайдера - так как он выходит за рамки.
-                margin-left:0;
+                margin-left: 0px;
                 margin-right:#{getEm(10)};
-                padding-left:0;
+                padding-left: 0px;
             }
             &>.service__image {
                 margin-left: -#{getEm(20)};
@@ -49,7 +49,7 @@
                 max-width: getEm(230 + 27);
             }
             &>.service__description {
-                margin-top:0;
+                margin-top: 0px;
             }
         }
     }

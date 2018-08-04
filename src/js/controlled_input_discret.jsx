@@ -92,7 +92,7 @@ export class ControlledInput extends React.Component{
         return (
             <div className="mt10 mb10">
                 <div className="raised">
-                    <div className="controlled-input" style={{margin: 0, maxWidth: '300px'}}>
+                    <div className="controlled-input" style={{margin: '0px', maxWidth: '300px'}}>
                         <button className="minus btn white left" onClick={this.decrement.bind(this)}>-</button>
                         <button className="plus btn white right" onClick={this.increment.bind(this)}>+</button>
                         <div className="input-wrap">

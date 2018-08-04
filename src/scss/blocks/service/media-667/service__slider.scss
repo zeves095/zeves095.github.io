@@ -3,6 +3,6 @@
         height: getEm(320); //275 // фиксированая высота - вероятно вынести на уровень настроек layout'a
         order: 3;
         width:calc(50% + #{getEm(30)}) !important;
-        margin-top:0;
+        margin-top: 0px;
     }
 }

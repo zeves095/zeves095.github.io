@@ -9,8 +9,8 @@
 
         &>* {
             width:  getEm(50,'%');
-            margin:0;
-            padding:0;
+            margin: 0px;
+            padding: 0px;
             box-sizing: border-box;
             padding-right: #{getEm(40,'rem',12)};
             padding-left: #{getEm(105,'rem',12)};
@@ -21,15 +21,15 @@
 
         &>.order__image {
             min-width:  getEm(50,'%');
-            padding-right: 0;
-            padding-left: 0;
+            padding-right: 0px;
+            padding-left: 0px;
         }
         &>.order__caption {
             display: block;
             padding-top: #{getEm(120,'rem',12)}; 
             margin-left: -#{getEm(60,'rem',12)};
-            padding-right: 0;
-            padding-left: 0;
+            padding-right: 0px;
+            padding-left: 0px;
         }
     }
 }

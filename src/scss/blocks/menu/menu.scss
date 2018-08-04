@@ -3,7 +3,7 @@
     flex-flow: column nowrap;
     align-items: stretch;
     box-sizing: border-box;
-    padding: 0 getEm(30);
+    padding: 0px getEm(30);
     background: $grey-dark;
     &>a {
         display: block;
@@ -16,10 +16,10 @@
     }
     &--is-open {
         position: fixed;
-        top: 0;
-        right: 0;
+        top: 0px;
+        right: 0px;
         left: getEm(20);
-        bottom: 0;
+        bottom: 0px;
         z-index:999;
     }
 }

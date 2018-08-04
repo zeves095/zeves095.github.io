@@ -4,8 +4,8 @@ html {
 
 body,
 html {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -17,14 +17,14 @@ body {
 main {
     // @include test-border($red);
     // do'nt style this element - just stay it for sematic html markup. (i.e. for yandex||google||ios reader)
-    margin:0;
+    margin: 0px;
 }
 
 .page-header {
     margin-bottom: getEm(10);
     &>*{
         max-width: getEm(375);
-        margin: 0 auto getEm(0);
+        margin: 0px auto getEm(0);
         min-height: getEm(54);
     }
 }
@@ -44,11 +44,11 @@ main {
     }
 
     &>.service {
-        margin:0 getEm(20) getEm(50);
+        margin: 0px getEm(20) getEm(50);
     }
 
     &>.order {
-        margin:0 getEm(20);
+        margin: 0px getEm(20);
     }
 
     &__social-links {
@@ -59,9 +59,9 @@ main {
 .page-footer {
     &>*{
         max-width: getEm(375);
-        margin: 0 auto;
+        margin: 0px auto;
         box-sizing: border-box;
-        padding:0 getEm(20);
+        padding: 0px getEm(20);
     }
 }
 

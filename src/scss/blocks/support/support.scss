@@ -26,10 +26,10 @@
     left: -#{getEm(40, em)};
     bottom: -#{getEm(5, em)};
 	padding:#{getEm(0,'px')};
-    width:0;
-    height:0;
+    width: 0px;
+    height: 0px;
     font-size: getEm(4, em);
-    // margin:0 0 -2.4em -3em;
+    // margin: 0px 0px -2.4em -3em;
 	/* css3 */
     -webkit-border-radius:50%;
 	-moz-border-radius:50%;
@@ -46,9 +46,9 @@
 	top: -#{getEm(18.2, em)}; //-1.3em;
 	left:-#{getEm(29.4, em)}; //-2.1em;
 	padding:#{getEm(0,'px')};
-    margin:0;
-    width:0;
-    height:0;
+    margin: 0px;
+    width: 0px;
+    height: 0px;
 	color:$white;
 	background:$white;
 	/* css3 */
@@ -66,9 +66,9 @@
 	top:-#{getEm(18.2, em)}; //-1.3em;
 	left:-#{getEm(7, em)}; //.5em;
 	padding:#{getEm(0,'px')};
-    margin:0;
-    width:0;
-    height:0;
+    margin: 0px;
+    width: 0px;
+    height: 0px;
 	/* css3 */
     -webkit-border-radius:50%;
 	-moz-border-radius:50%;

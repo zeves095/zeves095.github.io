@@ -40,7 +40,7 @@
 
 .slider__item--right {
     transition: margin-left 1s;
-    margin-left:0%;
+    margin-left: 0%;
 }
 
 .slider__item--left {
@@ -73,7 +73,7 @@
     }
     100% {
         position: relative;
-        left: 0;
+        left: 0px;
     }
 }
 

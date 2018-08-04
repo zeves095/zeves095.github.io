@@ -31,7 +31,7 @@
         &__description-main {
             max-width: getEm(490,'rem',12); // обязательное указание фикса - иначе верстка поедет
             flex: 1 1 auto;
-            margin:0 auto 0 #{getEm(120,'rem',12)};
+            margin: 0px auto 0px #{getEm(120,'rem',12)};
             align-self: flex-start;
         }
 

@@ -10,7 +10,7 @@
             // max-width: getEm(1400,'rem',12);
             max-width: 100%;
             width: auto;
-            margin: 0 auto getEm(0);
+            margin: 0px auto getEm(0);
             height: getEm(140,'rem',12);
         }
     }
@@ -37,18 +37,18 @@
         padding-top: #{getEm(120,'rem',12)}; 
         background-clip: content-box;
         position: relative;
-        margin-bottom: 0;
+        margin-bottom: 0px;
         
         @include two-color();
         
 
         &>.video-area {
-            flex:0 0 auto;
+            flex: 0 0 auto;
             width: getEm(1244,'rem',12);
             min-width:51%;
             flex-grow: 1;
             height: getEm(533,'rem',12);
-            margin: 0 #{getEm(60,'rem',12)};
+            margin: 0px #{getEm(60,'rem',12)};
             // margin-left: #{getEm(40)};
             // margin-right: #{getEm(20)};
             // max-height: 100%;
@@ -58,11 +58,11 @@
         }
     
         &>.service {
-            margin:0 getEm(20,'rem',12);
+            margin: 0px getEm(20,'rem',12);
         }
     
         &>.order {
-            margin:0 getEm(20,'rem',12);
+            margin: 0px getEm(20,'rem',12);
             
         }
         &--order {
@@ -70,7 +70,7 @@
         }
         &--main {
             @include two-color--reverse();
-            padding-top:0;
+            padding-top: 0px;
         }
 
         &::before {

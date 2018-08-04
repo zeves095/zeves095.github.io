@@ -10915,7 +10915,7 @@ var ControlledInput = exports.ControlledInput = function (_React$Component) {
                     { className: 'raised' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'controlled-input', style: { margin: 0, maxWidth: '300px' } },
+                        { className: 'controlled-input', style: { margin: '0px', maxWidth: '300px' } },
                         _react2.default.createElement(
                             'button',
                             { className: 'minus btn white left', onClick: this.decrement.bind(this) },

@@ -14,17 +14,17 @@
         margin-bottom: getEm(50);
 
         &--up38next {
-            margin-bottom: 0;
+            margin-bottom: 0px;
             height: auto;
         }
         &>.video-area {
             width: auto;
             height: getEm(265);
-            margin:0 getEm(20);
+            margin: 0px getEm(20);
         }
         &>.subvideo-area {
             width: auto;
-            margin:0 getEm(20);
+            margin: 0px getEm(20);
         }
         &--order {
             height: getEm(400);

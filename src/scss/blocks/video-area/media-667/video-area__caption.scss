@@ -13,8 +13,8 @@
         line-height: getEm(50);
         letter-spacing: normal;
         color: $white;
-        margin:0;
+        margin: 0px;
         // margin-top: auto;//getEm(100);  // Нельзя, в IE-11 поедет верстка.
-        padding:0;
+        padding: 0px;
     }
 }

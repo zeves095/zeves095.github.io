@@ -2,15 +2,15 @@
     .service__buttons {
         display: flex;
         flex-flow: row nowrap;
-        margin:0;
+        margin: 0px;
         margin-bottom: getEm(120,'rem',12);
-        padding:0;
+        padding: 0px;
 
         &>*{
             // flex-basis: getEm(50,'%');
-            // margin:0 getEm(20,'rem',12);
+            // margin: 0px getEm(20,'rem',12);
             // look .button
-            margin:0 getEm(10,'rem',12);
+            margin: 0px getEm(10,'rem',12);
             flex-grow: 1;
             &>a { 
                 font-size: getEm(13,'rem',12);
