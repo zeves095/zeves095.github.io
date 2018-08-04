@@ -35,7 +35,7 @@
 
         box-sizing: border-box;
         padding-top: #{getEm(120,'rem',12)}; 
-        background-clip: content-box;
+        background-clip: border-box;
         position: relative;
         margin-bottom: 0px;
         
