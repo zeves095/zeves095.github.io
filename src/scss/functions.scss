@@ -16,6 +16,8 @@
 }
 
 @mixin two-color() {
+    background-clip: border-box;
+    background-origin: border-box;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
     background: -moz-linear-gradient(left, rgba(255,255,255,0) 50%, $grey-light 50%, $grey-light 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(255,255,255,0) 50%,$grey-light 50%,$grey-light 100%); /* Chrome10-25,Safari5.1-6 */
@@ -23,6 +25,8 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#{$grey-light}',GradientType=1 ); /* IE6-9 */
 }
 @mixin two-color--reverse() {
+    background-clip: border-box;
+    background-origin: border-box;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,ffffff+50,d1d1d1+51,d1d1d1+100&0+50,0+50,1+51,1+51,1+100 */
     background: -moz-linear-gradient(left, $grey-light 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, $grey-light 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
