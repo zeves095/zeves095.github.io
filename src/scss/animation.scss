@@ -96,6 +96,7 @@
 
 
     .section__hover {
+        will-change:right;
         z-index:2;
         position:relative; // must be for IE
         right:-50%;
@@ -122,6 +123,7 @@
         text-decoration: underline !important;
     }
     .section__hover2 {
+        will-change:left;
         z-index:2;
         position:relative; // must be for IE
         left:-50%;
