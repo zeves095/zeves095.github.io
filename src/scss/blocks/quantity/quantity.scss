@@ -10,3 +10,32 @@
     text-align:center;
     align-self: stretch;
 }
+
+.quantity__value {
+    border: 0;
+    height: 100%;
+    width:100%;
+    background: none;
+    text-align: center;
+    &:focus {outline:0;}
+    order:2;
+}
+
+.quantity__minus,
+.quantity__plus {
+    height:100%;
+    width: getEm(66);
+    background: none;
+    border: none;
+    &:focus {outline:0;}
+    cursor: pointer;    
+}
+
+.quantity__minus {
+    order:1;
+    border-right: 1px solid $black;
+}
+.quantity__plus {
+    order:3;
+    border-left: 1px solid $black;
+}

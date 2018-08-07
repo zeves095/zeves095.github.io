@@ -1,3 +1,4 @@
+.denomination-custom,
 .denomination {
     display: flex;
     flex-flow: row nowrap;
@@ -9,4 +10,39 @@
     border: solid getEm(1) $black;
     text-align:center;
     align-self: stretch;
+
+    position: relative;
+}
+
+.denomination-custom__value,
+.denomination__select {
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    border:none;
+    background: none;
+    &:focus {outline:0;}
+    order: 2;
+}
+
+.denomination__minus,
+.denomination__plus {
+    height:100%;
+    width: getEm(66);
+    background: none;
+    border: none;
+    &:focus {outline:0;}
+    cursor: pointer; 
+}
+
+.denomination__minus {
+    order:1;
+    border-right: 1px solid $black;
+}
+
+.denomination__plus {
+    order:3;
+    border-left: 1px solid $black;
 }

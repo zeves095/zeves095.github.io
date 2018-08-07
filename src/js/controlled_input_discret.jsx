@@ -90,17 +90,13 @@ export class ControlledInput extends React.Component{
     */
     render() {
         return (
-            <div className="mt10 mb10">
-                <div className="raised">
-                    <div className="controlled-input" style={{margin: '0px', maxWidth: '300px'}}>
-                        <button className="minus btn white left" onClick={this.decrement.bind(this)}>-</button>
-                        <button className="plus btn white right" onClick={this.increment.bind(this)}>+</button>
-                        <div className="input-wrap">
-                            <input type='text' name={this.state.name} value={this.state.value} onChange={this.changeCountEvent.bind(this)} onWheel={this.wheel.bind(this)} />
-                        </div>
-                    </div>
+            <label className="order-form__label">Колличество
+                <div className="order-form__quantity quantity" id="quantity">
+                    <button className="quantity__minus" onClick={this.decrement.bind(this)}>-</button>
+                    <button className="quantity__plus" onClick={this.increment.bind(this)}>+</button>
+                    <input type='text' className="quantity__value" name={this.state.name} value={this.state.value} onChange={this.changeCountEvent.bind(this)} onWheel={this.wheel.bind(this)} />
                 </div>
-            </div>
+            </label>
         );
     }
 }

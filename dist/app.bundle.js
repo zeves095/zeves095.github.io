@@ -10737,35 +10737,53 @@ var CertsNominalSelect = exports.CertsNominalSelect = function (_React$Component
 
         var _this = _possibleConstructorReturn(this, (CertsNominalSelect.__proto__ || Object.getPrototypeOf(CertsNominalSelect)).call(this, props));
 
-        _this.nominals = [10000, 25000, 50000];
+        _this.nominals = [15000, 25000, 50000];
         return _this;
     }
 
     _createClass(CertsNominalSelect, [{
-        key: 'render',
+        key: "increment",
+        value: function increment(e) {
+            e.preventDefault();
+            var intval = parseInt(this.state.value);
+            if (!intval) intval = 1;
+            intval = intval + 1;
+            this.changeCount(intval);
+        }
+    }, {
+        key: "decrement",
+        value: function decrement(e) {
+            e.preventDefault();
+            var intval = parseInt(this.state.value);
+            if (!intval) intval = 1;
+            intval = intval - 1;
+            this.changeCount(intval);
+        }
+    }, {
+        key: "render",
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                { className: 'form-group', style: { maxWidth: '300px' } },
+                "label",
+                { className: "order-form__label" },
+                "\u041D\u043E\u043C\u0438\u043D\u0430\u043B \u0421\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u0430",
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    ' \u0421\u0443\u043C\u043C\u0430 \u043D\u0430 \u043A\u0430\u0440\u0442\u0435',
+                    "div",
+                    { className: "order-form__denomination denomination", id: "denomination" },
                     _react2.default.createElement(
-                        'select',
-                        { className: 'form-control form-control-lg', style: { display: 'block', textAlign: 'center' }, value: this.props.nominal, onChange: this.props.callback },
+                        "select",
+                        { className: "denomination__select", value: this.props.nominal, onChange: this.props.callback },
                         this.nominals.map(function (nominalValue) {
                             return _react2.default.createElement(
-                                'option',
+                                "option",
                                 { value: nominalValue, key: nominalValue },
                                 nominalValue.toLocaleString('ru', { style: 'decimal', minimumFractionDigits: 0 }),
-                                ' \u20BD'
+                                " \u20BD"
                             );
                         }),
                         _react2.default.createElement(
-                            'option',
-                            { value: '0', key: '0' },
-                            '\u0414\u0440\u0443\u0433\u0430\u044F \u0441\u0443\u043C\u043C\u0430..'
+                            "option",
+                            { value: "0", key: "0" },
+                            "\u0414\u0440\u0443\u0433\u0430\u044F \u0441\u0443\u043C\u043C\u0430.."
                         )
                     )
                 )
@@ -10908,30 +10926,23 @@ var ControlledInput = exports.ControlledInput = function (_React$Component) {
         key: 'render',
         value: function render() {
             return _react2.default.createElement(
-                'div',
-                { className: 'mt10 mb10' },
+                'label',
+                { className: 'order-form__label' },
+                '\u041A\u043E\u043B\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E',
                 _react2.default.createElement(
                     'div',
-                    { className: 'raised' },
+                    { className: 'order-form__quantity quantity', id: 'quantity' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'controlled-input', style: { margin: '0px', maxWidth: '300px' } },
-                        _react2.default.createElement(
-                            'button',
-                            { className: 'minus btn white left', onClick: this.decrement.bind(this) },
-                            '-'
-                        ),
-                        _react2.default.createElement(
-                            'button',
-                            { className: 'plus btn white right', onClick: this.increment.bind(this) },
-                            '+'
-                        ),
-                        _react2.default.createElement(
-                            'div',
-                            { className: 'input-wrap' },
-                            _react2.default.createElement('input', { type: 'text', name: this.state.name, value: this.state.value, onChange: this.changeCountEvent.bind(this), onWheel: this.wheel.bind(this) })
-                        )
-                    )
+                        'button',
+                        { className: 'quantity__minus', onClick: this.decrement.bind(this) },
+                        '-'
+                    ),
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'quantity__plus', onClick: this.increment.bind(this) },
+                        '+'
+                    ),
+                    _react2.default.createElement('input', { type: 'text', className: 'quantity__value', name: this.state.name, value: this.state.value, onChange: this.changeCountEvent.bind(this), onWheel: this.wheel.bind(this) })
                 )
             );
         }
@@ -11063,7 +11074,7 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
             var intval = parseInt(state.value);
             if (!intval) intval = 0;
             state.value = intval - 1000;
-            if (state.value < 1000) state.value = 1000;
+            if (state.value < 15000) state.value = 15000;
             this.setState(state);
             if (typeof this.props.callback != 'undefined') this.props.callback(state.value);
         }
@@ -11082,36 +11093,42 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
             this.setState(state);
             if (typeof this.props.callback != 'undefined') this.props.callback(state.value);
         }
-        /**
-         * <button className='minus btn white left ' onClick={this.decrement.bind(this)}>-</button>
-         * <button className='plus btn white right' onClick={this.increment.bind(this)}>+</button>
-         */
-
     }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
 
             return _react2.default.createElement(
-                'div',
-                { className: 'form-group', style: { maxWidth: '300px' } },
+                'label',
+                { className: 'order-form__label' },
+                '\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0443\u043C\u043C\u0443 \u043A\u0440\u0430\u0442\u043D\u0443\u044E 1000 \u0440. \u041D\u0435 \u043C\u0435\u043D\u044C\u0448\u0435 \u0447\u0435\u043C: ',
+                this.config.min_value,
+                ' \u0440.',
                 _react2.default.createElement(
-                    'label',
-                    null,
-                    '\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0441\u0443\u043C\u043C\u0443 \u043A\u0440\u0430\u0442\u043D\u0443\u044E 1000 \u0440. \u041D\u0435 \u043C\u0435\u043D\u044C\u0448\u0435 \u0447\u0435\u043C: ',
-                    this.config.min_value,
-                    ' \u0440.',
-                    _react2.default.createElement('input', { className: 'certificate__custom-input', type: 'text', style: { maxWidth: '300px' },
+                    'div',
+                    { className: 'order-form__denomination denomination-custom', id: 'denomination-custom' },
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'denomination__minus', onClick: this.decrement.bind(this) },
+                        '-'
+                    ),
+                    _react2.default.createElement(
+                        'button',
+                        { className: 'denomination__plus', onClick: this.increment.bind(this) },
+                        '+'
+                    ),
+                    _react2.default.createElement('input', { className: 'denomination-custom__value', type: 'text',
                         ref: function ref(input) {
                             _this2.valueInput = input;
                         },
                         placeholder: '',
                         name: this.state.name,
-                        value: this.state.value.toLocaleString('ru-RU', { style: 'decimal', minimumFractionDigits: 0 }),
+                        value: this.state.value ? this.state.value.toLocaleString('ru-RU', { style: 'decimal', minimumFractionDigits: 0 }) : 15000,
                         onBlur: this.santinizeValue.bind(this)
                         // onFocus={this.openHelper.bind(this)} 
                         , onChange: this.changeCount.bind(this),
-                        onWheel: this.wheel.bind(this) })
+                        onWheel: this.wheel.bind(this)
+                    })
                 )
             );
         }
@@ -11770,6 +11787,8 @@ var CertApp = exports.CertApp = function (_React$Component) {
     }, {
         key: 'addCertToBasket',
         value: function addCertToBasket(clickEvent) {
+            console.log('OK');
+            return;
             clickEvent.preventDefault();
             _jquery2.default.ajax(this.config.url, {
                 method: 'POST',
@@ -11809,25 +11828,25 @@ var CertApp = exports.CertApp = function (_React$Component) {
                 { className: 'item_info' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'item-price' },
-                    _react2.default.createElement(
-                        'span',
-                        { className: 'item-price-value' },
-                        total_summ.toLocaleString('ru-RU', { style: 'decimal', minimumFractionDigits: 0 })
-                    ),
-                    _react2.default.createElement('span', { className: 'rub1' })
-                ),
-                _react2.default.createElement(
-                    'div',
                     { className: 'item-info-btn-holder' },
                     _react2.default.createElement(_certs_nominal_select.CertsNominalSelect, { callback: this.selectedNominal.bind(this), nominal: this.state.nominalMode }),
                     this.state.showNominalInput ? _react2.default.createElement(_controlled_input.ControlledCertificateInput, { minValue: this.config.hardmin, defaultValue: this.state.nominal, callback: this.certNominalChange.bind(this) }) : '',
-                    _react2.default.createElement(_controlled_input_discret.ControlledInput, { name: '\u041A\u043E\u043B\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0432', minValue: this.config.hardmin, defaultValue: this.state.count, callback: this.certCountChange.bind(this) }),
-                    total_summ ? _react2.default.createElement(
-                        'a',
-                        { href: '#', className: 'btn-large', onClick: this.addCertToBasket.bind(this) },
-                        '\u041F\u043E\u043B\u043E\u0436\u0438\u0442\u044C \u0432 \u043A\u043E\u0440\u0437\u0438\u043D\u0443'
-                    ) : ''
+                    _react2.default.createElement(_controlled_input_discret.ControlledInput, { name: '\u041A\u043E\u043B\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E', minValue: this.config.hardmin, defaultValue: this.state.count, callback: this.certCountChange.bind(this) }),
+                    _react2.default.createElement(
+                        'button',
+                        { onClick: this.addCertToBasket.bind(this), className: 'order__button-submit button button--black', disabled: total_summ > 0 ? false : true },
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            '\u0417\u0430\u043A\u0430\u0437\u0430\u0442\u044C'
+                        ),
+                        ' ',
+                        _react2.default.createElement(
+                            'span',
+                            null,
+                            '\u0441\u0435\u0440\u0442\u0438\u0444\u0438\u043A\u0430\u0442'
+                        )
+                    )
                 )
             );
         }
@@ -11987,7 +12006,7 @@ var doing = false;
 
   var $supportContact = (0, _jquery2.default)('#support-contact');
   var $reactForm = (0, _jquery2.default)('#cert-app-wed');
-  $reactForm.hide();
+  // $reactForm.hide();
   // $('body').append($supportContact);
 
   (0, _jquery2.default)(document).on('wheel', function (e) {

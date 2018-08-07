@@ -1,3 +1,6 @@
 .order-form__denomination {
     height: getEm(51);
 }
+
+@import './media-667/order-form__denomination';
+@import './media-1400/order-form__denomination';

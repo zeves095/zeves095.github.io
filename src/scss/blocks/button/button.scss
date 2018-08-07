@@ -81,6 +81,9 @@
         &:active {
             background-color: $grey-darker;
         }
+        &:disabled {
+            color: $grey-darker;
+        }
     }
     &--link-call {
         text-transform: none;

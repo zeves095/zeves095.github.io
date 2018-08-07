@@ -1,0 +1,6 @@
+@media (min-width: #{getEm(1400,'px',12)}) {
+    .order-form__denomination {
+        // padding: getEm(13,'rem',12) getEm(30,'rem',12);
+        max-width: getEm(280,'rem',12);
+    }
+}

@@ -44,6 +44,8 @@ export class CertApp extends React.Component{
     }
 
     addCertToBasket(clickEvent){
+        console.log('OK');
+        return;
         clickEvent.preventDefault();
         $.ajax(this.config.url, {
             method: 'POST',
@@ -76,17 +78,19 @@ export class CertApp extends React.Component{
         const total_summ = this.state.count * this.state.nominal;
         return (
             <div className="item_info">
-				  <div className="item-price">
+				  {/* <div className="item-price">
                     <span className="item-price-value">{total_summ.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0})}</span>
                     <span className="rub1"></span>
-				  </div>
+				  </div> */}
                   <div className="item-info-btn-holder">
                     <CertsNominalSelect callback={this.selectedNominal.bind(this)} nominal={this.state.nominalMode}/>
                     { this.state.showNominalInput ? ( 
                     <ControlledCertificateInput minValue={this.config.hardmin} defaultValue={this.state.nominal} callback={this.certNominalChange.bind(this)} />
                     ): ''}
-                    <ControlledInput name='Колличество сертификатов'  minValue={this.config.hardmin} defaultValue={this.state.count} callback={this.certCountChange.bind(this)} />
-                    {total_summ ? (<a href="#"  className='btn-large' onClick={this.addCertToBasket.bind(this)}>Положить в корзину</a>) : '' }
+                    <ControlledInput name='Колличество'  minValue={this.config.hardmin} defaultValue={this.state.count} callback={this.certCountChange.bind(this)} />
+                    {/* {total_summ ? ( */}
+                        <button onClick={this.addCertToBasket.bind(this)} className="order__button-submit button button--black" disabled={(total_summ>0?false:true)}><span>Заказать</span> <span>сертификат</span></button>
+                    {/* ) : '' } */}
                   </div>
             </div>
         )

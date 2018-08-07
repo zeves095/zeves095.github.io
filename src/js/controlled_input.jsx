@@ -83,7 +83,7 @@ export class ControlledCertificateInput extends React.Component{
         let intval = parseInt(state.value);
         if(!intval) intval = 0;
         state.value = intval - 1000;
-        if(state.value<1000) state.value=1000;
+        if(state.value<15000) state.value=15000;
         this.setState(state);
         if(typeof this.props.callback != 'undefined') this.props.callback(state.value);
     }
@@ -101,27 +101,25 @@ export class ControlledCertificateInput extends React.Component{
         this.setState(state);
         if(typeof this.props.callback != 'undefined') this.props.callback(state.value);
     }
-    /**
-     * <button className='minus btn white left ' onClick={this.decrement.bind(this)}>-</button>
-     * <button className='plus btn white right' onClick={this.increment.bind(this)}>+</button>
-     */
+    
     render() {
         return (
-            <div className="form-group" style={{maxWidth: '300px'}}>
-            <label>
-                        Введите сумму кратную 1000 р.
-                        Не меньше чем: {this.config.min_value} р.
-                        <input className="certificate__custom-input" type='text' style={{maxWidth: '300px'}}
+            <label className="order-form__label">Введите сумму кратную 1000 р. Не меньше чем: {this.config.min_value} р.
+                <div className="order-form__denomination denomination-custom" id="denomination-custom">
+                    <button className="denomination__minus" onClick={this.decrement.bind(this)}>-</button>
+                    <button className="denomination__plus" onClick={this.increment.bind(this)}>+</button>
+                    <input className='denomination-custom__value' type='text'
                         ref={(input)=>{this.valueInput = input;}}
                         placeholder=''
                         name={this.state.name} 
-                        value={this.state.value.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0})} 
+                        value={this.state.value ? this.state.value.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0}) : 15000 } 
                         onBlur={this.santinizeValue.bind(this)} 
                         // onFocus={this.openHelper.bind(this)} 
                         onChange={this.changeCount.bind(this)} 
-                        onWheel={this.wheel.bind(this)} />
+                        onWheel={this.wheel.bind(this)}
+                    />
+                </div>
             </label>
-            </div>
         );
     }
 }
