@@ -15,8 +15,18 @@
         }
 
         &__description {
-            font-size: getEm(16,'rem',12);
+            font: {
+                family: ProximaNova;
+                size: getEm(16,'rem',12);
+                weight: normal;
+                style: normal;
+                stretch: normal;
+            }
             line-height: getEm(18,'rem',12);
+            letter-spacing: normal;
+            color: $black;
+
+
             align-self: flex-start;
             flex-grow: 0;
             flex-shrink: 1;

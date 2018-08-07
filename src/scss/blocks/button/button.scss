@@ -90,7 +90,7 @@
         }
         &::before {
             content: '📞  ';
-            color: inherit;
+            color: $black !important;
             display: inline;
         }
     }
