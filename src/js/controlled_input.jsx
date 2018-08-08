@@ -51,6 +51,10 @@ export class ControlledCertificateInput extends React.Component{
     changeCount(event){
         let val=event.target.value;
         val = val.replace(/\s/g,'');
+        if(val == '') {
+            this.setState({value: ''});
+            return false;
+        }
         let intval = Number.parseInt(val);
         if (Number.isNaN(intval)) return false;
         // if(val<1) val=1000;
@@ -99,7 +103,9 @@ export class ControlledCertificateInput extends React.Component{
         this.setState(state);
         if(typeof this.props.callback != 'undefined') this.props.callback(state.value);
     }
-    
+    select(event){
+        event.target.select();
+    }
     render() {
         return (
             <label className="order-form__label">Введите сумму кратную 1000 р. Не меньше чем: {this.config.min_value} р.
@@ -112,7 +118,7 @@ export class ControlledCertificateInput extends React.Component{
                         name={this.state.name} 
                         value={this.state.value ? this.state.value.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0}) : 15000 } 
                         onBlur={this.santinizeValue.bind(this)} 
-                        // onFocus={this.openHelper.bind(this)} 
+                        onFocus={this.select.bind(this)} 
                         onChange={this.changeCount.bind(this)} 
                         onWheel={this.wheel.bind(this)}
                     />

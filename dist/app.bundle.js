@@ -11134,6 +11134,10 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
         value: function changeCount(event) {
             var val = event.target.value;
             val = val.replace(/\s/g, '');
+            if (val == '') {
+                this.setState({ value: '' });
+                return false;
+            }
             var intval = Number.parseInt(val);
             if (Number.isNaN(intval)) return false;
             // if(val<1) val=1000;
@@ -11186,6 +11190,11 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
             if (typeof this.props.callback != 'undefined') this.props.callback(state.value);
         }
     }, {
+        key: 'select',
+        value: function select(event) {
+            event.target.select();
+        }
+    }, {
         key: 'render',
         value: function render() {
             var _this2 = this;
@@ -11216,9 +11225,9 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
                         placeholder: '',
                         name: this.state.name,
                         value: this.state.value ? this.state.value.toLocaleString('ru-RU', { style: 'decimal', minimumFractionDigits: 0 }) : 15000,
-                        onBlur: this.santinizeValue.bind(this)
-                        // onFocus={this.openHelper.bind(this)} 
-                        , onChange: this.changeCount.bind(this),
+                        onBlur: this.santinizeValue.bind(this),
+                        onFocus: this.select.bind(this),
+                        onChange: this.changeCount.bind(this),
                         onWheel: this.wheel.bind(this)
                     })
                 )
