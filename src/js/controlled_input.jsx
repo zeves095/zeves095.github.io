@@ -4,8 +4,6 @@ import React from 'react';
 export class ControlledCertificateInput extends React.Component{
     constructor(props){
       super(props);
-        console.log('CONSTRUCTOR');
-        console.log(props);
         this.config={
             debug: document.debug?true:false,
             max_value: 1000000000,

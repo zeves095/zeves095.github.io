@@ -17,7 +17,6 @@ const Materialize = {};
 
 export class CertApp extends React.Component{
     constructor(props){
-        console.log
       super(props);
       this.config = {
           url: '/api/card/add-cert',
@@ -34,7 +33,6 @@ export class CertApp extends React.Component{
     }
 
     certNominalChange(nominal){
-        console.log('nominal', nominal);
         let state = {nominal};
         this.setState(state);
         return true;
@@ -138,7 +136,7 @@ export class CertApp extends React.Component{
         }).success(this.callbackAJAX.bind(this));
     }
     callbackAJAX(response){
-        console.log(response);
+
     }
 
     selectedNominal(selectEvent){

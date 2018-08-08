@@ -10939,7 +10939,6 @@ var ControlledInput = exports.ControlledInput = function (_React$Component) {
     _createClass(ControlledInput, [{
         key: 'componentWillMount',
         value: function componentWillMount() {
-            //        console.log(this.props.data);
             var state = Object.assign({}, this.state);
 
             if (typeof this.props.name != 'undefined') {
@@ -11082,8 +11081,6 @@ var ControlledCertificateInput = exports.ControlledCertificateInput = function (
 
         var _this = _possibleConstructorReturn(this, (ControlledCertificateInput.__proto__ || Object.getPrototypeOf(ControlledCertificateInput)).call(this, props));
 
-        console.log('CONSTRUCTOR');
-        console.log(props);
         _this.config = {
             debug: document.debug ? true : false,
             max_value: 1000000000,
@@ -12237,8 +12234,6 @@ var CertApp = exports.CertApp = function (_React$Component) {
     function CertApp(props) {
         _classCallCheck(this, CertApp);
 
-        console.log;
-
         var _this = _possibleConstructorReturn(this, (CertApp.__proto__ || Object.getPrototypeOf(CertApp)).call(this, props));
 
         _this.config = {
@@ -12259,7 +12254,6 @@ var CertApp = exports.CertApp = function (_React$Component) {
     _createClass(CertApp, [{
         key: 'certNominalChange',
         value: function certNominalChange(nominal) {
-            console.log('nominal', nominal);
             var state = { nominal: nominal };
             this.setState(state);
             return true;
@@ -12362,9 +12356,7 @@ var CertApp = exports.CertApp = function (_React$Component) {
         }
     }, {
         key: 'callbackAJAX',
-        value: function callbackAJAX(response) {
-            console.log(response);
-        }
+        value: function callbackAJAX(response) {}
     }, {
         key: 'selectedNominal',
         value: function selectedNominal(selectEvent) {
@@ -12620,12 +12612,6 @@ var doing = false;
     i = i > 5 ? 5 : i;
     burgerTime();
   }
-
-  // wheel$.subscribe(
-  //   next => _scroll((next.deltaY < 0 ? -1 : 1)),
-  //   err => console.log('error:', err),
-  //   () => console.log('the end'),
-  // );
 
   (0, _jquery2.default)('#menu a, #logo, .service__button-buy-sertificate a, .video-area__button-buy-sertificate').click(function (e) {
     e.preventDefault();

@@ -17,7 +17,6 @@ export class ControlledInput extends React.Component{
     }
 
     componentWillMount() {
-//        console.log(this.props.data);
         let state=Object.assign({},this.state);
 
         if(typeof this.props.name !='undefined'){

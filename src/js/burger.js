@@ -180,12 +180,6 @@ $('document').ready(function () {
     burgerTime();
   }
 
-  // wheel$.subscribe(
-  //   next => _scroll((next.deltaY < 0 ? -1 : 1)),
-  //   err => console.log('error:', err),
-  //   () => console.log('the end'),
-  // );
-
   $('#menu a, #logo, .service__button-buy-sertificate a, .video-area__button-buy-sertificate').click(function(e){
     e.preventDefault();
     doing = true;
