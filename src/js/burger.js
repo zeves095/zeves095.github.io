@@ -134,7 +134,6 @@ $('document').ready(function () {
   // $('body').append($supportContact);
 
   $(document).on('wheel', function(e) {
-    console.log(window.innerWidth);
     if(!doing){
       doing = true;
       _scroll((e.originalEvent.deltaY < 0 ? -1 : 1));
@@ -187,8 +186,9 @@ $('document').ready(function () {
   //   () => console.log('the end'),
   // );
 
-  $('#menu a, #logo').click(function(e){
+  $('#menu a, #logo, .service__button-buy-sertificate a, .video-area__button-buy-sertificate').click(function(e){
     e.preventDefault();
+    doing = true;
     var dp = $(this).attr('data-page');
     i = dp - 1;
     burgerTime();

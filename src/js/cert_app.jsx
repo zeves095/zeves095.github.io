@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import $ from 'jquery';
+import 'sweetalert';
+
+
 import { ControlledCertificateInput } from './controlled_input.jsx';
 import { ControlledInput } from './controlled_input_discret.jsx';
 import { CertsNominalSelect } from './certs_nominal_select.jsx';
@@ -43,10 +46,91 @@ export class CertApp extends React.Component{
         return true;
     }
 
+    dialogue(context){
+
+        var contact = document.createElement("input");
+        contact.id = "swal-input-contact";
+        contact.class = "swal-input-contact";
+        contact.placeholder = "+7 900 000-00-00";
+        
+        var contactLabel = document.createElement("LABEL");
+        contactLabel.innerHTML = "Контактный телефон";
+        contactLabel.htmlFor = "swal-input-contact";
+        
+        var name =  document.createElement("input");
+        name.id = "swal-input-name";
+        name.class = "swal-input-name";
+        name.placeholder = "Надежда";
+        
+        var nameLabel = document.createElement("LABEL");
+        nameLabel.innerHTML = "Укажите ваше имя";
+        nameLabel.htmlFor = "swal-input-name";
+        
+        var wrapper = document.createElement("div");
+        var intro = document.createElement("span");
+        intro.innerHTML = "Заказ на "+context.count+" сертификат[ов], номиналом "+context.nominal+" Руб.<br /><br />";
+
+        wrapper.appendChild(intro);
+        wrapper.appendChild(nameLabel);
+        wrapper.appendChild(name);
+        wrapper.appendChild(contactLabel);
+        wrapper.appendChild(contact);
+        swal({
+            title: 'Заказ сертификата',
+            content: wrapper,
+            buttons: {
+                cancel: {
+                    text: "Отмена",
+                    value: null,
+                    visible: true,
+                    className: "button button--transparent",
+                    closeModal: true,
+                },
+                confirm: {
+                    text: "Заказать",
+                    value: true,
+                    visible: true,
+                    className: "button button--black",
+                    closeModal: true
+                }
+            }
+        }).then(
+        function (act) {
+            if(!act) return;
+            
+            var result = {
+                name: $('#swal-input-name').val(),
+                contact: $('#swal-input-contact').val()
+            };
+
+            $.ajax({
+                url: '/app/ajax/order/fast/cert/',
+                method: 'post',
+                data: {
+                    name: result.name,
+                    contact: result.contact,
+                    count: context.count,
+                    nominal: context.nominal
+                },
+                dataType: 'json'
+            }).then(function (response) {
+                swal(response.code == 200 ? 'Успешно' : 'Ошибка', response.message, response.code == 200 ? 'success' : 'error');
+            }.bind(context))
+            .catch(function(arg) {
+                swal('Ошибка', 'ошибка сервера - обратитесь к нам по телефону', 'error');
+            });
+        },
+        function (dismiss) {
+            
+        }.bind(this)).catch(swal.noop);
+
+        return true;
+    }
+
     addCertToBasket(clickEvent){
-        console.log('OK');
-        return;
         clickEvent.preventDefault();
+        this.dialogue(this.state);
+        return;
         $.ajax(this.config.url, {
             method: 'POST',
             dataType: 'json', // auto JSON.parse

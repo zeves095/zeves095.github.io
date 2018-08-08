@@ -28,6 +28,8 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    border-radius: 0;
+
     &--transparent {
         color: $grey-darkest;
         background-color: transparent;
@@ -74,7 +76,7 @@
         color: $white;
         background-color: $grey-darkest;
         border: solid getEm(1) $grey-darkest;
-
+        
         &:hover {
             background-color: $black;
         }

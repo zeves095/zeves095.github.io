@@ -1,0 +1,77 @@
+.swal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.swal-title {
+    
+}
+.swal-modal {
+    
+}
+.swal-content>div {
+    display: flex;
+    flex-flow: column nowrap;
+    &>input {
+        margin-bottom: getEm(20);
+        text-align: left;
+        font: {
+            family: ProximaNova;
+            size: getEm(17);
+            weight: normal;
+            style: normal;
+            stretch: normal;
+        };
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+
+        &#swal-input-name,
+        &#swal-input-contact {
+            // display: block;
+            line-height: getEm(35,'rem',12);
+            padding: getEm(13,'rem',12) getEm(30,'rem',12);
+            // max-width: getEm(280,'rem',12);
+        }
+    }
+    &>label {
+        text-align: left;
+        font: {
+            family: ProximaNova;
+            size: getEm(13);
+            weight: normal;
+            style: normal;
+            stretch: normal;
+        };
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+    }
+    &>span {
+        text-align: center;
+        font: {
+            family: ProximaNova;
+            size: getEm(13);
+            weight: normal;
+            style: normal;
+            stretch: normal;
+        };
+        line-height: normal;
+        letter-spacing: normal;
+        color: $black;
+    }
+}
+.swal-footer {
+    background-color: rgb(245, 248, 250);
+    margin-top: 32px;
+    border-top: 1px solid #E9EEF1;
+    overflow: hidden;
+}
+
+
+
+.swal-input-name {
+
+}
+
+.swal-input-contact {
+
+}

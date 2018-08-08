@@ -3,6 +3,7 @@
 @import './functions';
 @import './animation';
 @import './typography';
+@import './swal';
 
 @media (min-width: #{getEm(320,'px')}) {
 
