@@ -23,7 +23,7 @@ $.fn.swapWith = function(to) {
 };
 
 function swipedetect(el, callback){
-  
+
   var touchsurface = el,
   swipedir,
   startX,
@@ -88,26 +88,26 @@ var doing = false;
 $('document').ready(function () {
   // return;
   // $('body').append('<div style="height:1px"></div>');
-  
+
   // window.addEventListener('wheel', function(e) {
-    
+
   // });
   $('.slider').each(function(sliderNum, slider){
     $('.slider__item',slider).each(function(itemNum, item){
       var itemNumS = itemNum;
 
-      swipedetect(item, function(swipedir){ 
-        
+      swipedetect(item, function(swipedir){
+
         if(swipedir === 'right'){
           if($(item).prev().length){
             $(item).prev().removeClass('slider__item--left').addClass('slider__item--right');
-            
+
             $(item).removeClass('slider__item--active');
             $(item).prev().addClass('slider__item--active');
           }
         }else if(swipedir === 'left'){
           if($(item).next().length){
-            $(item).removeClass('slider__item--right').addClass('slider__item--left'); 
+            $(item).removeClass('slider__item--right').addClass('slider__item--left');
             $(item).removeClass('slider__item--active');
             $(item).next().addClass('slider__item--active');
           }
@@ -157,8 +157,8 @@ $('document').ready(function () {
     $(document).trigger('mousewheel');
   });
 
-  // var trigger = $('#hamburger'),
-  var trigger = $('.support'),
+  var trigger = $('#hamburger'),
+  //var trigger = $('.support'),
       isClosed = true;
       trigger.click(function () {
       burgerTime();
@@ -181,13 +181,13 @@ $('document').ready(function () {
   }
 
   $('#menu a, #logo, .service__button-buy-sertificate a, .video-area__button-buy-sertificate').click(function(e){
-    e.preventDefault();
+    if(window.matchMedia("(min-width: 1200px)").matches){e.preventDefault();}
     doing = true;
     var dp = $(this).attr('data-page');
     i = dp - 1;
     burgerTime();
   });
-  
+
   function burgerTime() {
     let item = $('.section').eq(i);
     let blockleft,blockright;
@@ -202,14 +202,14 @@ $('document').ready(function () {
       // левые элементы
       blockright = $('.service__caption, .service__description, .service__note, .service__buttons, .service__image',item);
     }
-    
+
     // сбрасываем стили анимации
     blockleft.removeClass(activeclass);
     blockright.removeClass(activeclass2);
 
     blockleft.addClass(activeclass);
     blockright.addClass(activeclass2);
-    
+
     window.setTimeout( function() {
       last.addClass('off');
       item.removeClass('off');
@@ -222,7 +222,7 @@ $('document').ready(function () {
         doing = false;
       },1500);
     },0);
-    
+
 
     // $('.main-header__menu').toggleClass('main-header__menu--hidden');
     // $('.menu').toggleClass('menu--is-open');
@@ -238,4 +238,3 @@ $('document').ready(function () {
   }
 
 });
-
