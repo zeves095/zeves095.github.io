@@ -27,7 +27,10 @@ $('document').ready(function() {
     e.preventDefault();
     jivo_api.open();
   });
-  $(".service__button-call, video-area__button-details, .service__button-details, .service__button-details>a, .main-footer__button_call").click(function (e) {
+  $(".service__button-call>a, \
+    a.video-area__button-details, \
+    .service__button-details>a, \
+    a.main-footer__button_call").click(function (e) {
     e.preventDefault();
     jivo_api.open({ start: 'call' });
   });

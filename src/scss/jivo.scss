@@ -1,0 +1,6 @@
+#jivo_custom_widget, // not working
+#jivo_chat_widget, // not working
+div#jivo-iframe-container.jivo-iframe-container-bottom.jivo-c-mobile, // not working
+body>jdiv {
+    display: none !important;
+}
