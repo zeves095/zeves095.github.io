@@ -1,5 +1,5 @@
 // @import url('https://fonts.googleapis.com/css?family=LucidaGrande'); // OK
-// @import url('https://fonts.googleapis.com/css?family=ProximaNova'); 
+// @import url('https://fonts.googleapis.com/css?family=ProximaNova');
 // @import url('https://fonts.googleapis.com/css?family=AcademyC'); // OK
 // @import url('https://fonts.googleapis.com/css?family=Athelas');  // FAIL платный
 
@@ -54,6 +54,17 @@ h1 {
         url('./fonts/KudryashevDisplay.svg#KudryashevDisplay') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('/assets/v3/fontello/font/fontello.eot?93422053');
+  src: url('/assets/v3/fontello/font/fontello.eot?93422053#iefix') format('embedded-opentype'),
+  url('/assets/v3/fontello/font/fontello.woff?93422053') format('woff'),
+  url('/assets/v3/fontello/font/fontello.ttf?93422053') format('truetype'),
+  url('/assets/v3/fontello/font/fontello.svg?93422053#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 // PROXIMA NOVA

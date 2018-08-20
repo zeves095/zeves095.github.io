@@ -27,11 +27,16 @@ $('document').ready(function() {
     e.preventDefault();
     jivo_api.open();
   });
-  $(".service__button-call>a, \
-    a.video-area__button-details, \
-    .service__button-details>a, \
-    a.main-footer__button_call").click(function (e) {
+  $("a.video-area__button-details, \
+    .service__button-details>a").click(function (e) {
     e.preventDefault();
     jivo_api.open({ start: 'call' });
+  });
+  $('.button--link-call, .main-footer__button_call, .service__button-call').click(function(e){
+    if(window.matchMedia("(min-width: 667px)").matches && window.matchMedia("(max-width: 1200px)").matches){
+      e.preventDefault();
+      jivo_api.open();
+      setTimeout(function(){$('#jivo_container').contents().find('jdiv.callMe_BG').click()},200);
+    }
   });
 });

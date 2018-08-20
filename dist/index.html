@@ -2,404 +2,537 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Свадебный сертификат</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/assets/templates/wedding_landing/dist/">
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> загрузка идет через js-->
-    <style>
-        body>header,
-        body>main,
-        body>footer { display: none; }
-        body { display: flex; height: 100vh; }
-        body::before {
-            content: 'сайт загружается..';
-            display: block;
-            margin: auto;
-            font-size: 5vw;
-        }
-    </style>
-    <script src="app.bundle.js" async></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Свадебный сертификат</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="/assets/templates/wedding_landing/dist/">
+  <!-- <link rel="stylesheet" type="text/css" media="screen" href="style.css" /> загрузка идет через js-->
+  <style>
+    body>header,
+    body>main,
+    body>footer {
+      display: none;
+    }
+
+    body {
+      display: flex;
+      height: 100vh;
+    }
+
+    body::before {
+      content: 'сайт загружается..';
+      display: block;
+      margin: auto;
+      font-size: 5vw;
+    }
+  </style>
+  <script src="app.bundle.js" async></script>
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="main-header">
-            <a href="/wedding#page-1" data-page="1" id="logo" class="main-header__logo logo"></a>
-            <nav class="main-header__menu menu" id="menu">
-                <a href="/wedding#page-2" data-page="2">О сертификате</a>
-                <a href="/wedding#page-3" data-page="3">Фарфор</a>
-                <a href="/wedding#page-4" data-page="4">Хрусталь</a>
-                <a href="/wedding#page-5" data-page="5">Текстиль</a>
-                <a href="/wedding#page-6" data-page="6">Заказать сертификат</a>
-            </nav>
-            <div class="main-header__support support" id="support">
-                <div class="support__icon"></div>
-                <span>консультант</span> <span class="hidden">онлайн</span>
-            </div>
-            <div class="main-header__hamburger hamburger" id="hamburger">☰</div>
-        </div>
-    </header>
-    <main>
-        <section class="section section--up38next" id="page-1" data-page="1">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="video-area">
-                <div class="video-area__video-container">
-                    <video  class="video-area__video" 
-                            autoplay="autoplay" 
-                            id="video-header" 
-                            preload="auto" 
-                            muted="" 
-                            playsinline="" 
-                            loop >
-                        <!-- <source src="./video/1700.mp4" type="video/mp4" media="screen and (min-device-width:1200px)">
+  <header class="page-header">
+    <div class="main-header">
+      <a href="/wedding#page-1" data-page="1" id="logo" class="main-header__logo logo"></a>
+      <nav class="main-header__menu menu" id="menu">
+        <a href="/wedding#page-2" data-page="2">О сертификате</a>
+        <a href="/wedding#page-3" data-page="3">Фарфор</a>
+        <a href="/wedding#page-4" data-page="4">Хрусталь</a>
+        <a href="/wedding#page-5" data-page="5">Текстиль</a>
+        <a href="/wedding#page-6" data-page="6">Заказать сертификат</a>
+      </nav>
+      <div class="main-header__support support" id="support">
+        <div class="support__icon"></div>
+        <span>консультант</span> <span class="hidden">онлайн</span>
+      </div>
+      <div class="main-header__hamburger hamburger" id="hamburger">☰</div>
+    </div>
+  </header>
+  <main>
+    <section class="section section--up38next" id="page-1" data-page="1">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="video-area">
+        <div class="video-area__video-container">
+          <video class="video-area__video" autoplay="autoplay" id="video-header" preload="auto" muted="" playsinline="" loop>
+                        <source src="./video/1700.mp4" type="video/mp4" media="screen and (min-device-width:1200px)">
                         <source src="./video/1700.webm" type="video/webm" media="screen and (min-device-width:1200px)">
                         <source src="./video/1200.mp4" type="video/mp4" media="screen and (min-device-width:667px)">
-                        <source src="./video/1200.webm" type="video/webm" media="screen and (min-device-width:667px)"> -->
+                        <source src="./video/1200.webm" type="video/webm" media="screen and (min-device-width:667px)">
                         <source src="./video/667.mp4" type="video/mp4">
                         <source src="./video/667.webm" type="video/webm">
-                        
-                        
+
+
                     </video>
-                </div>
-                
-                
-                <h1 class="video-area__caption">
+        </div>
+
+
+        <h1 class="video-area__caption">
                     <span>Свадебный</span><span>сертификат</span>
                 </h1>
-                <div class="video-area__buttons">
-                    <a class="video-area__button-buy-sertificate button button--white" href="/wedding#page-6" data-page="6">Купить сертификат</a>
-                    <a class="video-area__button-details button button--transparent-white" href="/wedding#">Рассказать подробно</a>
-                </div>
-            </div>
-            <div class="subvideo-area">
-                <div class="subvideo-area__support-contact" id="support-contact">Подробнее о Сертификате вам расскажет наш менеджер: <a href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">8 (800) 250 61 81</a><br /> Доставка по России бесплатно</div>
-                <div class="subvideo-area__copyright">2018 © «Дом Фарфора» – магазин фарфора и предметов декора интерьера. <br /><a href="https://www.domfarfora.ru/dogovor-oferta/">Договор-оферта</a></div>
-            </div>
-        </section>
-        <section class="section section--main" id="page-2" data-page="2">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="service service--reverse">
-                <h2 class="service__caption service__caption--double-left-to-right">
+        <div class="video-area__buttons">
+          <a class="video-area__button-buy-sertificate button button--white" href="/wedding#page-6" data-page="6">Купить сертификат</a>
+          <a class="video-area__button-details button button--transparent-white" href="/wedding#">Рассказать подробно</a>
+        </div>
+      </div>
+      <div class="subvideo-area">
+        <div class="subvideo-area__support-contact" id="support-contact">Подробнее об услуге «Свадебный сертификат» Вам расскажет наш менеджер: <br />т. <a href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">8 (800) 250 61 81</a> с 10:00 до 21:00.<br /> Доставка по России бесплатно.</div>
+        <div class="subvideo-area__copyright">2018 © «Дом Фарфора» – магазин фарфора и предметов декора интерьера. <br /><a href="https://www.domfarfora.ru/dogovor-oferta/">Договор-оферта</a></div>
+      </div>
+    </section>
+    <section class="section section--main" id="page-2" data-page="2">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="service service--reverse">
+        <h2 class="service__caption service__caption--double-left-to-right">
                     <span>Свадебный</span>
                     <span>сертификат</span>
                 </h2>
-                <div class="service__image image image--service-wedding"></div>
-                <p class="service__description">Как угадать желания молодоженов при выборе подарка на свадьбу? Идеальное решение — «Свадебный сертификат»
-                    сети «Дом Фарфора»!</p>
-                <h4 class="service__note-caption">Новая услуга «Свадебный сертификат» включает в себя одну из следующих опций на выбор:</h4>
-                <ul class="service__note service__note--list">
-                    <li>— Нанесение монограммы на 1 вид тарелок любого количества (6/12/18...персон) в зависимости от комплектации сервиза.</li>
-                    <li>— Нанесение монограммы на 1 вид бокалов любого количества (6/12/18...персон).</li>
-                    <li>— Вышивка монограммы на 1 виде салфеток, так же любого количества (6/12/18...персон).</li>
-                </ul>
-                <div class="service__buttons">
-                    <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
-                    <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+        <div class="service__image image image--service-wedding"></div>
+        <p class="service__description service__description--centered">- Вы дарите драгоценную возможность выбора и бесценные эмоции! <br /><br />
+- Мы наносим монограмму инициалов пары, которая сделает Ваш подарок уникальным!<br /><br />
+- Такой подарок станет фамильной ценностью, передающейся по наследству!</p>
+        <div class="service__buttons">
+          <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
+          <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+        </div>
+        <span class="service__button-call service__button-call--mainblock"><a class="button button--transparent" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Позвонить нам</a></span>
+        <span class="service__link-call service__link-call--reverse"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+        <!--<div class="service__calltext">
+                  <p>
+                    Подробнее об услуге «Свадебный сертификат» Вам расскажет наш менеджер: 8 (800) 250 61 81 <br />
+                    Доставка по России бесплатно
+                  </p>
+                </div>-->
+        <p class="service__subnote">Данный сертификат дает право на единоразовую 10% скидку на приобретаемый товар или составление заказа. Вы можете приобрести карту на любую желаемую сумму от 15 000 р., кратную 1000 р.</p>
+      </div>
+    </section>
+    <section class="section" id="page-3" data-page="3">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="service">
+        <h2 class="service__caption">Монограмма на Фарфоре</h2>
+        <div class="service__slider slider slider--service1">
+          <div class="slider__items">
+            <div>
+              <div class="slider__item slider__item--noop slider__item--active">
+                <div class="slider__image-wrapper slider__image-wrapper--active">
+                  <picture class="slider__picture">
+                    <source srcset="./images/1.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/1.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/1.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
                 </div>
-                <span class="service__button-call service__button-call--mainblock"><a class="button button--transparent" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Позвонить нам</a></span>
-                <span class="service__link-call service__link-call--reverse"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
-                <p class="service__subnote">Данный сертификат дает право на единоразовую 10% скидку на приобретаемый товар или составление заказа. Вы можете приобрести карту на любую желаемую сумму от 15 000 р., кратную 1000 р.</p>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Шер Бланк» от Noritake</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">38 360 Р</div>
+                    <div class="slider__description-price-old">42 623 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/1_1.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/1_1.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/1_1.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> На фотографии: чайный сервиз на 6 персон из коллекции «Шер Бланк» от Noritake</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">38 360 Р</div>
+                    <div class="slider__description-price-old">42 623 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/2.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/2.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/2.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Чистый опал» от Lenox.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">73 241 Р</div>
+                    <div class="slider__description-price-old">81 379 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/1_2.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/1_2.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/1_2.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Чистый опал» от Lenox.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">73 241 Р</div>
+                    <div class="slider__description-price-old">81 379 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/3.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/3.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/3.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Дворцовый сад, Маркеса» от Lenox.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">140 421 Р</div>
+                    <div class="slider__description-price-old">156 024 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/1_3.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/1_3.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/1_3.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Дворцовый сад, Маркеса» от Lenox.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">140 421 Р</div>
+                    <div class="slider__description-price-old">156 024 Р</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section" id="page-3" data-page="3">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="service">
-                <h2 class="service__caption">Монограмма на Фарфоре</h2>
-                <div class="service__slider slider slider--service1">
-                    <div class="slider__items"><div>
-                        <div class="slider__item slider__item--noop slider__item--active">
-                            <div class="slider__image-wrapper slider__image-wrapper--active">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/1.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/1.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/1.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/1.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/1.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/1.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> На фотографии: чайный сервиз на 6 персон из коллекции «Шер Бланк» от Noritake</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">38 360,7 Р</div>
-                                        <div class="slider__description-price-old">42 623 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item slider__item--noop">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/2.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/2.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/2.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/2.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/2.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/2.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Чистый опал» от Lenox.</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">73 241,1 Р</div>
-                                        <div class="slider__description-price-old">81 379 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item slider__item--noop">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/3.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/3.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/3.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/3.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/3.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/3.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> чайный сервиз на 6 персон из коллекции «Дворцовый сад, Маркеса» от Lenox.</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">140 421,6 Р</div>
-                                        <div class="slider__description-price-old">156 024 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-                <p class="service__description">Красивое сочетание из переплетенных букв имени или фамилии станет украшением вашего семейного сервиза. Отличительный знак в виде монограммы – не только красивая традиция, но и особая привилегия её обладателя.</p>
-                <p class="service__note">Нанесение монограммы выполняется на одном виде фарфоровых тарелок (6/12/18...персон) в зависимости от комплектации сервиза.<br />
-                        - Нанесение монограмм возможно в любых цветах, а также с использованием золота или платины по предварительной консультации с мастером.</p>
-                <div class="service__buttons">
-                    <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
-                    <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+          </div>
+          <div class="slider__controls">
+            <span class="button button-controls active"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+          </div>
+          <div class="slider__caret--left"></div>
+          <div class="slider__caret--right"></div>
+        </div>
+        <p class="service__description">Красивое сочетание из переплетенных букв имени или фамилии станет украшением вашего семейного сервиза.</p>
+        <p class="service__note">Нанесение монограммы выполняется на одном виде фарфоровых тарелок (6/12/18 персон) в зависимости от комплектации сервиза.<br /> Нанесение монограмм возможно в любых цветах, а также с использованием золота или платины по предварительной консультации
+          с мастером.</p>
+        <div class="service__buttons">
+          <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
+          <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+        </div>
+        <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+        <div class="service__calltext">
+          <p>
+            Подробнее об услуге «Свадебный сертификат» Вам расскажет наш менеджер: <br /> т. 8 (800) 250 61 81 с 10:00 до 21:00.<br /> Доставка по России бесплатно.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="page-4" data-page="4">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="service">
+        <h2 class="service__caption">Ручная гравировка на Хрустале</h2>
+        <div class="service__slider slider slider--service2">
+          <div class="slider__items">
+            <div>
+              <div class="slider__item slider__item--noop slider__item--active">
+                <div class="slider__image-wrapper slider__image-wrapper--active">
+                  <picture class="slider__picture">
+                    <source srcset="./images/4.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/4.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/4.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
                 </div>
-                <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 497 мл на 6 персон из коллекции «Вкус» от Schott Zwiesel.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">2 686 Р</div>
+                    <div class="slider__description-price-old">2 985 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/2_1.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/2_1.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/2_1.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 497 мл на 6 персон из коллекции «Вкус» от Schott Zwiesel.</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">2 686 Р</div>
+                    <div class="slider__description-price-old">2 985 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/5.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/5.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/5.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 170 мл на 6 персон из коллекции «Моцарт» от Moser</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">59 837 Р</div>
+                    <div class="slider__description-price-old">66 486 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/2_2.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/2_2.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/2_2.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 170 мл на 6 персон из коллекции «Моцарт» от Moser</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">59 837 Р</div>
+                    <div class="slider__description-price-old">66 486 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/6.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/6.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/6.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для белого вина 100 мл на 6 персон из коллекции «Леди Гамильтон» от Moser</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">76 545 Р</div>
+                    <div class="slider__description-price-old">85 050 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/2_3.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/2_3.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/2_3.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для белого вина 100 мл на 6 персон из коллекции «Леди Гамильтон» от Moser</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">76 545 Р</div>
+                    <div class="slider__description-price-old">85 050 Р</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section" id="page-4" data-page="4">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="service">
-                <h2 class="service__caption">Ручная гравировка на Хрустале</h2>
-                <div class="service__slider slider slider--service2">
-                    <div class="slider__items"><div>
-                        <div class="slider__item slider__item--noop slider__item--active">
-                            <div class="slider__image-wrapper slider__image-wrapper--active">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/4.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/4.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/4.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/4.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/4.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/4.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 497 мл на 6 персон из коллекции «Вкус» от Schott Zwiesel.</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">2 686,5 Р</div>
-                                        <div class="slider__description-price-old">2 985 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item slider__item--noop">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/5.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/5.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/5.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/5.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/5.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/5.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для красного вина 170 мл на 6 персон из коллекции «Моцарт» от Moser</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">59 837,4 Р</div>
-                                        <div class="slider__description-price-old">66 486 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item slider__item--noop">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/6.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/6.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/6.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/6.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/6.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/6.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор бокалов для белого вина 100 мл на 6 персон из коллекции «Леди Гамильтон» от Moser</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">76 545 Р</div>
-                                        <div class="slider__description-price-old">85 050 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-                <p class="service__description">Нанесение гравировки в виде инициалов, возможно также с использованием золота или платины</p>
-                <p class="service__note">Нанесение монограммы выполняется на одном виде бокалов (6/12/18…персон).<br />
-                    - Нанесение монограмм возможно в любых цветах, а также с использованием золота или платины по предварительной консультации с мастером.</p>
-                <div class="service__buttons">
-                    <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
-                    <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+          </div>
+          <div class="slider__controls">
+            <span class="button button-controls active"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+          </div>
+          <div class="slider__caret--left"></div>
+          <div class="slider__caret--right"></div>
+        </div>
+        <p class="service__description">Отличительный знак в виде монограммы - не только красивая традиция, но и особая привилегия ее обладателя.</p>
+        <p class="service__note">Нанесение монограммы выполняется на одном виде бокалов (6/12/18 персон).<br /> Нанесение монограмм возможно в любых цветах, а также с использованием золота или платины по предварительной консультации с мастером.</p>
+        <div class="service__buttons">
+          <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
+          <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+        </div>
+        <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+        <div class="service__calltext">
+          <p>
+            Подробнее об услуге «Свадебный сертификат» Вам расскажет наш менеджер: <br /> т. 8 (800) 250 61 81 с 10:00 до 21:00.<br /> Доставка по России бесплатно.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="page-5" data-page="5">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="service">
+        <h2 class="service__caption">Вышивка монограммы на текстиле</h2>
+        <div class="service__slider slider slider--service3">
+          <div class="slider__items">
+            <div>
+              <div class="slider__item slider__item--noop slider__item--active">
+                <div class="slider__image-wrapper slider__image-wrapper--active">
+                  <picture class="slider__picture">
+                    <source srcset="./images/7.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/7.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/7.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
                 </div>
-                <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">5 490 Р</div>
+                    <div class="slider__description-price-old">6 100 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/3_1.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/3_1.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/3_1.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">5 490 Р</div>
+                    <div class="slider__description-price-old">6 100 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/8.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/8.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/8.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">6 120 Р</div>
+                    <div class="slider__description-price-old">6 800 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/3_2.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/3_2.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/3_2.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">6 120 Р</div>
+                    <div class="slider__description-price-old">6 800 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/9.1000x793.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/9.618x490.jpg" media="(min-width: 667px)">
+                    <img src="./images/9.480x381.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор из 4 салфеток 40x40см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">2 070 Р</div>
+                    <div class="slider__description-price-old">2 300 Р</div>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item slider__item--noop">
+                <div class="slider__image-wrapper">
+                  <picture class="slider__picture">
+                    <source srcset="./images/mono/1000x794/3_3.jpg" media="(min-width: 1200px)">
+                    <source srcset="./images/mono/618x490/3_3.jpg" media="(min-width: 667px)">
+                    <img src="./images/mono/480x381/3_3.jpg" alt="" class="slider__image" />
+                  </picture>
+                </div>
+                <div class="slider__description">
+                  <p class="slider__description-main"><b>На фотографии:</b> Набор из 4 салфеток 40x40см, КРЕСТЕЦКАЯ СТРОЧКА</p>
+                  <div class="slider__description-price-list">
+                    <div class="slider__description-price-new">2 070 Р</div>
+                    <div class="slider__description-price-old">2 300 Р</div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="section" id="page-5" data-page="5">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="service">
-                <h2 class="service__caption">Вышивка монограммы на текстиле</h2>
-                <div class="service__slider slider slider--service3">
-                    <div class="slider__items"><div>
-                        <div class="slider__item slider__item--noop slider__item--active">
-                            <div class="slider__image-wrapper slider__image-wrapper--active">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/7.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/7.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/7.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/7.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/7.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/7.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">5 490 Р</div>
-                                        <div class="slider__description-price-old">6 100 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/8.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/8.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/8.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/8.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/8.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/8.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор салфеток под приборы 50x35см, КРЕСТЕЦКАЯ СТРОЧКА</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">6 120 Р</div>
-                                        <div class="slider__description-price-old">6 800 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                        <div class="slider__item slider__item--noop">
-                            <div class="slider__image-wrapper">
-                                <picture class="slider__picture">
-                                    <source srcset="./images/9.1000x793.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/9.618x490.jpg" media="(min-width: 667px)">
-                                    <img src="./images/9.480x381.jpg" alt="" class="slider__image" />
-                                </picture>
-                            </div>
-                            <div class="slider__image-preview-wrapper">
-                                <picture class="slider__picture-preview">
-                                    <source srcset="./images/9.206x165.jpg" media="(min-width: 1200px)">
-                                    <source srcset="./images/9.125x100.jpg" media="(min-width: 667px)">
-                                    <img src="./images/9.79x63.jpg" alt="" class="slider__image-preview" />
-                                </picture>
-                            </div>
-                            <div class="slider__description">
-                                    <p class="slider__description-main"><b>На фотографии:</b> Набор из 4 салфеток 40x40см, КРЕСТЕЦКАЯ СТРОЧКА</p>
-                                    <div class="slider__description-price-list">
-                                        <div class="slider__description-price-new">2 070 Р</div>
-                                        <div class="slider__description-price-old">2 300 Р</div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div></div>
-                <p class="service__description">Нанесение монограммы в виде инициалов.</p>
-                <p class="service__note">Вышивка монограммы выполняется на 1 виде салфеток, так же любого количества (6/12/18...персон).</p>
-                <div class="service__buttons">
-                    <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
-                    <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
-                </div>
-                <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
-            </div>
-        </section>
-        <section class="section section--order" id="page-6" data-page="6">
-            <ul class="section__social-links social-links social-links--column">
-                    <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                    <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
-                    <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
-            </ul>
-            <div class="order">
-                <h2 class="order__caption">Заказать Сертификат</h2>
-                <div class="order__image image image--order_">
-                    <picture>
-                        <img src="./images/order/order-image.png" alt="" class="" />
-                    </picture>
-                </div>
-                <p class="order__question">На какую сумму вы хотите подарить «Свадебный Сертифакт» от «Дома Фарфора»?</p>
-                <form class="order__form order-form" action="./">
-                    <div id="cert-app-wed">react</div>
-                    <!-- <label class="order-form__label">Номинал Сертификата</label>
+          </div>
+          <div class="slider__controls">
+            <span class="button button-controls active"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+            <span class="button button-controls"></span>
+          </div>
+          <div class="slider__caret--left"></div>
+          <div class="slider__caret--right"></div>
+        </div>
+        <p class="service__description">Нанесение монограммы в виде инициалов.</p>
+        <p class="service__note">Вышивка монограммы выполняется на 1 виде салфеток, также любого количества (6/12/18 персон).</p>
+        <div class="service__buttons">
+          <span class="service__button-buy-sertificate"><a class="button button--black" href="/wedding#page-6" data-page="6">Купить сертификат</a></span>
+          <span class="service__button-details"><a class="button button--transparent" href="/wedding#">Рассказать подробно</a></span>
+        </div>
+        <div class="service__calltext">
+          <p>
+            Подробнее об услуге «Свадебный сертификат» Вам расскажет наш менеджер: <br /> т. 8 (800) 250 61 81 с 10:00 до 21:00.<br /> Доставка по России бесплатно.
+          </p>
+        </div>
+        <span class="service__link-call"><a class="button button--link-call" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">Хочу задать вопрос по телефону</a></span>
+      </div>
+    </section>
+    <section class="section section--order" id="page-6" data-page="6">
+      <ul class="section__social-links social-links social-links--column">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse">facebook</a></li>
+      </ul>
+      <div class="order">
+        <h2 class="order__caption">Заказать Сертификат</h2>
+        <div class="order__image image image--order_">
+          <picture>
+            <img src="./images/order/order-image.png" alt="" class="" />
+          </picture>
+        </div>
+        <p class="order__question">На какую сумму вы хотите подарить «Свадебный сертификат» от сети «Дом Фарфора»?</p>
+        <form class="order__form order-form" action="./">
+          <div id="cert-app-wed">react</div>
+          <!-- <label class="order-form__label">Номинал Сертификата</label>
                     <div class="order-form__denomination denomination" id="denomination">
                         <div>-</div>
                         <div>15'000</div>
@@ -412,32 +545,30 @@
                         <div>+</div>
                     </div>
                     <button class="order__button-submit button button--black"><span>Заказать</span> <span>сертификат</span></button> -->
-                </form>
-                <p class="order__note">Сертификат уже включает в себя разработку и нанесение монограммы, скидку 10% на приобретаемый по сертификату
-                    товар в сети магазинов</p>
-            </div>
-        </section>
-    </main>
-    <footer class="page-footer">
-        <div class="main-footer">
-            <p class="main-footer__question">Остались вопросы? Позвоните нам.<br /> Подробнее о Сертификате вам расскажет наш менеджер</p>
-            <a class="main-footer__button_call button button--transparent" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">позвонить</a>
-            <ul class="main-footer__social-links social-links">
-                <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
-                <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/" target="_blank">instagram</a></li>
-                <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse" target="_blank">facebook</a></li>
-            </ul>
-            <div class="main-footer__footer-block">
-                <p class="main-footer__copyright">2018 © «Дом Фарфора» — магазин фарфора и предметов декора интерьера</p>
-                <div class="main-footer__links">
-                    <a class="main-footer__link .main-footer__link--oferta" href="https://www.domfarfora.ru/dogovor-oferta/">Договор-оферта</a>
-                    <a class="main-footer__link .main-footer__link--delivery">Доставка бесплатная по РФ</a>
-                </div>
-            </div>
+        </form>
+        <p class="order__note">Сертификат уже включает в себя разработку и нанесение монограммы, скидку 10% на приобретаемый по сертификату товар в сети магазинов "Дом фарфора".</p>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="main-footer">
+      <p class="main-footer__question">Остались вопросы? Позвоните нам.<br /> Подробнее о Сертификате вам расскажет наш менеджер</p>
+      <a class="main-footer__button_call button button--transparent" href="tel:88002506181" title="телефон менеджера - 8 800 250 61 81">позвонить</a>
+      <ul class="main-footer__social-links social-links">
+        <li class="social-link social-link--vk"><a href="https://vk.com/club166690809" target="_blank">vkontakte</a></li>
+        <li class="social-link social-link--instagram"><a href="https://www.instagram.com/domfarfora/" target="_blank">instagram</a></li>
+        <li class="social-link social-link--facebook"><a href="https://www.facebook.com/farforhouse" target="_blank">facebook</a></li>
+      </ul>
+      <div class="main-footer__footer-block">
+        <p class="main-footer__copyright">2018 © «Дом Фарфора» — магазин фарфора и предметов декора интерьера</p>
+        <div class="main-footer__links">
+          <a class="main-footer__link .main-footer__link--oferta" href="https://www.domfarfora.ru/dogovor-oferta/">Договор-оферта</a>
+          <a class="main-footer__link .main-footer__link--delivery">Доставка бесплатная по РФ</a>
         </div>
-    </footer>
-    
-    <noscript id="deferred-styles" >
+      </div>
+    </div>
+  </footer>
+  <noscript id="deferred-styles">
         <link rel="stylesheet" type="text/css" href="style.css" />
     </noscript >
 </body>

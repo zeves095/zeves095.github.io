@@ -30,7 +30,7 @@ export class ControlledCertificateInput extends React.Component{
         this.valueInput.focus();
     }
 
-    
+
     setVal(val){
         this.setState({value: val});
         if(typeof this.props.callback != 'undefined') this.props.callback(val);
@@ -115,12 +115,11 @@ export class ControlledCertificateInput extends React.Component{
                     <input className='denomination-custom__value' type='text'
                         ref={(input)=>{this.valueInput = input;}}
                         placeholder=''
-                        name={this.state.name} 
-                        value={this.state.value ? this.state.value.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0}) : 15000 } 
-                        onBlur={this.santinizeValue.bind(this)} 
-                        onFocus={this.select.bind(this)} 
-                        onChange={this.changeCount.bind(this)} 
-                        onWheel={this.wheel.bind(this)}
+                        name={this.state.name}
+                        value={this.state.value ? this.state.value.toLocaleString('ru-RU',{style: 'decimal', minimumFractionDigits: 0}) : '' }
+                        onBlur={this.santinizeValue.bind(this)}
+                        onFocus={this.select.bind(this)}
+                        onChange={this.changeCount.bind(this)}
                     />
                 </div>
             </label>

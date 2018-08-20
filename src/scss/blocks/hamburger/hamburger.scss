@@ -2,4 +2,12 @@
     z-index: 1000;
     font-size: getEm(28);
     line-height: getEm(28);
+    cursor: pointer;
+    transition: 1s;
+    &--is-open{
+      color:white;
+      position:fixed;
+      top:10px;
+      right:30px;
+    }
 }

@@ -69,14 +69,14 @@
             color: $grey-darkest;
             background-color: $grey-lightest;
             border: none;
-        }        
+        }
     }
 
     &--black {
         color: $white;
         background-color: $grey-darkest;
         border: solid getEm(1) $grey-darkest;
-        
+
         &:hover {
             background-color: $black;
         }
@@ -94,9 +94,17 @@
             weight: normal;
         }
         &::before {
-            content: '📞  ';
-            color: $black !important;
+            //content: '📞  ';
+            //color: $black !important;
+            //display: inline;
+            content: '';
             display: inline;
+            width: getEm(20,'px');
+            height: getEm(20,'px');
+            background-image: url(/assets/templates/wedding_landing/dist/images/icons/phoneicon.png);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
     }
 }

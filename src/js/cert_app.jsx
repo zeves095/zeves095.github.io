@@ -50,20 +50,20 @@ export class CertApp extends React.Component{
         contact.id = "swal-input-contact";
         contact.class = "swal-input-contact";
         contact.placeholder = "+7 900 000-00-00";
-        
+
         var contactLabel = document.createElement("LABEL");
         contactLabel.innerHTML = "Контактный телефон";
         contactLabel.htmlFor = "swal-input-contact";
-        
+
         var name =  document.createElement("input");
         name.id = "swal-input-name";
         name.class = "swal-input-name";
-        name.placeholder = "Надежда";
-        
+        name.placeholder = "Имя";
+
         var nameLabel = document.createElement("LABEL");
         nameLabel.innerHTML = "Укажите ваше имя";
         nameLabel.htmlFor = "swal-input-name";
-        
+
         var wrapper = document.createElement("div");
         var intro = document.createElement("span");
         intro.innerHTML = "Заказ на "+context.count+" сертификат[ов], номиналом "+context.nominal+" Руб.<br /><br />";
@@ -95,7 +95,7 @@ export class CertApp extends React.Component{
         }).then(
         function (act) {
             if(!act) return;
-            
+
             var result = {
                 name: $('#swal-input-name').val(),
                 contact: $('#swal-input-contact').val()
@@ -119,7 +119,7 @@ export class CertApp extends React.Component{
             });
         },
         function (dismiss) {
-            
+
         }.bind(this)).catch(swal.noop);
 
         return true;
@@ -152,7 +152,7 @@ export class CertApp extends React.Component{
                 state.showNominalInput = false;
         }
         state.nominalMode = selectedValue;
-        
+
         this.setState(state);
     }
 
@@ -166,8 +166,8 @@ export class CertApp extends React.Component{
 				  </div> */}
                   <div className="item-info-btn-holder">
                     <CertsNominalSelect callback={this.selectedNominal.bind(this)} nominal={this.state.nominalMode}/>
-                    { this.state.showNominalInput ? ( 
-                    <ControlledCertificateInput minValue={this.config.hardmin} defaultValue={this.state.nominal} callback={this.certNominalChange.bind(this)} />
+                    { this.state.showNominalInput ? (
+                    <ControlledCertificateInput minValue={this.config.hardmin} defaultValue='' callback={this.certNominalChange.bind(this)} />
                     ): ''}
                     <ControlledInput name='Колличество'  minValue={this.config.hardmin} defaultValue={this.state.count} callback={this.certCountChange.bind(this)} />
                     {/* {total_summ ? ( */}

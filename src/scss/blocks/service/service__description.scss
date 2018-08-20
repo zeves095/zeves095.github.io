@@ -12,7 +12,12 @@
     margin: 0px;
 
 
-    margin-top: getEm(45);
+    margin-top: getEm(50);
+    &.service__description--centered{
+      margin-top:auto !important;
+      margin-bottom:auto !important;
+      max-height: getEm(250) !important;
+    }
 }
 
 @import './media-667/service__description';

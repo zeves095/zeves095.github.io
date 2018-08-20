@@ -9,4 +9,10 @@
     margin-top: getEm(30);
 }
 
+.service__calltext{
+  display: none;
+    font-family: ProximaNova;
+    font-size: 1.4rem;
+}
+
 @import './media-667/service__button-call';

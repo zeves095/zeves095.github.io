@@ -5,6 +5,12 @@
     box-sizing: border-box;
     padding: 0px getEm(30);
     background: $grey-dark;
+    transition: max-height 0.3s;
+    max-height:0px;
+    font:{
+      size: 2em;
+      family: ProximaNova;
+    }
     &>a {
         display: block;
         color: $white;
@@ -15,12 +21,14 @@
         margin: auto;
     }
     &--is-open {
+        margin:0;
         position: fixed;
         top: 0px;
         right: 0px;
-        left: getEm(20);
+        left: 0px;
         bottom: 0px;
         z-index:999;
+        max-height: 200px;
     }
 }
 

@@ -1,8 +1,8 @@
 .main-header__menu {
     &--hidden {
-        display: none;
+        max-height:0px;
         &.menu { // @INFO - нужно конечно было вынести .menu в ребенка .main-header__menu - но из-за мелочи не хотел разметку усложнять. Если вдруг меню разрастется по сложности - тогда вынести. А пока и так норм.
-            display: none;
+            
         }
     }
     flex-basis: 100%;

@@ -7,6 +7,8 @@
         box-sizing: border-box;
         padding: 0px getEm(190,'rem',12);
         background: transparent;
+        transition: 0s;
+        //max-height: none;
         &>a {
             display: block;
             color: $black;
