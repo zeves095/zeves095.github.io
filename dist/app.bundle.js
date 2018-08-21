@@ -12413,7 +12413,7 @@ var CertApp = exports.CertApp = function (_React$Component) {
                                 "transactionProducts": [{
                                     "currency": "RUB",
                                     "name": "Свадебный сертификат [" + context.nominal + "]",
-                                    "sku": "00010626505",
+                                    "sku": "00010626504",
                                     "price": "" + context.nominal,
                                     "brand": "BRAND",
                                     "category": "CATEGORY",
