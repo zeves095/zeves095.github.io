@@ -12403,29 +12403,47 @@ var CertApp = exports.CertApp = function (_React$Component) {
                     if (response.code == 200) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
-                                "ecommerce": {
-                                    "currency": "RUB",
-                                    "purchase": {
-                                        "actionField": {
-                                            "id": "DF" + response.data.purchase.actionField.id,
-                                            "affiliation": "domfarfora.ru",
-                                            "revenue": "" + context.count * context.nominal,
-                                            "tax": "",
-                                            "shiipping": "",
-                                            "coupon": ""
-                                        },
-                                        "products": [{
-                                            "name": "Свадебный сертификат [" + context.nominal + "]",
-                                            "id": "00010626504",
-                                            "price": "" + context.nominal,
-                                            "brand": null,
-                                            "category": "",
-                                            "variant": "",
-                                            "coupon": "",
-                                            "quantity": context.count
-                                        }]
-                                    }
-                                }
+                                "event": "ajaxPurchased",
+                                "transactionId": "DF" + response.data.purchase.actionField.id,
+                                "transactionAffilation": "domfarfora.ru",
+                                "transactionTotal": "" + context.count * context.nominal,
+                                "transactionTax": "",
+                                "transactionShipping": "",
+                                "transactionProducts": [{
+                                    "name": "Свадебный сертификат [" + context.nominal + "]",
+                                    "sku": "00010626504",
+                                    "price": "" + context.nominal,
+                                    "brand": "",
+                                    "category": "",
+                                    "variant": "",
+                                    "coupon": "",
+                                    "quantity": context.count
+                                }]
+                                // "ecommerce": {
+                                //     "currency": "RUB",
+                                //     "purchase": {
+                                //         "actionField": {
+                                //             "id":"DF" + response.data.purchase.actionField.id,
+                                //             "affiliation":"domfarfora.ru",
+                                //             "revenue": "" + (context.count * context.nominal), 
+                                //             "tax":"",
+                                //             "shiipping":"",
+                                //             "coupon":""
+                                //         },
+                                //         "products": [
+                                //             {
+                                //                 "name":"Свадебный сертификат [" + context.nominal + "]",
+                                //                 "id":"00010626504",
+                                //                 "price": "" + context.nominal,
+                                //                 "brand":null,
+                                //                 "category":"",
+                                //                 "variant":"",
+                                //                 "coupon":"",
+                                //                 "quantity": context.count
+                                //             }
+                                //         ]
+                                //     }
+                                // }
                             };
 
                             window.dataLayer.push(ecommerce);
