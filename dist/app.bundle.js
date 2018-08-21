@@ -12404,17 +12404,19 @@ var CertApp = exports.CertApp = function (_React$Component) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
                                 "event": "ajaxPurchased",
+                                "currency": "RUB",
                                 "transactionId": "DF" + response.data.purchase.actionField.id,
                                 "transactionAffiliation": "domfarfora.ru",
                                 "transactionTotal": "" + context.count * context.nominal,
                                 "transactionTax": "",
                                 "transactionShipping": "",
                                 "transactionProducts": [{
+                                    "currency": "RUB",
                                     "name": "Свадебный сертификат [" + context.nominal + "]",
                                     "sku": "00010626505",
                                     "price": "" + context.nominal,
-                                    "brand": "",
-                                    "category": "",
+                                    "brand": "BRAND",
+                                    "category": "CATEGORY",
                                     "variant": "",
                                     "coupon": "",
                                     "quantity": context.count
