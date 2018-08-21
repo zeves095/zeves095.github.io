@@ -12403,7 +12403,7 @@ var CertApp = exports.CertApp = function (_React$Component) {
                     if (response.code == 200) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
-                                // "event":"ajaxPurchased",
+                                "event": "ajaxPurchased",
                                 // "transactionId": "DF" + response.data.purchase.actionField.id,
                                 // "transactionAffiliation": "domfarfora.ru",
                                 // "transactionTotal": "" + (context.count * context.nominal),
