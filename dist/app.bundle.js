@@ -12404,6 +12404,7 @@ var CertApp = exports.CertApp = function (_React$Component) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
                                 "ecommerce": {
+                                    "event": "ajaxPurchased",
                                     "currency": "RUB",
                                     "purchase": {
                                         "actionField": {
