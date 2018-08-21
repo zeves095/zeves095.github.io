@@ -117,7 +117,7 @@ export class CertApp extends React.Component{
                         let ecommerce = {
                             "event":"ajaxPurchased",
                             "transactionId": "DF" + response.data.purchase.actionField.id,
-                            "transactionAffilation": "domfarfora.ru",
+                            "transactionAffiliation": "domfarfora.ru",
                             "transactionTotal": "" + (context.count * context.nominal),
                             "transactionTax": "",
                             "transactionShipping": "",

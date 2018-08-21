@@ -12405,7 +12405,7 @@ var CertApp = exports.CertApp = function (_React$Component) {
                             var ecommerce = {
                                 "event": "ajaxPurchased",
                                 "transactionId": "DF" + response.data.purchase.actionField.id,
-                                "transactionAffilation": "domfarfora.ru",
+                                "transactionAffiliation": "domfarfora.ru",
                                 "transactionTotal": "" + context.count * context.nominal,
                                 "transactionTax": "",
                                 "transactionShipping": "",
