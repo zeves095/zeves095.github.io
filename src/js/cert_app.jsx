@@ -124,7 +124,7 @@ export class CertApp extends React.Component{
                             "transactionProducts": [
                                 {
                                     "name":"Свадебный сертификат [" + context.nominal + "]",
-                                    "sku":"00010626504",
+                                    "sku":"00010626505",
                                     "price": "" + context.nominal,
                                     "brand":"",
                                     "category":"",
