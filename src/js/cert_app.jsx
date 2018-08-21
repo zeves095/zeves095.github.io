@@ -113,8 +113,36 @@ export class CertApp extends React.Component{
                 dataType: 'json'
             }).then(function (response) {
                 if(response.code == 200){
-                    if(typeof window['gti'] !== 'undefined'){
-	                    window['gti'].addEcommerceEvent([{"name":"Свадебный сертификат [" + context.nominal + "]","id":"00010626504","price": "" + context.nominal,"brand":null,"category":"","variant":"","coupon":"","quantity": "" + context.count}],'purchase',{"id":"" + response.data.purchase.actionField.id,"affiliation":"domfarfora.ru","revenue": "" + (context.count * context.nominal), "tax":"","shiipping":"","coupon":""});
+                    if(typeof window['dataLayer'] !== 'undefined'){
+                        let ecommerce = {
+                            "ecommerce": {
+                                "currency": "RUB",
+                                "purchase": {
+                                    "actionField": {
+                                        "id":"DF" + response.data.purchase.actionField.id,
+                                        "affiliation":"domfarfora.ru",
+                                        "revenue": "" + (context.count * context.nominal), 
+                                        "tax":"",
+                                        "shiipping":"",
+                                        "coupon":""
+                                    },
+                                    "products": [
+                                        {
+                                            "name":"Свадебный сертификат [" + context.nominal + "]",
+                                            "id":"00010626504","price": "" + context.nominal,
+                                            "brand":null,
+                                            "category":"",
+                                            "variant":"",
+                                            "coupon":"",
+                                            "quantity": "" + context.count
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                        
+                        window.dataLayer.push(ecommerce);
+	                    // window['gti'].addEcommerceEvent([{"name":"Свадебный сертификат [" + context.nominal + "]","id":"00010626504","price": "" + context.nominal,"brand":null,"category":"","variant":"","coupon":"","quantity": "" + context.count}],'purchase',{"id":"DF" + response.data.purchase.actionField.id,"affiliation":"domfarfora.ru","revenue": "" + (context.count * context.nominal), "tax":"","shiipping":"","coupon":""});
                     }
                 }
                 swal(response.code == 200 ? 'Успешно' : 'Ошибка', response.message, response.code == 200 ? 'success' : 'error');
