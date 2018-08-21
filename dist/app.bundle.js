@@ -12403,7 +12403,6 @@ var CertApp = exports.CertApp = function (_React$Component) {
                     if (response.code == 200) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
-                                "event": "ajaxPurchased",
                                 "ecommerce": {
                                     "currency": "RUB",
                                     "purchase": {

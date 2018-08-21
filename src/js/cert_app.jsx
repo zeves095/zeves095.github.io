@@ -115,7 +115,6 @@ export class CertApp extends React.Component{
                 if(response.code == 200){
                     if(typeof window['dataLayer'] !== 'undefined'){
                         let ecommerce = {
-                            "event":"ajaxPurchased",
                             "ecommerce": {
                                 "currency": "RUB",
                                 "purchase": {
