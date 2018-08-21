@@ -115,8 +115,8 @@ export class CertApp extends React.Component{
                 if(response.code == 200){
                     if(typeof window['dataLayer'] !== 'undefined'){
                         let ecommerce = {
+                            "event":"ajaxPurchased",
                             "ecommerce": {
-                                "event":"ajaxPurchased",
                                 "currency": "RUB",
                                 "purchase": {
                                     "actionField": {
@@ -130,12 +130,13 @@ export class CertApp extends React.Component{
                                     "products": [
                                         {
                                             "name":"Свадебный сертификат [" + context.nominal + "]",
-                                            "id":"00010626504","price": "" + context.nominal,
+                                            "id":"00010626504",
+                                            "price": "" + context.nominal,
                                             "brand":null,
                                             "category":"",
                                             "variant":"",
                                             "coupon":"",
-                                            "quantity": "" + context.count
+                                            "quantity": context.count
                                         }
                                     ]
                                 }

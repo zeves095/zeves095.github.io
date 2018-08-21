@@ -12403,8 +12403,8 @@ var CertApp = exports.CertApp = function (_React$Component) {
                     if (response.code == 200) {
                         if (typeof window['dataLayer'] !== 'undefined') {
                             var ecommerce = {
+                                "event": "ajaxPurchased",
                                 "ecommerce": {
-                                    "event": "ajaxPurchased",
                                     "currency": "RUB",
                                     "purchase": {
                                         "actionField": {
@@ -12417,12 +12417,13 @@ var CertApp = exports.CertApp = function (_React$Component) {
                                         },
                                         "products": [{
                                             "name": "Свадебный сертификат [" + context.nominal + "]",
-                                            "id": "00010626504", "price": "" + context.nominal,
+                                            "id": "00010626504",
+                                            "price": "" + context.nominal,
                                             "brand": null,
                                             "category": "",
                                             "variant": "",
                                             "coupon": "",
-                                            "quantity": "" + context.count
+                                            "quantity": context.count
                                         }]
                                     }
                                 }
